@@ -22,4 +22,23 @@ struct DreamBuildShip: Website {
 }
 
 // This will generate your website using the built-in Foundation theme:
+<<<<<<< HEAD
 try DreamBuildShip().publish(withTheme: .foundation)
+=======
+//try DreamBuildShip().publish(withTheme: .foundation)
+
+try DreamBuildShip()
+  .publish(using: [
+    .addMarkdownFiles(),
+    .copyResources(),
+    .generateHTML(withTheme: .foundation),
+    .generateRSSFeed(including: [.posts]),
+    .generateSiteMap(),
+    // Deployment step
+    .deploy(using: .gitHub(
+      "DandyLyons/DandyLyons.github.io",
+      branch: "main",
+      useSSH: true)
+    )
+    ])
+>>>>>>> parent of e8f72bf (Publish deploy 2023-08-13 16:48)
