@@ -16,12 +16,24 @@
     <loc>https://dandylyons.github.io/releases</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <lastmod>2024-03-06</lastmod>
+    <lastmod>2024-03-07</lastmod>
   </url>
   <url>
-    <loc>https://dandylyons.github.io/releases/Learn%20Hawaiian%20Words</loc>
+    <loc>https://dandylyons.github.io/releases/HawaiianVocab/Privacy%20Policy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <lastmod>2024-03-06</lastmod>
+    <lastmod>2024-03-07</lastmod>
+  </url>
+  <url>
+    <loc>https://dandylyons.github.io/releases/HawaiianVocab/Support%20FAQ</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2024-03-07</lastmod>
+  </url>
+  <url>
+    <loc>https://dandylyons.github.io/releases/HawaiianVocab/index</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2024-03-07</lastmod>
   </url>
 </urlset>
