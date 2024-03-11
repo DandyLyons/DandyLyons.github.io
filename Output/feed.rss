@@ -1,1 +1,146 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Dream. Build. Ship!</title><description>Welcome to my personal site.</description><link>https://dandylyons.github.io</link><language>en</language><lastBuildDate>Mon, 11 Mar 2024 13:04:36 -0600</lastBuildDate><pubDate>Mon, 11 Mar 2024 13:04:36 -0600</pubDate><ttl>250</ttl><atom:link href="https://dandylyons.github.io/feed.rss" rel="self" type="application/rss+xml"/><item><guid isPermaLink="true">https://dandylyons.github.io/blog/first-post</guid><title>Welcome to Dream. Build. Ship!</title><description>This is the beginning of my personal site.</description><link>https://dandylyons.github.io/blog/first-post</link><pubDate>Sun, 13 Aug 2023 16:39:00 -0600</pubDate><content:encoded><![CDATA[<h1>Welcome to Dream. Build. Ship!</h1><p>Hello and welcome to my personal site. Here I will be sharing anything that I find interesting, including <a href="https://dandylyons.github.io/tags/app">apps that I'm developing</a> and <a href="https://dandylyons.github.io/blog">general thoughts that I want to share with the world</a>.</p>]]></content:encoded></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Dream. Build. Ship!</title><description>Welcome to my personal site.</description><link>https://dandylyons.github.io</link><language>en</language><lastBuildDate>Mon, 11 Mar 2024 16:41:58 -0600</lastBuildDate><pubDate>Mon, 11 Mar 2024 16:41:58 -0600</pubDate><ttl>250</ttl><atom:link href="https://dandylyons.github.io/feed.rss" rel="self" type="application/rss+xml"/><item><guid isPermaLink="true">https://dandylyons.github.io/blog/first-post</guid><title>Welcome to Dream. Build. Ship!</title><description>This is the beginning of my personal site.</description><link>https://dandylyons.github.io/blog/first-post</link><pubDate>Sun, 13 Aug 2023 16:39:00 -0600</pubDate><content:encoded><![CDATA[<h1>Welcome to Dream. Build. Ship!</h1><p>Hello and welcome to my personal site. Here I will be sharing anything that I find interesting, including <a href="https://dandylyons.github.io/tags/app">apps that I'm developing</a> and <a href="https://dandylyons.github.io/blog">general thoughts that I want to share with the world</a>.</p><pre><code><span class="keyword">let</span> string = <span class="string">"hello world"</span>
+</code></pre><pre><code><span class="keyword">struct</span> MyHTMLFactory&lt;Site: <span class="type">Website</span>&gt;: <span class="type">HTMLFactory</span> {
+
+  <span class="comment">// The front page of the website.</span>
+  <span class="keyword">func</span> makeIndexHTML(for index: <span class="type">Index</span>,
+                     context: <span class="type">PublishingContext</span>&lt;<span class="type">Site</span>&gt;) <span class="keyword">throws</span> -&gt; <span class="type">HTML</span> {
+    <span class="keyword">let</span> latestContentItems = context
+      .<span class="call">allItems</span>(sortedBy: \.<span class="property">date</span>, order: .<span class="dotAccess">descending</span>)
+      .<span class="call">filter</span> { (item: <span class="type">Item</span>&lt;<span class="type">Site</span>&gt;) <span class="keyword">in</span>
+        item.<span class="property">tags</span>.<span class="call">allSatisfy</span> { $0.<span class="property">description</span> != <span class="string">"hidden"</span> } }
+
+    <span class="keyword">return</span> <span class="type">HTML</span>(
+      .<span class="call">lang</span>(context.<span class="property">site</span>.<span class="property">language</span>),
+      .<span class="call">head</span>(for: index, on: context.<span class="property">site</span>),
+      .<span class="call">body</span> {
+        <span class="type">SiteHeader</span>(context: context, selectedSelectionID: <span class="keyword">nil</span>)
+        <span class="type">Wrapper</span> {
+          <span class="type">H1</span>(index.<span class="property">title</span>)
+          <span class="comment">// Paragraph(context.site.description)
+          //   .class("description")</span>
+          <span class="type">H2</span>(<span class="string">"Latest content"</span>)
+          <span class="type">ItemList</span>(
+            items: latestContentItems,
+            site: context.<span class="property">site</span>
+          )
+        }
+        <span class="type">SiteFooter</span>()
+      }
+    )
+  }
+  
+  <span class="comment">// The root level "index" page of each section.</span>
+  <span class="keyword">func</span> makeSectionHTML(for section: <span class="type">Section</span>&lt;<span class="type">Site</span>&gt;,
+                       context: <span class="type">PublishingContext</span>&lt;<span class="type">Site</span>&gt;) <span class="keyword">throws</span> -&gt; <span class="type">HTML</span> {
+    <span class="keyword">let</span> items = section.<span class="property">items</span>
+      .<span class="call">filter</span> { $0.<span class="property">tags</span>.<span class="call">allSatisfy</span> { $0.<span class="property">description</span> != <span class="string">"hidden-</span>\(section.<span class="property">id</span>)<span class="string">"</span> } }
+
+    <span class="keyword">return</span> <span class="type">HTML</span>(
+      .<span class="call">lang</span>(context.<span class="property">site</span>.<span class="property">language</span>),
+      .<span class="call">head</span>(for: section, on: context.<span class="property">site</span>),
+      .<span class="call">body</span> {
+        <span class="type">SiteHeader</span>(context: context, selectedSelectionID: section.<span class="property">id</span>)
+        <span class="type">Wrapper</span> {
+          <span class="type">H1</span>(section.<span class="property">title</span>)
+          <span class="type">ItemList</span>(items: items, site: context.<span class="property">site</span>)
+        }
+        <span class="type">SiteFooter</span>()
+      }
+    )
+  }
+  
+  <span class="comment">// The "detail" page for each item.</span>
+  <span class="keyword">func</span> makeItemHTML(for item: <span class="type">Item</span>&lt;<span class="type">Site</span>&gt;,
+                    context: <span class="type">PublishingContext</span>&lt;<span class="type">Site</span>&gt;) <span class="keyword">throws</span> -&gt; <span class="type">HTML</span> {
+    <span class="type">HTML</span>(
+      .<span class="call">lang</span>(context.<span class="property">site</span>.<span class="property">language</span>),
+      .<span class="call">head</span>(for: item, on: context.<span class="property">site</span>),
+      .<span class="call">body</span>(
+        .<span class="call">class</span>(<span class="string">"item-page"</span>),
+        .<span class="call">components</span> {
+          <span class="type">SiteHeader</span>(context: context, selectedSelectionID: item.<span class="property">sectionID</span>)
+          <span class="type">Wrapper</span> {
+            <span class="type">Article</span> {
+              <span class="type">Div</span>(item.<span class="property">content</span>.<span class="property">body</span>).<span class="call">class</span>(<span class="string">"content"</span>)
+              <span class="keyword">if</span> item.<span class="property">tags</span>.<span class="property">displayableTags</span>.<span class="property">isEmpty</span> == <span class="keyword">false</span> {
+                <span class="type">Span</span>(<span class="string">"Tagged with: "</span>)
+                <span class="type">ItemTagList</span>(item: item, site: context.<span class="property">site</span>)
+              }
+            }
+          }
+          <span class="type">SiteFooter</span>()
+        }
+      )
+    )
+  }
+  
+  <span class="keyword">func</span> makePageHTML(for page: <span class="type">Page</span>,
+                    context: <span class="type">PublishingContext</span>&lt;<span class="type">Site</span>&gt;) <span class="keyword">throws</span> -&gt; <span class="type">HTML</span> {
+    <span class="type">HTML</span>(
+      .<span class="call">lang</span>(context.<span class="property">site</span>.<span class="property">language</span>),
+      .<span class="call">head</span>(for: page, on: context.<span class="property">site</span>),
+      .<span class="call">body</span> {
+        <span class="type">SiteHeader</span>(context: context, selectedSelectionID: <span class="keyword">nil</span>)
+        <span class="type">Wrapper</span>(page.<span class="property">body</span>)
+        <span class="type">SiteFooter</span>()
+      }
+    )
+  }
+  
+  <span class="keyword">func</span> makeTagListHTML(for page: <span class="type">TagListPage</span>,
+                       context: <span class="type">PublishingContext</span>&lt;<span class="type">Site</span>&gt;) <span class="keyword">throws</span> -&gt; <span class="type">HTML</span>? {
+    <span class="type">HTML</span>(
+      .<span class="call">lang</span>(context.<span class="property">site</span>.<span class="property">language</span>),
+      .<span class="call">head</span>(for: page, on: context.<span class="property">site</span>),
+      .<span class="call">body</span> {
+        <span class="type">SiteHeader</span>(context: context, selectedSelectionID: <span class="keyword">nil</span>)
+        <span class="type">Wrapper</span> {
+          <span class="type">H1</span>(<span class="string">"Browse all tags"</span>)
+          <span class="type">List</span>(page.<span class="property">tags</span>.<span class="call">sorted</span>()) { tag <span class="keyword">in</span>
+            <span class="type">ListItem</span> {
+              <span class="type">Link</span>(tag.<span class="property">string</span>,
+                   url: context.<span class="property">site</span>.<span class="call">path</span>(for: tag).<span class="property">absoluteString</span>
+              )
+            }
+            .<span class="call">class</span>(<span class="string">"tag"</span>)
+          }
+          .<span class="call">class</span>(<span class="string">"all-tags"</span>)
+        }
+        <span class="type">SiteFooter</span>()
+      }
+    )
+  }
+  
+  <span class="keyword">func</span> makeTagDetailsHTML(for page: <span class="type">TagDetailsPage</span>,
+                          context: <span class="type">PublishingContext</span>&lt;<span class="type">Site</span>&gt;) <span class="keyword">throws</span> -&gt; <span class="type">HTML</span>? {
+    <span class="type">HTML</span>(
+      .<span class="call">lang</span>(context.<span class="property">site</span>.<span class="property">language</span>),
+      .<span class="call">head</span>(for: page, on: context.<span class="property">site</span>),
+      .<span class="call">body</span> {
+        <span class="type">SiteHeader</span>(context: context, selectedSelectionID: <span class="keyword">nil</span>)
+        <span class="type">Wrapper</span> {
+          <span class="type">H1</span> {
+            <span class="type">Text</span>(<span class="string">"Tagged with "</span>)
+            <span class="type">Span</span>(page.<span class="property">tag</span>.<span class="property">string</span>).<span class="call">class</span>(<span class="string">"tag"</span>)
+          }
+          
+          <span class="type">Link</span>(<span class="string">"Browse all tags"</span>,
+               url: context.<span class="property">site</span>.<span class="property">tagListPath</span>.<span class="property">absoluteString</span>
+          )
+          .<span class="call">class</span>(<span class="string">"browse-all"</span>)
+          
+          <span class="type">ItemList</span>(
+            items: context.<span class="call">items</span>(
+              taggedWith: page.<span class="property">tag</span>,
+              sortedBy: \.<span class="property">date</span>,
+              order: .<span class="dotAccess">descending</span>
+            ),
+            site: context.<span class="property">site</span>
+          )
+        }
+        <span class="type">SiteFooter</span>()
+      }
+    )
+  }
+}
+</code></pre>]]></content:encoded></item></channel></rss>

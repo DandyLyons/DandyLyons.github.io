@@ -1,6 +1,7 @@
 import Foundation
 import Publish
 import Plot
+import SplashPublishPlugin
 
 // This type acts as the configuration for your website.
 struct DreamBuildShip: Website {
@@ -27,11 +28,13 @@ struct DreamBuildShip: Website {
 try DreamBuildShip()
   .publish(
     using: [
+      .installPlugin(.splash(withClassPrefix: "")),
+
       .addMarkdownFiles(),
       .sortItems(in: .blog, by: \.date, order: .descending),
       
       .copyResources(),
-      .generateHTML(withTheme: .myTheme, fileMode: .foldersAndIndexFiles),
+      .generateHTML(withTheme: .myTheme, indentation: .spaces(2), fileMode: .foldersAndIndexFiles),
       
       .generateRSSFeed(including: [.blog], config: .default),
       .generateSiteMap(excluding: [], indentedBy: .spaces(2)),
@@ -43,6 +46,7 @@ try DreamBuildShip()
       )
     ]
   )
+
 
 
 
