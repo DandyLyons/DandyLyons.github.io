@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:DreamBuildShip}",
+            "name": "Debug DreamBuildShip",
+            "program": "${workspaceFolder:DreamBuildShip}/.build/debug/DreamBuildShip",
+            "preLaunchTask": "swift: Build Debug DreamBuildShip"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:DreamBuildShip}",
+            "name": "Release DreamBuildShip",
+            "program": "${workspaceFolder:DreamBuildShip}/.build/release/DreamBuildShip",
+            "preLaunchTask": "swift: Build Release DreamBuildShip"
+        }
+    ]
+}
