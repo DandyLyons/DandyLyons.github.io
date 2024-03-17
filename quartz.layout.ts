@@ -32,12 +32,12 @@ export const defaultContentPageLayout: PageLayout = {
     // Component.PageTitle(),
   ],
   right: [
-    Component.Graph(),
     Component.Explorer({
       folderClickBehavior: "link",
       folderDefaultState: "open",
       useSavedState: true,
     }),
+    Component.DesktopOnly(Component.Graph()),
     Component.TableOfContents(),
     Component.Backlinks(),
   ],
