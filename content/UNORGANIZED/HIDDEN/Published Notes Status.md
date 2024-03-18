@@ -2,7 +2,9 @@
 publish: true
 ---
 ```dataview
-TABLE publish
+TABLE date, publish 
 FROM ""
-SORT DESC
+SORT
+	publish ASC,
+	date DESC
 ```
