@@ -23,8 +23,18 @@ publish: true
 
 ### Laws
 
+#### The Law of Competition
+
+
+> [!quote] Measure Against Yourself
+> *Do not compare yourself to others, but rather compare today's you to yesterday's. Strive to be incrementally better and you will reach new heights, untethered by the unreasonable expectations derived from comparisons to an infinite supply of others.*
+> 
+> **Ch. 6 of The Laws of Creativity by Joey Cofone**
 #### The Law of Ideation
 
 > [!quote] Sketch It Out
 > *Take your idea and make it real, no matter how rough. The final step is only attainable by taking the first step. Once you have something to look at and adjust, you can begin the journey towards completion.*
-> Ch. 13: The Laws of Creativity
+> 
+> **Ch. 13 of The Laws of Creativity by Joey Cofone**
+
+

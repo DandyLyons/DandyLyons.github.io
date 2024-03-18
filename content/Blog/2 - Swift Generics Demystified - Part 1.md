@@ -1,12 +1,15 @@
 ---
-title: "Swift Generics Demystified - Part 1: Concrete/Soft Types"
 publish: true
 aliases:
-  - post
+  - post-2
+title: "Swift Generics Demystified - Part 1: Concrete/Soft Types"
+tags:
+  - Series/Swift_Generics_Demystified
+  - Swift/Generics
 ---
 
 
-In our last article, we learned about how the generics system is deeply integrated into Swift at practically every level. This can give us magical features that help like *Type Inference* which makes our code easier to read and right, but it can also lead frustrating and confusing compile-time errors. Furthermore, most modern Swift libraries are filled with generic code, especially in Apple first-party frameworks such as **SwiftUI**, **Combine**, and the recently announced **SwiftData**. I hope that I've made a strong case that generics in Swift are simply too important to ignore. So without further ado, let's dive into generics, albeit with a slightly different approach than you might expect. 
+In our [[1- Swift Generics Demystified Prologue - Explicit, Implicit Types|last article]], we learned about how the generics system is deeply integrated into Swift at practically every level. This can give us magical features that help like *Type Inference* which makes our code easier to read and right, but it can also lead frustrating and confusing compile-time errors. Furthermore, most modern Swift libraries are filled with generic code, especially in Apple first-party frameworks such as **SwiftUI**, **Combine**, and the recently announced **SwiftData**. I hope that I've made a strong case that **generics in Swift are simply too important to ignore**. So without further ado, let's dive into generics, albeit with a slightly different approach than you might expect. 
 
 ## Reading Generic Code
 You might expect an article on Swift Generics to start with writing generic code, and in fact [[#Suggested Articles on Swift Generics|many fantastic authors have already covered this quite well]]. But perhaps a better approach would be to start with **reading** generic code. This is for a few reasons: 
@@ -90,6 +93,9 @@ struct MyView: View {
           Text("This is the current number: \(num)")
         }
       }
+      .onAppear {
+	      print("The type of MyView.body is \(type(of: self.body))")
+      }
     }
   }
 }
@@ -108,13 +114,73 @@ public protocol View {
 }
 ```
 
-But don't forget `Body` is **not** a concrete type. It's a *soft type*, a placeholder for some type that conforms to `View`. 
-## Suggested Articles on Swift Generics
-### Progressive Disclosure of Information
+But don't forget `Body` is **not** a concrete type. It's a *soft type*, a placeholder for a type that conforms to `View`. **This means that every time you use a protocol with an associatedtype, you must tell the compiler what the associatedtype is.** 
+So in the example below how are we telling Swift the type for `body`? 
+```swift
+struct MyView: View {
+	 var body: some View {
+		 List {
+			 Text("Hello")
+		 }
+	 }
+}
+```
 
+When we used the `:` we declared the type for `body` explicitly right? Well, no. Remember that the `some` keyword is also a placeholder, a *soft type*. No, the concrete type is actually `List<Text>` in this case, and so the `associatedtype` `Body` was implicitly[^2] evaluated to be `List<Text>`. 
 
+### How to explicitly declare the `associatedtype`
+If you recall, earlier we learned how to explicitly and implicitly declare generic types: 
+```swift
+let implicitArray = ["strings"]
+let explicitArray: Array<String> = ["more strings"]
+```
 
-#### Nominal Typing vs. Structural Typing
+But did you know you can even do this for `associatedtype`s? 
 
-### Generics: How to Make Swift Loosen up a little
+```swift
+struct MyView: View {
+	typealias Body = Text // explicitly set the associatedtype
+	var body: Text {
+		Text("Hello")
+	}
+}
+```
 
+In practice, this wouldn't be the most practical way to do this, in this situation[^3], but there are some situations when it can be helpful. In fact this is often what Xcode will automatically do if you click a "Fix Me" button. 
+
+[^3]: because we would have to remember to keep the types of `Body` and `body` in sync with each other.
+
+If you write this: 
+```swift
+struct MyView: View { // 🔴 type 'MyView' does not conform to protocol 'View'
+    // this is intentionally blank
+}
+```
+... and then click the "Fix Me" button in the error, then Xcode will add this: 
+```swift
+struct MyView: View { // 🔴 type 'MyView' does not conform to protocol 'View'
+    typealias Body = 
+}
+```
+This is because, Xcode doesn't have all the information it needs to help you fulfill the protocol requirement yet. It doesn't know what type `Body` is. Now fill in `Body`...:
+```swift
+struct MyView: View { // 🔴 type 'MyView' does not conform to protocol 'View'
+    typealias Body = Text
+}
+```
+and click "Fix Me" one more time and Xcode will add this..."
+```swift
+struct MyView: View { // 🔴 type 'MyView' does not conform to protocol 'View'
+    typealias Body = Text
+    var body: Text
+}
+```
+
+### Why not just explicitly type everything? 
+Perhaps you are thinking, "Why can't I just explicitly type everything? Why do we need concrete and so-called soft-types?" In other words, why do we need type inference.  
+
+There are a few reasons why type inference is powerful. As we established earlier, Swift's strongly typed system allows the compiler to guarantee that your code is safe and that certain bugs are impossible to write! 🎉 In addition, it allows the compiler to make some optimizations behind the scenes that make our code more performant, and we get all these benefits for free! 
+
+But a strongly typed system is also more strict and cumbersome to use. It also requires more maintenance as our codebase evolves over time. For this reason, the Swift team decided to adopt a philosophy of design called [[Progressive Disclosure of Information]]. In other words, Swift will hide complexity until it is actually relevant and helpful, and one of the ways that they achieved this was through generics. Through type inference, the Swift compiler is empowered to handle a lot of the grunt work for us, and we can focus on only the things that we care about. For example, we don't need to explicitly tell Swift what the concrete type of `Body` is. But it is also nice to know that we have the power to be explicit, should the need arise. 
+## Conclusion
+In this article we learned about concrete types, and so-called *soft* types. We also learned how they can be used explicitly and implicitly. Once again, we've learned how the Swift compiler has your back and can prevent you from writing certain types of bugs. Furthermore, while the type system can produce some confusing error messages, that can feel very unhelpful, Swift become much more helpful when you "have a conversation with it". This can be done by explicitly setting types in order to see what errors are produced. 
