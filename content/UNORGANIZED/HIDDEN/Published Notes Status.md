@@ -1,5 +1,5 @@
 ---
-publish: true
+publish: false
 ---
 ```dataview
 TABLE date, publish 

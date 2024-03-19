@@ -12,14 +12,11 @@ But there are also sections of the site which are intended to be more "polished"
 
 ## Points of Interest
 - [[Releases/index|Releases]]: Here are some things I've created and released. 
+	- [[Releases/Software/Apps/index|Apps]]: Here are some apps that I have released. 
 - [[Topics/Inputs/index|Inputs]]: Here are some things I'm reading. 
 - [[Blog/index|Blog]]: Here is my blog:
 	- This blog is focused on software engineering. I might make another blog dedicated to non-software topics. 
 	- Note: This section of the site will behave more like a traditional blog (it will be more static and won't evolve as rapidly as the rest of the *Digital Garden*). 
-
-
-![[Dream. Build. Ship!#Why is this site called *"Dream. Build. Ship!"*?]]
-
 
 
 ## About the Infrastructure of this Site
