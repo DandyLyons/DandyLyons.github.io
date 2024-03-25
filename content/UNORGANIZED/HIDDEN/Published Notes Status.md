@@ -1,8 +1,9 @@
 ---
 publish: false
 ---
+
 ```dataview
-TABLE date, publish 
+TABLE aliases, date, publish 
 FROM ""
 SORT
 	publish ASC,
