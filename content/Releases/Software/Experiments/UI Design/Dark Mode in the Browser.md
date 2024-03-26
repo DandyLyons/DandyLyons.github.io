@@ -9,4 +9,4 @@ So my mind was blown, the first time I tried out [[Arc]] browsers boost feature.
 
 But alas, it's buried in a series of menus and clicks. It's not easily discoverable, and it doesn't respond to the OS's dark mode settings. So I made a prototype to address this. 
 
-![[in.mov]]
+![[DArc Mode.mov]]

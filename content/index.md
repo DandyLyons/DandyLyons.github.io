@@ -23,6 +23,6 @@ But there are also sections of the site which are intended to be more "polished"
 - I edit and write this site using a fantastic piece of software called [[Obsidian]]. 
 	- Obsidian is a [[Markdown]] editor with **many** powerful customizations. 
 	- Every file in an Obsidian vault is a simple `.md` file, which is plain text. 
-- I use [[Quartz]], a [[Static Site Generation]], to then convert those `.md` files into fully fleshed out HTML, CSS, and JS. 
+- I use [[Topics/Software Development/Web Development/Static Site Generation/Quartz/index|Quartz]], a [[Static Site Generation]], to then convert those `.md` files into fully fleshed out HTML, CSS, and JS. 
 	- Under the hood Quartz uses [Hugo](https://gohugo.io/) for static site generation. 
 

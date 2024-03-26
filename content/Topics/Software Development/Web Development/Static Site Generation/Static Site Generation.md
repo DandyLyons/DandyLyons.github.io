@@ -14,5 +14,5 @@ A Static Site Generator is a tool that compiles all of the pages of a website in
 
 ## Examples of Static Site Generators
 - *Publish* a static site generator written in Swift by John Sundell. 
-- [[Quartz]] 
+- [[Topics/Software Development/Web Development/Static Site Generation/Quartz/index|Quartz]] 
 - [[Hugo]] 

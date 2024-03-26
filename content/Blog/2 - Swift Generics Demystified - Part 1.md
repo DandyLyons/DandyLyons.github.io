@@ -1,5 +1,5 @@
 ---
-publish: true
+publish: false
 aliases:
   - post-2
   - concrete-soft-types

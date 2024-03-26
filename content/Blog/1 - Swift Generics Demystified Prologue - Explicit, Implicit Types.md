@@ -4,7 +4,7 @@ aliases:
   - post-1
   - explicit-implicit-types
 date: 2024-03-16
-title: "Swift Generics Demystified - Prologue: Explicit/Implicit Types"
+title: "Swift Generics Demystified - Prologue: Explicit & Implicit Types"
 tags:
   - Swift/Generics
   - Series/Swift_Generics_Demystified

@@ -68,7 +68,11 @@ const config: QuartzConfig = {
       Plugin.GitHubFlavoredMarkdown({linkHeadings: true, enableSmartyPants: true}),
       Plugin.HardLineBreaks(),
       Plugin.TableOfContents({collapseByDefault: true, showByDefault: true}),
-      Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
+      Plugin.CrawlLinks({ 
+        markdownLinkResolution: "shortest" ,
+        openLinksInNewTab: true,
+        lazyLoad: true,
+      }),
       Plugin.Description(),
     ],
     filters: [Plugin.ExplicitPublish()], // only publish files that have the "publish: true" frontmatter 
