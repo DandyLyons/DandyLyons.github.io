@@ -5,7 +5,7 @@ related:
 tags:
   - AppleSDK/Metal
   - open-source/Inferno
-publish: true
+publish: false
 ---
 As an indie dev, with a small team, it can feel impossible to create apps that standout with powerful visual effects. In 2014, Apple released [[Metal]], a powerful library and [shading language](https://en.wikipedia.org/wiki/Shading_language) for GPU-accelerated visuals. In 2019, Apple released SwiftUI, making it dramatically simpler to make UI's. And in 2023, Apple made it much easier to use Metal within SwiftUI. 
 
@@ -316,3 +316,4 @@ Metal is an extremely powerful API to empower us with fast, low-level, performan
 ## Further Reading
 - [Metal | Apple Developer Documentation](https://developer.apple.com/documentation/metal)
 - [[Jacob Bartlett]] has an incredible deep dive: [Metal in SwiftUI: How to Write Shaders - by Jacob Bartlett](https://jacobbartlett.substack.com/p/metal-in-swiftui-how-to-write-shaders#%C2%A7the-book-of-shaders) 
+- [Metal for SwiftUI - Alex Logan](https://alexanderlogan.co.uk/blog/wwdc23/09-metal) 

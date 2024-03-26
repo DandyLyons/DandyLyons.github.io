@@ -1,6 +1,6 @@
 ---
 docs: https://developer.apple.com/documentation/foundation/attributedstring
-## Usage
+publish: true
 ---
 
 ## Usage

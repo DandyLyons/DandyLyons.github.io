@@ -17,6 +17,6 @@ Thank God for dreamers! Every single thing that was ever worth building started 
 
 To dream is necessary, but it is not enough. Without nourishment, any dream will die on the vine. We must [[Dream. Build. Ship!#Build.|build]], and we must [[Dream. Build. Ship!#Ship!|ship]], and more often than not, even that will not be enough. 
 
-To dream is to mourn. Inevitably, your dreams will fail. 
+To dream is to mourn. Inevitably, most of your dreams will fail. 
 
 But to dream, to truly dream is to [[Hope|hope]]. 
