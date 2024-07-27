@@ -4,7 +4,7 @@ date: 2024-08-02
 draft: true
 topics: ["SwiftUI"]
 ---
-
+This blog post should be about creating a scroll view that can be programmatically scrolled to any percentage. 
 
 ```swift
 
