@@ -1,0 +1,1 @@
+The purpose of this "private" directory is to hold files that are related to this site, but that should not be used in hugo builds, nor be vended out in the final deployed site. 
