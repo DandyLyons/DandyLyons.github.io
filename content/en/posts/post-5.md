@@ -4,7 +4,7 @@ date: 2024-04-01
 series: ["Swift Generics Demystified"]
 tags: ["SwiftUI"]
 topics: ["Swift", "Generics"]
-url: "/swift-generics/concrete-types-swift"
+url: "/posts/swift-generics/concrete-types-swift"
 ---
 In our [last article]({{< ref "post-4" >}}), we learned about how the generics system is deeply integrated into Swift at practically every level. This can give us magical features that help like *Type Inference* which makes our code easier to read and right, but it can also lead frustratingÂ and confusing compile-time errors. Furthermore, most modern Swift libraries are filled with generic code, especially in Apple first-party frameworks such as **SwiftUI**, **Combine**, and the recently announced **SwiftData**. I hope that I've made a strong case that **generics in Swift are simply too important to ignore**. So without further ado, let's dive into generics, albeit with a slightly different approach than you might expect. 
 

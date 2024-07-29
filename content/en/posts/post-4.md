@@ -4,7 +4,7 @@ date: 2024-03-16
 draft:  false
 series: ["Swift Generics Demystified"]
 topics: ["Swift", "Generics"]
-url: "/swift-generics/explicit-types-swift"
+url: "/posts/swift-generics/explicit-types-swift"
 ---
 Generics are one of the most powerful features in Swift, yet they can often feel overwhelming, even for seasoned Swift developers. In this series we'll learn how to make generics simple, useful, and even fun!
 ### Back to Basics
