@@ -6,7 +6,7 @@ topics: ["JavaScript"]
 > **Note**:
 > I originally posted this blog post to Medium, [here](https://medium.com/@_DandyLyons/how-to-use-a-js-for-of-loop-with-an-index-a4675ed22351).
 
-JavaScript’s `for...of` loop is a powerful construct for iterating over elements in an [iterable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#built-in_iterables), such as arrays, strings, or [other iterable objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#built-in_iterables:~:text=iterables%20and%20iterators.-,Built%2Din%20iterables,-String%2C%20Array). However, unlike the traditional [C-style for loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for), **the** `**for...of**` **loop doesn't provide a built-in index**. But fear not! In this blog post, we'll learn how to use the `for...of` loop with an index.
+JavaScript’s `for...of` loop is a powerful construct for iterating over elements in an [iterable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#built-in_iterables), such as arrays, strings, or [other iterable objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#built-in_iterables:~:text=iterables%20and%20iterators.-,Built%2Din%20iterables,-String%2C%20Array). However, unlike the traditional [C-style for loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for), **the** `for...of` **loop doesn't provide a built-in index**. But fear not! In this blog post, we'll learn how to use the `for...of` loop with an index.
 
 ## The Traditional `for...of` Loop
 
