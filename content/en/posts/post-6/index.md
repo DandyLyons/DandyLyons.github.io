@@ -2,6 +2,7 @@
 title: Hello Hugo
 date: 2024-07-23
 images: ["image.png"]
+description: I've rewritten and released my personal site using Hugo!
 ---
 Hello! 
 

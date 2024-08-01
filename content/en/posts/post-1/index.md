@@ -4,6 +4,7 @@ date: 2021-05-06
 topics: ['SwiftUI']
 slug: 7-ways-to-organize-swiftui
 images: ["image.jpg"]
+description: Learn how to avoid the dreaded pyramid of doom in SwiftUI. 
 ---
 
 > NOTE:
