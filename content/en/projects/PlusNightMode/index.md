@@ -13,5 +13,6 @@ date: 2023-08-01
 | Platforms    | iOS, iPadOS                       |
 | Architecture | TCA (The Composable Architecture) |
 | UI           | SwiftUI                           |
-| Purchases    | RevenueCat                        |
 
+## Developer Diary
+- [How to add Apple’s “Night Mode” to your SwiftUI Views]({{< ref "post-3" >}})

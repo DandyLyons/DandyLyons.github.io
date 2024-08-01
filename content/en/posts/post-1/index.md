@@ -3,11 +3,11 @@ title: 7 Ways to Organize SwiftUI Code
 date: 2021-05-06
 topics: ['SwiftUI']
 slug: 7-ways-to-organize-swiftui
+images: ["image.jpg"]
 ---
 
 > NOTE:
 > I originally posted this blog post to Medium, [here](https://medium.com/@_DandyLyons/7-ways-to-organize-swiftui-code-e786307d3916).
-
 
 SwiftUI is a complete paradigm shift in how we write apps for Apple platforms. It’s functional and declarative rather than object-oriented and imperative. And there is no need for ViewControllers anymore! While all of this means that we can write code that is more readable, testable, and reusable, it also means that we don’t have decades of tried and true architecture patterns to draw from.
 
@@ -55,7 +55,7 @@ This monstrosity, is technically valid SwiftUI code, but I wouldn’t recommend 
 First, let’s look at that these two templates that we’ve see a million times:
 
 ```swift
-// Example App.swift  
+// ExampleApp.swift  
 import SwiftUI  
   
 @main  
@@ -65,7 +65,10 @@ struct ExampleApp: App {
             ContentView()  
         }  
     }  
-}// ContentView.swift  
+}
+```
+```swift
+// ContentView.swift  
 import SwiftUI  
   
 struct ContentView: View {  
