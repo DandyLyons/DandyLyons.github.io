@@ -5,6 +5,7 @@ draft:  false
 series: ["Swift Generics Demystified"]
 topics: ["Swift", "Generics"]
 url: "/posts/swift-generics/explicit-types-swift"
+images: ["image.jpg"]
 ---
 Generics are one of the most powerful features in Swift, yet they can often feel overwhelming, even for seasoned Swift developers. In this series we'll learn how to make generics simple, useful, and even fun!
 ### Back to Basics
@@ -13,7 +14,7 @@ But to start off, we'll look somewhere you probably won't expect: declaring vari
 let strings = ["John", "Paul", "George", "Ringo"]
 let oneLongString = strings.joined(separator: ", ") 
 ```
-This seemingly simple piece of code has some hidden functionality. Consider for a second, what type is `strings`. That's easy. It's an `Array`. But that answer is only half correct. Furthermore, how does `strings` know about the `joined` method? How does it know how to join the elements? What if there was a number in that Array. How would it join a String and an `Int` for example? Here, most Swift developers would say that the answer is [Type Inference](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/types/#Type-Inference). And while that answer is technically correct, it's still missing part of the story. 
+This seemingly simple piece of code has some hidden functionality. Consider for a second, what type is `strings`. That's easy. It's an `Array`. But that answer is only half correct. Notice, how does `strings` know about the `joined` method? How does it know how to join the elements? What if that was an array of numbers?. Here, most Swift developers would say that the answer is [Type Inference](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/types/#Type-Inference). And while that answer is technically correct, it's still missing part of the story. 
 
 The problem with simply saying that it's Type Inference is that it feels like magic, and while Swift certainly feels magical, it most certainly is **not** magical (and that's actually a good thing). Magic, may produce joy, surprise, and wonder but it is also mysterious, unpredictable, and impossible to understand. So, how did Swift infer the type for the `strings` variable? Was it just really smart? No, absolutely not. The first step to understanding Swift, the Swift type system, and Swift generics is learning this lesson: 
 
@@ -52,16 +53,17 @@ Why did we get an error? Because we gave Swift two conflicting instructions. We 
 >Swift is a **very** strongly typed language. In other words, it won't allow you to break the rules. Learn how to follow the rules, or your code simply won't compile. 
 
 Or a better way of thinking of it is: "Swift's got your back and will protect you from making silly mistakes".
+
 ### Generic Types
 But we still haven't answered one question, how does `strings` know what the `joined` method is? Is it just a method on `Array`? Nope. 
 ```swift
-let strings = ["John", "Paul", "George", "Ringo"]
+let strings: Array = ["John", "Paul", "George", "Ringo"]
 let oneLongString = strings.joined(separator: ", ") // no Error
 
 let numbers: Array = [3, 4, 5]
 let maybeOneLongNumber = numbers.joined(separator: ", ") // Error: No exact matches in call to instance method 'joined'
 ```
-This is because `strings` and `numbers` are not the same type even though they are both `Array`s. `strings` is type `Array<String>` and `numbers` is type `Array<Int>`. See those `<`angle brackets`>`? Those are generics. This is because `Array` is a generic type. Let's look at the definition of Array: 
+This is because `strings` and `numbers` are not the same type even though they are both `Array`s. `strings` is type `Array<String>` and `numbers` is type `Array<Int>`. See those `<`angle brackets`>`? Those are generics. This is because `Array` is a generic type. To illustrate my  point, let's look at the definition of Array. Right-click `Array` and choose "Jump to Definition". 
 ```swift
 @frozen public struct Array<Element> {
 // ...
@@ -111,7 +113,7 @@ struct BottomBarView: View {
 }
 ```
 
-Why does Swift think that name is an `Int`. And why is `ForEach` expecting a `Range<Int>`? Moments like this can be extremely frustrating. Worse, yet, they are very difficult to search for an answer since you're error message is likely to be too specific to your code. Even worse still, there is no way to debug this problem since our code isn't even compiling. Moments like this can make us want to scream at the compiler, but instead why don't we try having a *conversation* with it. 
+Why does Swift think that name is an `Int`. And why is `ForEach` expecting a `Range<Int>`? Moments like this can be extremely frustrating. Worse, yet, they are very difficult to search for an answer since you're error message is likely to be too specific to your code. Even worse still, there is no way to debug this problem since our code isn't even compiling. Moments like this can make us want to scream at the compiler, but instead **why don't we try having a *conversation* with it?** 
 
 Notice how the first message `Cannot convert value of type 'Binding<[Any]>' to expected argument type 'Range<Int>'` starts with `Cannot convert value`? In my experience, **this almost always means that there is some sort of type mismatch**. In other words, the type that I think I'm using and the type that the compiler determines I'm using are actually different types. 
 
@@ -120,8 +122,7 @@ Notice how the first message `Cannot convert value of type 'Binding<[Any]>' to e
 What is the type of `self.$contacts`? Isn't it `Array`? Swift already knows that it's an Array because I assigned an Array literal (`[]`). But don't forget, `Array` is a generic type. This means that it's actually not complete to say that it's an Array. Let's ask the compiler "What kind of Array is it?" Right-click the `contacts` variable after `@State private var` and choose "Show Quick Help".  Hopefully, if Xcode doesn't fail[^1], it should show the following: 
 
 ```swift
-@State
-var contacts: [Any] { get nonmutating set }
+@State var contacts: [Any] { get nonmutating set }
 ```
 
 [^1]: In my experience, Xcode will often fail when I click "Show Quick Help", instead of displaying "No Quick Help". If you can find any tips to make Quick Help more reliable, please let me know on social media. 
@@ -136,13 +137,13 @@ As you can see `contacts` is not a `[Contact]` but instead a `[Any]`. You might 
 @State private var contacts: [Contact] = []
 ```
 
-And *voila* all of the errors should be gone now! Before, we didn't give Swift enough information to know what type contacts was, so Swift essentially had to guess. Swift guessed `[Any]` and this produced a whole host of problems. For example, `ForEach` creates a view for each element in our contacts array, and we named that element `contact`. But because `contacts` was `[Any]` that means `contact` was `Any`, and this produced the error. `Any` has no parameter `name`. 
+And *voila* all of the errors should be gone now! Before, we didn't give Swift enough information to know what type contacts was, so Swift essentially had to fallback to a default type. In this case Swift fell back to `[Any]` and this produced a whole host of problems. For example, `ForEach` creates a view for each element in our contacts array, and we named that element `contact`. But because `contacts` was `[Any]` that means `contact` was `Any`, and this produced the error. `Any` has no parameter `name`. 
 
 But afterwards we *explicitly* said that the type is `[Contact]`. Now, that Swift has more information, it can tell that `contact` is a `Contact` and therefore has a `name` property. 
 ### Takeaways
 Ask yourself "What type does Swift think this variable is and is that the same type I'm expecting."
 
-If your code won't compile, the reason why is often going to be because of an incorrect type somewhere in your code. **Try explicitly typing variables to see what will happen.** Many times, this will give Swift just the amount of info that it needs. Other times, you might discover that the type wasn't what you assumed it was. This doesn't mean that you should explicitly type everything, nor does it mean that you should avoid type inference. Type inference in many instances can lead to code that is easier to read, maintain, understand and is even safer. 
+If your code won't compile, the reason why is often going to be because of an incorrect type somewhere in your code. **Try explicitly declaring the type of your variables to see what will happen.** Many times, this will give Swift just the amount of info that it needs. Other times, you might discover that the type wasn't what you assumed it was. This doesn't mean that you should explicitly type everything, nor does it mean that you should avoid type inference. Type inference in many instances can lead to code that is easier to read, maintain, understand and is even safer. 
 
 But sometimes you and Swift will understand each other more if you just talk to each other. 
 

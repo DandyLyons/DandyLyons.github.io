@@ -1,6 +1,7 @@
 ---
 title: Hello Hugo
-date: 2024-07-24
+date: 2024-07-23
+images: ["image.png"]
 ---
 Hello! 
 
@@ -20,7 +21,7 @@ When creating this site, I had a few priorities:
 
 ### Initial Priorities
 #### It should be statically generated
-One of my first encounters with the concept of statically generated sites was [Swift by Sundell](https://www.swiftbysundell.com). This has been one of my favorite blogs for years, and so eventually I learned that John Sundell created his site using something called Static Site Generation. 
+One of my first encounters with the concept of statically generated sites was [Swift by Sundell](https://www.swiftbysundell.com). This has been one of my favorite blogs for years, and so eventually I learned that John Sundell created his site using something called Static Site Generation, which is when the entire site generated ahead of time statically. 
 
 #### It should be easy to write on using Markdown
 What attracted me to SSG was that I can write articles in simple Markdown. This is a lightweight simple syntax that allows me to just focus on the content. Furthermore, I can develop my site locally, and see my changes update in real time (much like a SwiftUI Preview), and then deploy my changes when I'm ready. 
@@ -69,7 +70,7 @@ On the other hand, what happens if I just grok and use actual HTML? Well that kn
 But more importantly, now I have simplified the stack. I have one less system of complexity to consider. I no longer have to wonder if my DSL has generated the HTML code that I think it has. I can just write HTML code. 
 
 ### Revised Priorities
-So it was with a heavy heart that I looked for a new solution. I experimented with a few others along the way. 
+So it was with a heavy heart that I looked for a new solution. I was no longer prioritizing a Swift-first solution. I experimented with a few others along the way. 
 - **Quartz**: Quartz turns an Obsidian vault into a publishable site. (It's a replacement for Obsidian Publish). 
   - For a while, I wondered if I could just host my blog inside of my Obsidian vault. 
   - Eventually I realized that it's just a different problem space with different needs. I still love Quartz and plan to use it in the future, but just for a *notes* section of the site, and not for the whole site. 
