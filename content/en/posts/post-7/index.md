@@ -1,7 +1,8 @@
 ---
 title: How to Programmatically Scroll to a Percentage in a ScrollView
-date: 2024-07-31
+date: 2024-07-30
 # topics: ["SwiftUI"]
+images: ["image.jpg"]
 ---
 SwiftUI can make many tasks extremely easy, yet SwiftUi struggles to do other seemingly simple tasks. Today we will learn how to accomplish one of those tasks. We will create a ScrollView that can programmatically scroll to a specific location within the ScrollView. First let's create a new type called `ProgrammaticScrollView`. 
 
