@@ -9,7 +9,7 @@ date: 2024-07-26
 
 *Job Copilot is currently available for pre-release testing.*
 
-#About
+# About
 Job Copilot makes it easy to advance your career. It includes: 
 - Job Application tracker to keep track of your progress on opportunities
 - A "Resumé Closet", a place to keep track of work history, skills and anything else that may fit your resume. 
