@@ -25,6 +25,7 @@ Kaomojis are like emojis except they are made from multiple unicode characters, 
 
 ## Behind the Scenes
 ### The Composable Architecture
+I chose to use TCA for two main reasons: modularity and testability. TCA makes it easy to separate your app into self-contained modules. This means, it's easy to refactor, since I can build a portion of the project without needing to build the entire project. It's also exhaustively testable since everything is a value type, so I can test that the values equal exactly what I intended. 
 
 ### In-App Purchases
-
+For this project, I decided to use RevenueCat, so that I can take advantage of their robust In-App Purchase features, including IAP screens which can be updated remotely without the user needing to download a new version of the app. 
