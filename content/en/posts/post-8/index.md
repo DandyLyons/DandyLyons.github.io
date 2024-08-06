@@ -134,6 +134,8 @@ Let's explore some practical use cases and how you can combine the techniques fr
 >Most code editors have a command with a name like "Move line up" which will make this process even easier by moving the line up, without the need to select text. 
 >In Xcode, this command is **CMD + Opt + [** by default. 
 
+![An example of quickly moving a line down without needing to use a mouse to highlight.](<move line down.gif>)
+
 **Equivalent VIM Commands**: 
 - Move the current line up: `ddkP`.
 - Move the current line down: `ddp`.
