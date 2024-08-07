@@ -1,6 +1,8 @@
 ---
 date: 2024-08-07
 title: How to Take Full Advantage of Swift Package Index
+images: ["https://swiftpackageindex.com/images/logo.svg"]
+description: The Swift Package Index is an invaluable tool useful for every Swift developer. Are you taking full advantage of it? 
 ---
 
 The [Swift Package Index](https://swiftpackageindex.com) (SPI) is an invaluable resource for both package users and maintainers, streamlining the process of discovering, using, and managing Swift packages. Whether you're looking to integrate a package into your project or contribute your own, SPI offers a range of features to maximize your productivity and collaboration. This blog post will guide you through the best practices for leveraging SPI to its full potential.
