@@ -2,8 +2,6 @@
 date: 2024-08-06
 title: Boost Your Productivity with These macOS Typing Shortcuts
 ---
-# Boost Your Productivity with These macOS Typing Shortcuts
-
 Mastering keyboard shortcuts can significantly enhance your productivity on macOS. These shortcuts are versatile and work in nearly any text field across various macOS apps, including browsers. Moreover, many of these shortcuts can be combined, offering even more powerful text navigation and editing capabilities.
 
 >#### [BONUS] Vim Equivalents: 
