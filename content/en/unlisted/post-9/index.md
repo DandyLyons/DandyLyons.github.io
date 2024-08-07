@@ -1,5 +1,5 @@
 ---
-date: 2024-08-14
+date: 2024-08-07
 title: How to Take Full Advantage of Swift Package Index
 ---
 
