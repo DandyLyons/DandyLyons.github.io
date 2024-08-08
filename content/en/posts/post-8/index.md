@@ -98,8 +98,8 @@ For developers using Xcode, multi-cursor editing can be a game-changer. This fea
 - **Ctrl + Shift + (↓)**: Move your cursor down and create a new cursor there.  
 - **CMD + Opt + Enter**: This keyboard shortcut is incredibly powerful! It does so many things at the same time and it is perfect for renaming variables or classes in code. Here's the workflow: 
   -  First, highlight something you would like to rename (i.e. "Find and Replace"). 
-  -  Then press **CMD + Opt + Enter**. It will find the next occurance of what you highlighted and highlight that as well. 
-  -  You can press **CMD + Opt + Enter** many times and it will find more and more occurances and highlight them as well. 
+  -  Then press **CMD + Opt + Enter**. It will find the next occurence of what you highlighted and highlight that as well. 
+  -  You can press **CMD + Opt + Enter** many times and it will find more and more occurences and highlight them as well. 
   - Now that you have all these highlights, you can make any edit you want to all of the highlights at the same time. 
   - For example, to rename, simply start typing. Since multiple spots are highlighted, the highlighted text will be replaced with a cursor at each highlight. 
   - Or if you just want to rename part of it, you can press ← and all of your cursors will move to the beginning of their highlight, and you can start typing there.
