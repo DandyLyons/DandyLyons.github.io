@@ -8,3 +8,5 @@ USE https://blogrecorder.com/
 - [x] Typing keyboard shortcuts. 
 - [ ] Swift/C++ interoperability
 - [ ] Helpful features of Swift Package Index
+- [ ] How to test in TCA even without Equatable, using xctassertnodifference
+- [ ] 

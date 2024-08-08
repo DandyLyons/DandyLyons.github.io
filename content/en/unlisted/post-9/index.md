@@ -22,9 +22,16 @@ When you've decided that a package is a good fit for your use case, simple click
 ### View Documentation
 Comprehensive documentation is crucial for the effective use of any package. SPI simplifies the process of accessing a package’s documentation directly from its index page. Users can view different versions of the documentation, making it easier to refer to the correct information for the specific version of the package they are using. Well-maintained documentation ensures users can implement the package with minimal friction.
 
-SPI's search results helpfully show if a package has documentation. To view documentation, simply go to the package's page and click the **Documentation** button on the right. When you are looking at documentation, notice how it is rendered in Swift's super helpful DocC format, just like Apple's own documentation. There's also a helpful breadcrumb trail at the top of the page so that you can quickly navigate to the package's page or the author's page. At the end of that breadcrumb is a truly killer feature. You can pick the exact package version that you would like to view documentation for. As the API of a library evolves over time, this feature can become invaluable. In fact, SPI's documentation hosting has become so valuable to me, that I tend to use it more often than Xcode's local **Build documentation** feature.
-
 ![](<Docs.png>)
+
+SPI's search results helpfully show if a package has documentation. To view documentation, simply go to the package's page and click the **Documentation** button on the right. When you are looking at documentation, notice how it is rendered in Swift's super helpful DocC format, just like Apple's own documentation. There's also a helpful breadcrumb trail at the top of the page so that you can quickly navigate to the package's page or the author's page. At the end of that breadcrumb is a truly killer feature. **You can pick the exact package version that you would like to view documentation for.** Just hover your mouse over the version number to see the available versions. Lastly, if the package contains documentation for multiple targets, then you will also see a breadcrumb for the target. Hover over that, to see the other available targets!
+
+![](<breadcrumb.gif>)
+
+
+
+As the API of a library evolves over time, this feature can become invaluable. In fact, SPI's documentation hosting has become so valuable to me, that I tend to use it more often than Xcode's local **Build documentation** feature. 
+
 
 ### Use Package Collections
 In Swift 5.5, the Swift Package Manager added support for [Package Collections](https://www.swift.org/blog/package-collections/). These work sort of like an RSS feed for Swift Packages, and SPI auto-generates these Package Collections for you. For example, if you go to https://swiftpackageindex.com/swiftlang this will take you to the author page for **The Swift Programming Language**. Here you can see all of the packages created by this author or organization. At the top of the page is a URL to the Package Collection. You can copy this URL for your own use. 
@@ -54,9 +61,11 @@ SPI automatically runs these tests for you and auto generates the badges for you
 ### Host Documentation
 This is the killer feature of Swift Package Index! Hosting your package documentation is essential for providing users with the necessary information to implement and utilize your package effectively. SPI can build your documentation on your behalf, and host it on their site. You don't have to build your documentation or deploy it. Simply push a new release, and SPI will create your documentation site. All that SPI needs is a little bit of configuration data so that they know how best to build your docs. 
 
-Configurations are stored directly in your repo in a `.spi.yml` file. You can find the docs [here](https://swiftpackageindex.com/swiftpackageindex/spimanifest/main/documentation/spimanifest). 
+Configurations are stored directly in your repo in a `.spi.yml` file. You can find the docs [here](https://swiftpackageindex.com/swiftpackageindex/spimanifest/main/documentation/spimanifest). They also have a very [helpful tool](https://swiftpackageindex.com/swiftpackageindex/spimanifest/~/documentation/spimanifest/manifestvalidation) to validate your `.spi.yml` file before you upload. The tool is available as a CLI or an [Online Validator](https://swiftpackageindex.com/validate-spi-manifest). 
 
 **SPI will even generate a new documentation site for each version of your library.**
 
+It's worth noting that, generating and hosting documentation is a non-trivial task. Even a small Swift library can hold documentation for thousands of pages. You might only have a few small types in your code, but Swift and DocC could be generating an enormous amount of methods and documentation on your behalf. Simply conforming to common Swift protocols such as `Collection` or SwiftUI's `View` will add a ton of functionality and therefore documentation. Now multiply all of that by all the versions of your library and this can be truly daunting to self-host. SPI abstracts away so much of that complexity. SPI will even retain the major versions of your library. This means it's easy to keep legacy documentation which will make it so much easier for your library user's to migrate. 
+
 ## Conclusion
-By following these tips, both package users and maintainers can take full advantage of the Swift Package Index, creating a more efficient and collaborative environment for Swift development. Whether you're exploring new packages or sharing your own, SPI offers the tools and features necessary to streamline your workflow and elevate your projects.
+By following these tips, both package users and maintainers can take full advantage of the Swift Package Index, creating a more efficient and collaborative environment for Swift development. Whether you're exploring new packages or sharing your own, SPI offers the tools and features necessary to streamline your workflow and elevate your projects. Let me know if I missed one of your favorite features. 
