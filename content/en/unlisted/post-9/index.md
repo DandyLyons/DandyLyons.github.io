@@ -17,7 +17,7 @@ One of the easiest ways to evaluate a new Swift package is by trying it out in a
 ### Use a Package
 When you've decided that a package is a good fit for your use case, simple click the **Use this Package** button at the top right of the package page. This will show a modal with extremely helpful and concise installation instructions. 
 
-![](<Use this package.png>)
+![](Use-this-package.png)
 
 ### View Documentation
 Comprehensive documentation is crucial for the effective use of any package. SPI simplifies the process of accessing a package’s documentation directly from its index page. Users can view different versions of the documentation, making it easier to refer to the correct information for the specific version of the package they are using. Well-maintained documentation ensures users can implement the package with minimal friction.
@@ -44,7 +44,7 @@ You can now go to your terminal and type in `swift package-collection add https:
 #### Adding a Package Collection Using Xcode
 To add a Package Collection to Xcode, go to **File > Add Package Dependencies...**. This will open a modal to add a package to your project. On the left sidebar you can see all the collections you've already added. On the bottom of the sidebar is a **+** button. Click it to add a collection. You can simply paste in that same URL that we got from SPI. There's also a refresh button to refetch the latest data from the package collections. 
 
-![](<package collections.png>)
+![](package-collections.png)
 
 ## Tips For Package Maintainers
 ### How To Add Your Package to SPI
@@ -53,7 +53,7 @@ Adding your package to the Swift Package Index is straightforward and enhances i
 By listing your package on SPI, you make it easier for developers to discover and use your work, fostering a larger community around your project.
 
 ### Add shields.io Badges
-![shields.io badges at the top of a GitHub repo.](<shields badges.png>)
+![shields.io badges at the top of a GitHub repo.](shields-badges.png)
 Perhaps you've noticed that many repos today have informative, glanceable badges at the top of their README's. This can display helpful information such as compatibility for Swift language versions, platforms, as well as automated CI testing results. 
 
 SPI automatically runs these tests for you and auto generates the badges for you. All you have to do is paste in a simple code into your repo's README. To add it, go to your package's page, and look for the **Do you maintain this package?** section on the right. Click the link and follow the directions.
@@ -66,6 +66,11 @@ Configurations are stored directly in your repo in a `.spi.yml` file. You can fi
 **SPI will even generate a new documentation site for each version of your library.**
 
 It's worth noting that, generating and hosting documentation is a non-trivial task. Even a small Swift library can hold documentation for thousands of pages. You might only have a few small types in your code, but Swift and DocC could be generating an enormous amount of methods and documentation on your behalf. Simply conforming to common Swift protocols such as `Collection` or SwiftUI's `View` will add a ton of functionality and therefore documentation. Now multiply all of that by all the versions of your library and this can be truly daunting to self-host. SPI abstracts away so much of that complexity. SPI will even retain the major versions of your library. This means it's easy to keep legacy documentation which will make it so much easier for your library user's to migrate. 
+
+### Gather Build Results
+Swift is available on so many different language versions and operating systems. Ensuring that your library is compatible (and stays compatible) in all of these environments is prohibitively expensive. Amazingly, SPI handles all of this as well! When you push an update, the [SPI Build System](https://swiftpackageindex.com/docs/builds) will attempt to build for each of these environments, and will display the results on the page. In addition, it will generate shields.io badges, so that users can even see some of these results directly in the README (e.g. when looking on GitHub). Gain a huge insight into how your code builds across a wide array of environments with SPI. 
+
+![](<build-results.png>)
 
 ## Conclusion
 By following these tips, both package users and maintainers can take full advantage of the Swift Package Index, creating a more efficient and collaborative environment for Swift development. Whether you're exploring new packages or sharing your own, SPI offers the tools and features necessary to streamline your workflow and elevate your projects. Let me know if I missed one of your favorite features. 
