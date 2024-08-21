@@ -2,7 +2,7 @@
 date: 2024-08-20
 title: Exhaustive Testing Made Easy
 images: [""]
-description: 
+description: Learn how to exhaustively cover your code with tests so that you can eliminate obscure edge cases. 
 tags: Swift, Testing
 ---
 
@@ -146,7 +146,7 @@ expectNoDifference(person1, person2)
 // Now we have proof of every change that happened in `makeSomeMutation()`
 ```
 
-![](../../posts/post-10/expectNoDifference.png)
+![](<expectNoDifference.png>)
 
 Once again, however, we must conform to `Equatable`, which may not always be feasible. Does this mean we also have to lose those convenient diffs? No. Once again we can implement Pseudo-Exhaustive Testing. The `CustomDump` library has another function called `diff` which powers the diff output of `expectNoDifference`. We can make a function which will pass if there is no difference in the dump.  
 
@@ -174,3 +174,9 @@ Today, we assessed a variety of testing styles along the spectrum of exhaustivit
 Still I don't want to replace one false sense of security with another. Exhaustive Testing is very valuable, but it is no silver bullet. The name is even a little misleading. For example, it is exhaustive over every child property in a type, but it is not exhaustive over every function. Nor is it exhaustive over side effects from outside dependencies and so forth. My intention with this blog is not to claim that I've found a silver bullet to kill all bugs.
 
 The point is to show that with exhaustive testing, we are exhaustively asserting on every value of every nested property. This is deep test coverage. We are testing issues that we likely would have never considered, and it turns out, it's actually easier to write as well. 
+
+## Next Steps
+If you would like to dip your toes more into the world of exhaustive testing in Swift, then I recommend checking out these two libraries: 
+- [swift-custom-dump](https://swiftpackageindex.com/pointfreeco/swift-custom-dump): The library which we discussed throughout this article.
+- [swift-composable-architecture](https://swiftpackageindex.com/pointfreeco/swift-composable-architecture): A powerful library for building applications. It uses exhaustive testing by default.
+- [swift-snapshot-testing](https://swiftpackageindex.com/pointfreeco/swift-snapshot-testing): While **Snapshot Testing** is a whole other style, and is not the same as Exhaustive Testing, it can also alert you to edge cases that you did not consider. 
