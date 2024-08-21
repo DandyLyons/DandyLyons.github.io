@@ -1,6 +1,7 @@
 ---
 date: 2024-08-13
 title: How to Take Full Advantage of Swift Package Index
+slug: spi-tips
 images: ["https://swiftpackageindex.com/images/logo.svg"]
 description: The Swift Package Index is an invaluable tool useful for every Swift developer. Are you taking full advantage of it? 
 ---

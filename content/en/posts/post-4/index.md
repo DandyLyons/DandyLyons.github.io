@@ -1,5 +1,6 @@
 ---
 title: 'Explicit and Implicit Types in Swift'
+slug: explicit-implicit-types-in-swift
 date: 2024-03-16
 draft:  false
 series: ["Swift Generics Demystified"]

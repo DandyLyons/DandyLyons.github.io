@@ -1,5 +1,6 @@
 ---
 title: 7 Ways to Organize SwiftUI Code
+slug: 7-ways-to-organize-swiftui-code
 date: 2021-05-06
 topics: ['SwiftUI']
 slug: 7-ways-to-organize-swiftui

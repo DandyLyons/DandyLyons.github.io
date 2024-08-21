@@ -1,5 +1,6 @@
 ---
 title: 'Concrete and "Soft" Types in Swift'
+slug: concrete-soft-types-in-swift
 date: 2024-04-01
 series: ["Swift Generics Demystified"]
 tags: ["SwiftUI"]

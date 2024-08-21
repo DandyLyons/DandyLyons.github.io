@@ -1,6 +1,7 @@
 ---
 date: 2024-08-06
 title: Boost Your Productivity with These macOS Typing Shortcuts
+slug: macos-typing-shortcuts
 images: ["image.jpg"]
 description: Write at the speed of thought with these powerful shortcuts.
 ---
