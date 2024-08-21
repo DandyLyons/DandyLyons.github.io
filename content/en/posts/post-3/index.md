@@ -1,5 +1,6 @@
 ---
 title: How to add Apple’s “Night Mode” to your SwiftUI Views
+slug: implement-swiftui-night-mode
 date: 2023-09-14
 topics: ["SwiftUI"]
 images: ["image.jpg"]

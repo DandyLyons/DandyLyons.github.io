@@ -1,5 +1,6 @@
 ---
 title: How to Scroll to a Percentage in a ScrollView
+slug: scroll-to-percentage-in-scrollview
 date: 2024-07-30
 # topics: ["SwiftUI"]
 images: ["image.jpg"]

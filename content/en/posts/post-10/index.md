@@ -1,6 +1,7 @@
 ---
 date: 2024-08-20
 title: Exhaustive Testing Made Easy
+slug: exhaustive-testing-made-easy
 images: [""]
 description: Learn how to exhaustively cover your code with tests so that you can eliminate obscure edge cases. 
 tags: Swift, Testing
@@ -175,6 +176,7 @@ Still I don't want to replace one false sense of security with another. Exhausti
 
 The point is to show that with exhaustive testing, we are exhaustively asserting on every value of every nested property. This is deep test coverage. We are testing issues that we likely would have never considered, and it turns out, it's actually easier to write as well. 
 
+---
 ## Next Steps
 If you would like to dip your toes more into the world of exhaustive testing in Swift, then I recommend checking out these two libraries: 
 - [swift-custom-dump](https://swiftpackageindex.com/pointfreeco/swift-custom-dump): The library which we discussed throughout this article.

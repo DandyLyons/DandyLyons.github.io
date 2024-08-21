@@ -1,5 +1,6 @@
 ---
 title: How to use a JS for...of loop with an index
+slug: js-for-of-loop
 date: 2023-09-07
 topics: ["JavaScript"]
 images: ["image.jpg"]
