@@ -184,7 +184,6 @@ Regex {
     }
   }
 }
-.anchorsMatchLineEndings()
 ```
 What if you're not using Xcode? Try using [SwiftRegex.com](https://www.swiftregex.com). It's a robust Regex playground and it will even convert to the Builder DSL. 
 
