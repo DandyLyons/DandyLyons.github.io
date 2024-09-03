@@ -111,6 +111,7 @@ theme = "hugo-blog-awesome"
   # summary - includes a short summary of the blog post in the RSS feed. Generated using Hugo .Summary .
   # full - includes full blog post in the RSS feed. Generated using Hugo .Content .
   # By default (or if nothing is specified), summary is used.
+  defaultSocialImage = "/images/site-social-preview.jpeg"
 
 [Languages.en-gb.params.author]
   avatar = "DanielLyons.png" # put the file in assets folder; also ensure that image has same height and width
