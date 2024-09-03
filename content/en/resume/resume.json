@@ -1,164 +1,349 @@
 {
-  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
-  "basics": {
-    "name": "Daniel Kalani Lyons (Test Resume)",
-    "label": "Programmer",
-    "image": "",
-    "email": "daniellyons500@gmail.com",
-    "phone": "(912) 555-4321",
-    "url": "http://richardhendricks.example.com",
-    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
-    "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
-    },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "neutralthoughts",
-        "url": ""
-      },
-      {
-        "network": "SoundCloud",
-        "username": "dandymusicnl",
-        "url": "https://soundcloud.example.com/dandymusicnl"
-      }
-    ]
-  },
-  "work": [
-    {
-      "name": "Pied Piper",
-      "location": "Palo Alto, CA",
-      "description": "Awesome compression company",
-      "position": "CEO/President",
-      "url": "http://piedpiper.example.com",
-      "startDate": "2013-12-01",
-      "endDate": "2014-12-01",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
-      "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
-      ]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "CoderDojo",
-      "position": "Teacher",
-      "url": "http://coderdojo.example.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
-      "highlights": [
-        "Awarded 'Teacher of the Month'"
-      ]
-    }
-  ],
-  "education": [
-    {
-      "institution": "University of Oklahoma",
-      "url": "https://www.ou.edu/",
-      "area": "Information Technology",
-      "studyType": "Bachelor",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
-      "score": "4.0",
-      "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
-      ]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Digital Compression Pioneer Award",
-      "date": "2014-11-01",
-      "awarder": "Techcrunch",
-      "summary": "There is no spoon."
-    }
-  ],
-  "publications": [
-    {
-      "name": "Video compression for 3d media",
-      "publisher": "Hooli",
-      "releaseDate": "2014-10-01",
-      "url": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
-    }
-  ],
-  "skills": [
-    {
-      "name": "Web Development",
-      "level": "Master",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "Javascript"
-      ]
-    },
-    {
-      "name": "Compression",
-      "level": "Master",
-      "keywords": [
-        "Mpeg",
-        "MP4",
-        "GIF"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Native speaker"
-    }
-  ],
-  "interests": [
-    {
-      "name": "Wildlife",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
-    }
-  ],
-  "projects": [
-    {
-      "name": "Miss Direction",
-      "description": "A mapping engine that misguides you",
-      "highlights": [
-        "Won award at AIHacks 2016",
-        "Built by all women team of newbie programmers",
-        "Using modern technologies such as GoogleMaps, Chrome Extension and Javascript"
-      ],
-      "keywords": [
-        "GoogleMaps",
-        "Chrome Extension",
-        "Javascript"
-      ],
-      "startDate": "2016-08-24",
-      "endDate": "2016-08-24",
-      "url": "missdirection.example.com",
-      "roles": [
-        "Team lead",
-        "Designer"
-      ],
-      "entity": "Smoogle",
-      "type": "application"
-    }
-  ],
-  "meta": {
-    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/sample.resume.json",
-    "version": "v1.0.0",
-    "lastModified": "2017-12-24T15:53:00"
-  }
+	"languages": [
+		{
+			"fluency": "Native Speaker",
+			"language": "English",
+			"id": "8715F6F0-1541-4F5B-B0EC-AA3F202E74D6"
+		}
+	],
+	"education": [
+		{
+			"area": "",
+			"id": "53A4E945-D7CB-4CDC-B451-5A3304B3F155",
+			"institution": "Honolulu Community College",
+			"studyType": ""
+		},
+		{
+			"studyType": "High School",
+			"area": "",
+			"id": "C2C0F7B2-6118-417A-A075-777F012CD50D",
+			"endDate": 297118534.02954495,
+			"institution": "Mililani High School"
+		}
+	],
+	"id": "38963C9D-4BB6-4206-9A69-49F95E4BA781",
+	"references": [
+		{
+			"id": "9BA97FD6-01E2-4A63-931F-B446915052D7",
+			"name": "David Shinsato",
+			"address": "2820 Sitting Bull Way, Fort Collins, CO 80525",
+			"email": "dvdshinsato@gmail.com",
+			"phoneNumber": "1 (808) 753-4095",
+			"reference": ""
+		},
+		{
+			"phoneNumber": "+1 (808) 738-7189",
+			"id": "07B2E3C9-47C6-4BFB-8455-ACAC6AE5C685",
+			"address": "4585 Hollycomb Drive Windsor CO 80550 United States",
+			"name": "Steve Deming",
+			"reference": "",
+			"email": "stevejdeming@gmail.com"
+		},
+		{
+			"reference": "",
+			"id": "65CB028D-32E1-4C04-BF0E-63621DD40522",
+			"phoneNumber": "+1 (970) 308-5268",
+			"address": "3808 Ziegler Road Fort Collins CO 80525",
+			"email": "allison.1@opc.org",
+			"name": "Archibald Allison"
+		}
+	],
+	"personalInfo": {
+		"email": "daniellyons500@gmail.com",
+		"label": "SwiftUI Developer",
+		"location": {
+			"countryCode": "US",
+			"id": "85BB138B-953E-4E0C-8C48-553F1121586C",
+			"address": "United States"
+		},
+		"phone": "",
+		"profiles": [
+			{
+				"id": "DC5249F5-2E17-49C1-91CC-CFBA33E61B4A",
+				"url": "https:\/\/www.linkedin.com\/in\/dandylyons\/",
+				"network": "LinkedIn",
+				"username": "dandylyons"
+			}
+		],
+		"id": "5C5E89FA-D3C5-4E4E-BAFA-CF227D33859E",
+		"name": "Daniel Lyons",
+		"summary": ""
+	},
+	"volunteer": [
+
+	],
+	"work": [
+		{
+			"position": "Mobile Application Developer",
+			"id": "2510AFD5-3C6F-4EB9-8293-7C1DC5C0B15E",
+			"name": "Self-Employed",
+			"highlights": [
+
+			]
+		},
+		{
+			"id": "69CD695A-5929-445B-A7AA-D8A78145FE56",
+			"description": "",
+			"highlights": [
+
+			],
+			"name": "Pop Acta",
+			"position": "Operations Administrator",
+			"urlString": "https:\/\/www.popacta.com"
+		},
+		{
+			"position": "Technical Specialist",
+			"name": "Apple",
+			"urlString": "https:\/\/www.apple.com",
+			"highlights": [
+
+			],
+			"id": "43669513-66FF-46CC-B98C-6FD6C7B5FFF9",
+			"description": ""
+		},
+		{
+			"name": "The Fresh Preps",
+			"position": "Co-Owner Professional Musician\/Songwriter\/Audio Engineer",
+			"id": "555C4FA7-8E82-4BD0-B7CC-626CAA0B5163",
+			"highlights": [
+
+			]
+		},
+		{
+			"id": "C897042D-F86F-4334-95A3-7C614DC3739C",
+			"highlights": [
+
+			],
+			"name": "Consolidated Theaters",
+			"position": "Associate"
+		},
+		{
+			"id": "17CB64EA-4165-48C3-8169-FAB8573727CF",
+			"name": "Wiz Kids Learning Center",
+			"position": "Tutor",
+			"highlights": [
+
+			],
+			"urlString": "https:\/\/www.kaimukihawaii.com\/d\/c\/wiz-kids-learning-centers-kaimuki.html"
+		}
+	],
+	"certificates": [
+
+	],
+	"publications": [
+
+	],
+	"resumeInfo": {
+		"id": "455D41A6-B0D3-47E6-A7F2-DCDB0BEE5CD1"
+	},
+	"awards": [
+
+	],
+	"interests": [
+		{
+			"id": "4F45F8A0-376B-40F3-AAF6-7849291D91A6",
+			"name": "Music"
+		}
+	],
+	"skills": [
+		{
+			"keywords": [
+
+			],
+			"level": "",
+			"id": "01602025-1930-4F21-80BD-05E9169B70C6",
+			"name": "Music Publishing"
+		},
+		{
+			"level": "",
+			"id": "CBE55F0C-A488-4561-A433-AF45D99503EA",
+			"name": "WordPress",
+			"keywords": [
+
+			]
+		},
+		{
+			"id": "99084AF1-22E1-44F0-9EDD-6CFF1C0B2A15",
+			"level": "",
+			"keywords": [
+
+			],
+			"name": "Retail"
+		},
+		{
+			"level": "",
+			"id": "1E42892F-46F5-4FB8-AA99-47DBEFFB95C3",
+			"keywords": [
+
+			],
+			"name": "Technical Support"
+		},
+		{
+			"name": "Audio Engineering",
+			"id": "0370C030-BD6D-455F-A1C3-D1132268D8A5",
+			"keywords": [
+
+			],
+			"level": ""
+		},
+		{
+			"name": "Music",
+			"keywords": [
+
+			],
+			"level": "",
+			"id": "B3F4D017-ACED-4FB1-AF28-3CD28E8CCFB8"
+		},
+		{
+			"name": "DAW",
+			"keywords": [
+
+			],
+			"level": "",
+			"id": "D96A0286-1659-46F6-B381-EFA148494F1E"
+		},
+		{
+			"keywords": [
+
+			],
+			"level": "",
+			"name": "SwiftUI",
+			"id": "F12884BA-8C90-4795-AB62-CCD1E3BD8E3C"
+		},
+		{
+			"id": "DD8FDDBD-E117-42EF-9FC9-7A791744ABC7",
+			"name": "Xcode",
+			"keywords": [
+
+			],
+			"level": ""
+		},
+		{
+			"keywords": [
+
+			],
+			"level": "",
+			"id": "05F1C059-71EA-482B-91A6-D5FD93A530D3",
+			"name": "Social Media"
+		},
+		{
+			"keywords": [
+
+			],
+			"id": "9426B5EA-BF3E-4D45-8C24-3E81EE05464B",
+			"name": "Customer Service",
+			"level": ""
+		},
+		{
+			"id": "AACAB0E3-3DBF-42C5-8CAF-E6FCE11E85DB",
+			"keywords": [
+
+			],
+			"name": "Microsoft Office",
+			"level": ""
+		},
+		{
+			"name": "HTML Emails",
+			"keywords": [
+
+			],
+			"level": "",
+			"id": "556BD847-E921-45BD-AE23-1FB64708AECD"
+		},
+		{
+			"name": "Customer Support",
+			"id": "C7B1C461-B90E-4245-9D64-13451F9D5C2C",
+			"level": "",
+			"keywords": [
+
+			]
+		},
+		{
+			"level": "",
+			"keywords": [
+
+			],
+			"name": "Songwriting",
+			"id": "C3549139-37D5-45E1-A954-8453A4B9BEC9"
+		},
+		{
+			"name": "iOS Development",
+			"level": "",
+			"id": "76440545-E8FD-4418-845E-59B489BCCEB9",
+			"keywords": [
+
+			]
+		},
+		{
+			"keywords": [
+
+			],
+			"level": "",
+			"name": "Mobile Application Development",
+			"id": "DB5436CD-4CF7-472D-8D35-FACCC17DAA85"
+		},
+		{
+			"keywords": [
+
+			],
+			"id": "D3760B8D-A98C-4964-8025-2CD8CB590A76",
+			"name": "Singing",
+			"level": ""
+		},
+		{
+			"keywords": [
+
+			],
+			"level": "",
+			"id": "4D345ED3-89AE-4F7B-8DC5-3B668771C710",
+			"name": "Pro Tools"
+		},
+		{
+			"keywords": [
+
+			],
+			"name": "Swift (Programming Language)",
+			"id": "D73D5634-B4A7-4CB3-9BD3-DCED2E1C132A",
+			"level": ""
+		},
+		{
+			"name": "Music Production",
+			"keywords": [
+
+			],
+			"level": "",
+			"id": "82E91771-B0AF-497D-B818-A8227600F502"
+		}
+	],
+	"projects": [
+		{
+			"description": "",
+			"name": "Job Copilot",
+			"type": "",
+			"id": "43D2A471-FFC2-4468-B4AA-23340E421D9F",
+			"startDate": 743720289.149726
+		},
+		{
+			"name": "AestheText",
+			"endDate": 738968370.889659,
+			"description": "",
+			"id": "B60CD194-13FC-41D0-AAD6-5ED3153551B1"
+		},
+		{
+			"endDate": 731023204.288374,
+			"id": "C18F1D69-E9EA-4986-B1BE-CA8E7DD80ED7",
+			"startDate": 728517604.288303,
+			"name": "Hawaiian Vocab"
+		},
+		{
+			"id": "8D42ED7D-7E2C-4151-A210-6D7711901E2B",
+			"endDate": 718578052.25186,
+			"name": "TCACalc"
+		},
+		{
+			"name": "PlusNightMode",
+			"endDate": 712616492.385126,
+			"id": "462F53B2-E086-4686-A173-F552B81B2034"
+		}
+	]
 }

@@ -51,6 +51,36 @@ In 2019, the same year that Apple announced Catalyst, they also announced SwiftU
 [^3]: or rather **almost** the same code
 [^4]: iPhone, iPad, Apple Watch, mac, Apple TV, Vision Pro etc. 
 
+## SDK vs. OS
+For a long time the SDK essentially mapped one-to-one to the OS. Building on the iOS SDK created a target that could run on the iOS OS, and only the iOS OS. This is no longer the case. Now you can build a target for the macOS OS using either SDK. To demonstrate my point, open an Xcode project with a multiplatform target. Click the project in the left sidebar. Now select the target. Now select the "General" tab, and view the "Supported Destinations" section. As you can see in the picture below there are multiple Mac destinations and they have different SDKs. 
+
+![](<target-destinations.png>)
+
+| Destination             | SDK   |
+| ----------------------- | ----- |
+| Mac                     | macOS |
+| Mac (Mac Catalyst)      | iOS   |
+| Mac (Designed for iPad) | iOS   |
+
+The SDK is very important because it determines which types, methods, etc. your code has access to. 
+
+```swift
+struct JobCopilotApp: App {
+  @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
+  var body: some Scene {
+    WindowGroup {
+      App_V(store: self.appDelegate.store)
+    }
+    #if os(macOS)
+    .onChange(of: true, initial: true) {
+      print("On Mac (Designed for iPad) this doesn't run.")
+      print("On Mac (Catalyst) I don't think this will run")
+    }
+    #endif
+  }
+}
+```
+
 ## Compared Side-by Side
 
 | **Aspect**                 | **Native macOS App (SwiftUI)** | **UIKit App on macOS (Catalyst)**                      | **SwiftUI Mac App (Designed for iPad)**                            |
