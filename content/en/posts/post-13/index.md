@@ -64,13 +64,12 @@ First, let's get a working example of our `NSDataDetector` to detect phone numbe
 
 ```swift
 import Foundation
-import RegexBuilder
 
 let types: NSTextCheckingResult.CheckingType = [.phoneNumber]
 let detector = try NSDataDetector(types: types.rawValue)
-let input = "(808) 232-4825"
+let input = "(789) 555-1234"
 let swiftRange = input.startIndex..<input.endIndex
-let nsRange = NSRange(swiftRange, in: input) // Fatal error: String index is out of bounds
+let nsRange = NSRange(swiftRange, in: input) 
 var result: String?
 detector.enumerateMatches(
     in: input,
