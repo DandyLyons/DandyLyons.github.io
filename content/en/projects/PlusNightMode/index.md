@@ -8,11 +8,12 @@ date: 2023-08-01
 - [Swift Package Index](https://swiftpackageindex.com/DandyLyons/PlusNightMode)
 
 ## Tech Stack 
-| Component    | Tech                              |
-| ------------ | --------------------------------- |
-| Platforms    | iOS, iPadOS                       |
-| Architecture | TCA (The Composable Architecture) |
-| UI           | SwiftUI                           |
+| Component    | Tech                  |
+| ------------ | --------------------- |
+| Platforms    | iOS, iPadOS           |
+| UI           | SwiftUI               |
+| Distribution | Swift Package Manager |
+
 
 ## Developer Diary
 - [How to add Apple’s “Night Mode” to your SwiftUI Views]({{< ref "post-3" >}})

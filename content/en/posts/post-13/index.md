@@ -185,6 +185,6 @@ There are so many more powerful parsing libraries that could benefit from Swift'
 Do you have any code that you think could be super-powered as a RegexComponent? 
 
 ## Conclusion
-When writing parsers, we have to fully appreciate the full domain of the problem that we are trying to solve. There are dozens of phone numbers. Perhaps hundreds of phone companies. Many of these are standardized, but there are certainly exceptions to all of these standards and there is no one universally accepted standard. The problem domain is far too large and ever-changing for one team to tackle. Instead we should look to battle-tested parsers established by the community to tackle these problems. 
+When writing parsers, we have to fully appreciate the full domain of the problem that we are trying to solve. There are dozens of countries. Perhaps hundreds of phone companies. Many of these are standardized, but there are certainly exceptions to all of these standards and there is no one universally accepted standard. The problem domain is far too large and ever-changing for one team to tackle. Instead we should look to battle-tested parsers established by the community to tackle these problems. 
 
 That's why I created [NativeRegexExamples](https://swiftpackageindex.com/DandyLyons/NativeRegexExamples). It's a library where we can crowd-source our learning, and collectively discover best practices for various parsers. Please contribute, so that the entire community can benefit! 
