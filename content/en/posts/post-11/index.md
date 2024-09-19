@@ -2,9 +2,8 @@
 date: 2024-08-27
 title: Using Optionals with SwiftUI Bindings
 slug: using-optionals-with-swiftui-bindings
-# images: [""]
+topics: ["SwiftUI"]
 description: Bend your view to work with your model's optional values. 
-tags: SwiftUI, Optionals
 ---
 
 [Optionals](https://developer.apple.com/documentation/swift/optional) are an invaluable, core feature of Swift, and [Bindings](https://developer.apple.com/documentation/swiftui/binding) are the same for SwiftUI, but unfortunately it can be difficult to get them to play nicely with each other. Bindings are one of the core ways to empower child views to talk to parent views, and they are used throughout the SwiftUI framework. For example all of these core components use Bindings. 

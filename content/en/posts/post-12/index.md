@@ -2,9 +2,8 @@
 date: 2024-09-03
 title: The Many Faces Of Swift's Regex
 slug: the-many-faces-of-swifts-regex
-# images: [""]
+topics: ["Regex", "Swift"]
 description: Learn how to take ad
-tags: Regex, Swift
 ---
 
 In Swift 5.7, Swift added native support for [regular expressions](https://en.wikipedia.org/wiki/Regular_expression) through a new type, [Regex](https://developer.apple.com/documentation/swift/regex). Regular expressions have been a staple part of programming for decades and provide many capabilities including: 

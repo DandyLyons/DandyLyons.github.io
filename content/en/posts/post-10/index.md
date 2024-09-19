@@ -3,8 +3,8 @@ date: 2024-08-20
 title: Exhaustive Testing Made Easy
 slug: exhaustive-testing-made-easy
 images: [""]
+topics: ["Testing", "Swift", "Unit Testing"]
 description: Learn how to exhaustively cover your code with tests so that you can eliminate obscure edge cases. 
-tags: Swift, Testing
 ---
 
 Testing is vitally important in virtually any tech stack. That is, unless you want to [shut down 8.5 million computers worldwide](https://en.wikipedia.org/wiki/2024_CrowdStrike_incident). [^1] Testing is more than a tedious chore. It's an automated warning system of current bugs. What is not automated (at least not entirely) is writing the tests. It takes time to write tests, and we have to know what needs to be tested. No matter how well your tests are written, if your tests don't cover a particular situation, then it won't be caught. This means that we need to assert on every value in our code. This is tedious and error-prone.

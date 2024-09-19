@@ -2,8 +2,8 @@
 date: 2024-09-10
 title: Using Custom Components in Swift's Regex
 slug: using-custom-components-in-swifts-regex
+topics: ["Swift", Regex]
 description: Plug your own custom logic into any Swift Regex!
-tags: Regex, Swift
 ---
 
 In our [last article]({{< ref "post-12" >}}) we learned about Swift's `Regex` type and the various different ways to create them. Today we're going to dive a little deeper into one of those methods. We'll be building a custom `RegexComponent` using the [CustomConsumingRegexComponent](https://developer.apple.com/documentation/swift/customconsumingregexcomponent) protocol. 

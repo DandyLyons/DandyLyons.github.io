@@ -34,7 +34,13 @@ theme = "hugo-blog-awesome"
 #     path = "github.com/hugo-sid/hugo-blog-awesome"
 #     disable = false
 
-    
+[taxonomies]
+  series = "series" # blog series
+  topics = "topics"
+
+[permalinks]
+  series = "/posts/series/:slug/"
+  topics = "/topics/:slug/"
 
 [services]
 # To enable Google Analytics 4 (gtag.js) provide G-MEASUREMENT_ID below.

@@ -4,7 +4,7 @@ title: Demystifying Modern macOS Development
 slug: demystifying-modern-macos-development
 images: [""]
 description: 
-tags: macOS, SwiftUI, Catalyst
+topics: macOS, SwiftUI, Catalyst
 ---
 
 # Demystifying Modern macOS Development
