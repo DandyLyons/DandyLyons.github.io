@@ -1,0 +1,9 @@
+{{ with .Params.topics }}
+<div class="post-topics">
+  <b>Topics:</b>
+  {{ range $index, $topic := . }}
+    {{- if $index }}, {{ end -}}
+    <a href="{{ "/topics/" | relLangURL }}{{ $topic | urlize }}" class="topics">{{ $topic }}</a>
+  {{ end }}
+</div>
+{{ end }}

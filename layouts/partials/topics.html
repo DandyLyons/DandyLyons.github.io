@@ -1,0 +1,9 @@
+{{ if .Params.topics }}
+<div class="topics">
+  <span>Topics:</span>
+  {{ range $index, $topic := .Params.topics }}
+    {{- if gt $index 0 }}, {{ end -}}
+    <a href="{{ "/topics/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+  {{- end }}
+</div>
+{{ end }}

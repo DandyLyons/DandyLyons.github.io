@@ -3,7 +3,7 @@ date: 2024-09-17
 title: Benchmarking in Swift with swift-collections-benchmark
 slug: benchmarking-in-swift-with-swift-collections-benchmark
 description: 
-topics: Swift, Benchmarking, "Data Structures and Algorithms"
+topics: ["Swift", "Benchmarking", "Data Structures and Algorithms"]
 ---
 
 # Benchmarking in Swift with `swift-collections-benchmark`

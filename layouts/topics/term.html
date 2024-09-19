@@ -1,0 +1,32 @@
+{{ define "main" }}
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">{{ .Title }}</h1>
+                
+                
+            </header>
+            <div class="page-content">
+                {{ .Content }}
+            </div>
+            <div class="topic-posts">
+                <h2>Posts in this topic</h2>
+                <ul>
+                {{ range .Pages }}
+                    <li>
+                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                        <span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
+                    </li>
+                {{ end }}
+                </ul>
+                <hr>
+                <div class="topics-link">
+                    <b><a href="{{ "/topics" | relLangURL }}">View all topics</a></b>
+                </div>
+            </div>
+        </article>
+        {{- partial "comments.html" . -}}
+    </main>
+</div>
+{{ end }}
