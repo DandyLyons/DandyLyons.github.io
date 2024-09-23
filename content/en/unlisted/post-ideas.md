@@ -16,3 +16,4 @@ USE https://blogrecorder.com/
   - [No Priors: Tengyu Ma | June 6th](https://share.snipd.com/episode/8db8d89c-b912-4aa0-8f7f-d2d712947c8f)  
 - [ ] Dependabot for Swift packages: https://github.blog/changelog/2023-08-01-swift-support-for-dependabot-updates/
 - [ ] How to find unused Swift code with Periphery
+  - **Update**: Errors after running `periphery scan --setup`. I suspect periphery might 
