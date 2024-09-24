@@ -26,7 +26,7 @@ However, doing this can be quite problematic. What happens if the library owner 
 
 [^1]: There are a few exceptions to the this which you can find [here](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0364-retroactive-conformance-warning.md#detailed-design) and [here](https://forums.swift.org/t/amendment-se-0364-allow-same-package-conformances/71877). 
 
-## The Solution: `@retroactive`
+## Introducing `@retroactive`
 
 To combat this problem, Swift 6.0 now emits a warning any time you retroactively add a conformance to an external type. However, there are some scenarios where it might be best to extend external types, despite this risk. 
 
@@ -43,6 +43,7 @@ If you use `@retroactive`, you are, in fact, explicitly declaring that you ackno
 ## How to Use It
 
 ```swift
+import ExternalModule
 extension ExternalType: @retroactive ExternalProtocol {
     // Implementation here
 }
