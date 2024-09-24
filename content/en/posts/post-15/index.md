@@ -3,7 +3,7 @@ date: 2024-09-23
 title: Demystifying Modern macOS Development
 slug: demystifying-modern-macos-development
 images: [""]
-description: 
+description: Learn the subtle differences between native Mac apps, Mac Catalyst apps, and Mac (Designed for iPad) apps. 
 topics: [macOS, SwiftUI, Catalyst, Swift]
 ---
 
