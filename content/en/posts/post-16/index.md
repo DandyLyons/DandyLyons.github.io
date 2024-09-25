@@ -2,7 +2,7 @@
 date: 2024-09-24
 title: Swift 6's New @retroactive Attribute
 slug: swift-6-retroactive-attribute
-images: [""]
+images: ["@retroactive example.png"]
 description: Learn about retroactive protocol conformance, and why you probably shouldn't use it on external types. 
 topics: [Swift]
 ---
