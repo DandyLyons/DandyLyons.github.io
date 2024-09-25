@@ -6,7 +6,7 @@ images: [""]
 description: Ranges in Swift exlained, plain and simple.
 topics: [Swift, Ranges, Cheatsheet]
 ---
-# Swift Ranges Cheat Sheet
+# Swift Ranges Cheatsheet
 Ranges are fantastic for when we want to work with a range of sorted values that contain no duplicates. 
 
 ## Core Concepts:
