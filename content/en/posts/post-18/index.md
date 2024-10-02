@@ -2,8 +2,8 @@
 date: 2024-10-01
 title: "Abstractions Increase Complexity: Here's Why That's Not A Bad Thing"
 slug: abstractions-increase-complexity
-images: [""]
-description: 
+images: ["pexels-googledeepmind-17484975.jpg"]
+description: Has another technology broken your heart when it promised to make things simpler? Abstractions don't reduce complexity, they delegate it. 
 topics: ["Software Development", "Abstractions"]
 ---
 # Abstractions Increase Complexity: Here's Why That's Not A Bad Thing
