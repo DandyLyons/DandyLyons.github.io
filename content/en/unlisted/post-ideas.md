@@ -3,7 +3,9 @@ draft: true
 date: 2024-01-01
 ---
 USE https://blogrecorder.com/
-- Install Swift Package using CLI
+- [ ] Install Swift Package using CLI
+  - It seems easier to just edit the Package.swift file
+- [x] How to visually graph swift dependencies
 - [ ] DocC: 
   - [ ] DocC deep dive
   - [ ] hosting DocC on GitHub Pages
