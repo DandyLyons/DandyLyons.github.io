@@ -1,12 +1,12 @@
 ---
 date: 2024-10-01
-title: "The Illusion of Simplicity: Understanding Complexity and Abstractions"
-slug: the-illusion-of-simplicity
+title: "Abstractions Increase Complexity: Here's Why That's Not A Bad Thing"
+slug: abstractions-increase-complexity
 images: [""]
 description: 
 topics: ["Software Development", "Abstractions"]
 ---
-# "The Illusion of Simplicity: Understanding Complexity and Abstractions"
+# Abstractions Increase Complexity: Here's Why That's Not A Bad Thing
 I'm starting to see a pattern that seems to replay again and again. A shiny new technology comes out that solves a problem. A bunch of developers flock to it, evangelizing it to everyone else. Eventually the tech disappoints. The developers complain that the new solution is so complicated, and they long for the next shiny new thing. 
 
 Surely this pattern has existed for a long time, and will continue to repeat. But why does it happen? I think it's because we have fallen for a fallacy. The fallacy is this: 
@@ -72,5 +72,5 @@ So has your heart been broken by yet another framework with broken promises? Fre
 3. **Incorporate**: Perhaps your should add a new abstraction alongside your current abstractions.   
 
 ## Conclusion
-Don't be afraid of complexity. Embrace it. Find the right abstractions that you are comfortable using. You can handle it. 
+Don't be afraid of complexity. Embrace it. Find the right abstractions that you are comfortable using and discard the abstractions that aren't up to the task. You can handle it. 
 
