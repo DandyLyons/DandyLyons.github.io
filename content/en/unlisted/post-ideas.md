@@ -3,6 +3,7 @@ draft: true
 date: 2024-01-01
 ---
 USE https://blogrecorder.com/
+- [x] `assert()` vs `precondition()` vs. ...
 - [ ] Install Swift Package using CLI
   - It seems easier to just edit the Package.swift file
 - [x] How to visually graph swift dependencies
