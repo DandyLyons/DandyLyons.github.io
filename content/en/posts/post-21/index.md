@@ -1,13 +1,16 @@
 ---
 date: 2024-10-16
-title: "Mastering Swift Assertions: Choosing the Right Tool for the Job"
+title: "Swift Assertions Cheatsheet: How, Why, and When to Crash"
 slug: mastering-swift-assertions
-images: [""]
+images: ["https://i.imgflip.com/96ybn9.jpg"]
 description: Should you use assert(), precondition(), or maybe fatalError()? Let's learn how to decide. 
-topics: ["Swift"]
+topics: ["Swift", "Cheatsheet"]
 ---
 
-# Swift Assertions: Choosing the Right Tool for the Job
+# Swift Assertions Cheatsheet: How, Why, and When to Crash
+<center>
+<img src="https://i.imgflip.com/96ybn9.jpg" alt="Chaos Girl Meme: Swift watches while a house labeled `fatalError()` burns.">
+</center>
 
 As Swift developers, we have several assertion tools at our disposal. But how do we choose the right one for each situation? This blog post will explore the different types of assertions in Swift and provide a framework to help you decide which to use and when.
 
@@ -29,13 +32,6 @@ For this reason, Swift provides us with several tools:
 `assert()` is used to check a condition that must be true for your code to continue execution. If the condition is false, the assertion triggers and the program terminates. But the program will only terminate if this was a debug build. If you build the same code for production then Swift will ignore the `assert()` and move on. 
 
 ```swift
-/// Divides two integers.
-///
-/// - Parameters:
-///   - a: The numerator.
-///   - b: The denominator.
-/// - Returns: The result of the division.
-/// - Precondition: `b` must not be zero.
 func divide(_ a: Int, by b: Int) -> Int {
     assert(b != 0, "Cannot divide by zero")
     return a / b
@@ -102,7 +98,9 @@ class Animal {
 }
 ```
 
-Sometimes a class will implement a function with a fatalError if they require subclasses to override it. Another common use case is to fatal error when the app is unable to load the database upon startup. This is a very common pattern when using Core Data for example. 
+Sometimes a class will implement a function with a fatalError if they require subclasses to override it. However, I prefer not to use this pattern because it's easy to use this API wrong. For example, in many classes it is expected that you finish an implementation by calling the parent implementation (e.g. `super.makeSound()`). This pattern is used throughout UIKit for example. However, if we called `super.makeSound()` here, it would crash. The fact that it would crash is not obvious at the call site, or the definition. Instead we have to pay close attention to the documentation. 
+
+Another common use case for `fatalError()` is when the app is unable to load its database upon startup. If the app can't use its database, much if not all of its functionality is broken. It's better to crash. This is a very common pattern when using Core Data for example. 
 
 ## Crashes vs. Errors
 
@@ -148,5 +146,5 @@ Today we learned the value of crashing. We also learned how, why and when to cra
   - [Addressing crashes from Swift runtime errors](https://developer.apple.com/documentation/xcode/addressing-crashes-from-swift-runtime-errors)
   - [Analyzing a crash report](https://developer.apple.com/documentation/xcode/analyzing-a-crash-report)
   - [Error Handling](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/errorhandling/)
-- [SwiftRocks - How To Solve Any iOS Crash Ever](https://swiftrocks.com/how-to-solve-any-ios-crash-ever)
 - [SwiftLee - EXC_BAD_ACCESS crash error: Understanding and solving it](https://www.avanderlee.com/swift/exc-bad-access-crash/)
+- [SwiftRocks - How To Solve Any iOS Crash Ever](https://swiftrocks.com/how-to-solve-any-ios-crash-ever)
