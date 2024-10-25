@@ -4,7 +4,7 @@ title: "A Deep Dive into Value and Reference Types in Swift"
 slug: swift-value-reference-deep-dive
 images: [""]
 description: 
-topics: ["Swift"]
+topics: ["Swift", "C", "Pointers"]
 ---
 
 # A Deep Dive into Value and Reference Types in Swift
