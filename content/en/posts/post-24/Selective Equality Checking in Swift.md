@@ -6,6 +6,7 @@ series: ["Swift Equatability"]
 topics: ["Swift", "Equatable Protocol", "Parameter Packs"]
 images: 
 description: 
+draft: true
 ---
 
 ## Why Not Just Use Equatable
