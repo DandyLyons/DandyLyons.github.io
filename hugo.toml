@@ -175,3 +175,7 @@ url = "https://iosdev.space/@dandylyons"
 [[params.socialIcons]]
 name = "medium"
 url = "https://medium.com/@_DandyLyons"
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
