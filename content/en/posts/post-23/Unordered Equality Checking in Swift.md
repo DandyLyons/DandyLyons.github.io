@@ -1,11 +1,11 @@
 ---
 title: 'Unordered Equality Checking in Swift'
-slug: 
+slug: unordered-equality-checking-in-swift
 date: 2024-10-29
 series: ["Swift Equatability"]
 topics: ["Swift", "Equatable Protocol"]
 images: 
-description: 
+description: Learn how to ignore ordering when checking equality in Swift. 
 ---
 # Unordered Equality Checking in Swift
 
