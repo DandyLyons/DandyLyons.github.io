@@ -212,6 +212,17 @@ This is slightly easier to read. However, I couldn't figure out how to implement
 This would be an instance method. But we want to add it as a method to almost any type in Swift. There are a few ways that I thought we could achieve it but they all turned out to be dead ends. 
 
 ## Selective Equality Checking
+```swift
+struct Person: Identifiable {
+   let firstName: String
+   let lastName: String
+   let age: Int
+   let id: UUID
+   let profileImage: UIImage
+}
+value(person1, isEqualTo: person2, by: \.firstName, \.lastName, \.age)
+```
+
 Well there you have it, **Selective Equality Checking in Swift**. We can now easily and ergonomically check for equality on select properties and we don't need to conform our types to `Equatable`. Do you like this solution? Grab it for yourself from the [gist](https://gist.github.com/DandyLyons/d19c2b2444db743372fbe9f21d93c98a) here and don't forget to star it! 
 
 ---
