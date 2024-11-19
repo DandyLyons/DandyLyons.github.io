@@ -129,6 +129,9 @@ I like to finish my posts with a little "birthday present" for you. Here is a gi
 <script src="https://gist.github.com/DandyLyons/56dc43d0b98befa670758490b43fff07.js"></script>
 
 ---
+## Acknowledgments
+Huge thank you to Xiaodi Wu for informing me that the default language mode is Swift 6 when using `// swift-tools-version:6.0`. This was a huge help in writing this post. (See this [forum post](https://forums.swift.org/t/crowd-source-swift-language-modes-in-various-environments/76102/6).)
+
 ## Recommended Reading
 - [Migrating to Swift 6 | Documentation](https://www.swift.org/migration/documentation/migrationguide)
   - [Enabling The Swift 6 Language Mode | Documentation](https://www.swift.org/migration/documentation/swift-6-concurrency-migration-guide/swift6mode)
