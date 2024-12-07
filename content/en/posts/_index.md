@@ -6,7 +6,7 @@ title: Strongly Typed
 <center>
 <h3>Weekly Held</h3>
 Expect new posts every Tuesday.<br>
-Subscribe to the rss feed <a href="https://dandylyons.github.io/posts/index.xml">here</a>.
+Subscribe to the rss feed <a href="https://dandylyons.net/posts/index.xml">here</a>.
 </center>
 
 

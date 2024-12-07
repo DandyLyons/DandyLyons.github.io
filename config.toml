@@ -2,7 +2,7 @@
 
 # This is what goes in <html lang="">
 languageCode = 'en'
-baseURL = 'https://dandylyons.github.io'
+baseURL = 'https://dandylyons.net'
 title = 'Daniel Lyons'
 
 
