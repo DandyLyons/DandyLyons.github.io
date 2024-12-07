@@ -198,8 +198,10 @@ value(person1, isEqualTo: person2, by: \.firstName, \.lastName, \.age)
 ### How It Works
 This solution uses a new Swift 6.0 feature called [Parameter Pack Iteration](https://www.swift.org/blog/pack-iteration/). First we declare that the function receives many types `V`, all of which conform to `Equatable`. Then we accept a pack of `KeyPath` values (notice the `repeat`). Each of these key paths goes from type `T` to `each V`, and each V type will be `Equatable`. Then we iterate through each keypath, and compare the values to each other. 
 
-Let's evaluate our function: 
-1. Pro: Now we can check multiple properties at the same time **even when they are different types**!
+>**Note**: For some reason, this feature appears to work for me even when I am using Swift 5 language mode. So even though the blog says that it is a Swift 6 feature, it appears to not require the Swift 6 language mode. Make sure you read my post? "[Am I Using Swift 5 or 6?]({{< ref "Am I Using Swift 5 or 6" >}})" to understand the difference between Swift 6, **the tools** and Swift 6, **the language mode**. 
+
+Now, let's evaluate our function again: 
+1. Pro: Now we can check multiple properties at the same time **even when they are different types**! 
 
 ### Room For Improvement
 Our final function doesn't quite match up to our original API design. Remember we wanted to build something that could be used like this: 
@@ -223,6 +225,30 @@ struct Person: Identifiable {
 value(person1, isEqualTo: person2, by: \.firstName, \.lastName, \.age)
 ```
 
+### Works Great With Reference Types
+As we noted before, `Equatable` doesn't quite work for reference types. But our `value(isEqualTo:by:)` function works great with reference types! Look what happens if we change `Person` to a class: 
+
+```swift
+class Person: Identifiable {
+   let firstName: String
+   let lastName: String
+   let age: Int
+   let id: UUID
+   let profileImage: UIImage
+}
+value(person1, isEqualTo: person2, by: \.firstName, \.lastName, \.age)
+```
+
+Here the code works exactly the same. The call site makes it very clear that we are not checking if two `Person` instances are the same instance. Instead we are checking if they have the same values for the same properties.
+
+>**Note:** Don't forget that if we want to check if two class instances are the same instance, we can use the `===` operator like this: 
+
+```swift
+person1 === person2
+```
+
+
+## Conclusion
 Well there you have it, **Selective Equality Checking in Swift**. We can now easily and ergonomically check for equality on select properties and we don't need to conform our types to `Equatable`. Do you like this solution? Grab it for yourself from the [gist](https://gist.github.com/DandyLyons/d19c2b2444db743372fbe9f21d93c98a) here and don't forget to star it! 
 
 ---

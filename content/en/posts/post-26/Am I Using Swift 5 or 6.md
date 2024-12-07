@@ -3,7 +3,7 @@ title: 'Am I Using Swift 5 or 6?'
 slug: am-i-using-swift-5-or-6
 date: 2024-11-19
 topics: ["Swift 6"]
-description: 
+description: What's the difference between the Swift "language modes" and "compiler"? How do I determine which version of Swift I am using? How do I opt in or out of Swift 5 or Swift 6 language mode?
 ---
 
 Swift is in the middle of a transition from Swift 5 to Swift 6. This transition is not as simple as it may seem. In this post, we will discuss how to determine which version of Swift you are using. But first we need to clear up some misconceptions. 
