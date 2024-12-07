@@ -1,3 +1,5 @@
+# THIS IS THE CONFIGURATION FILE FOR HUGO.
+
 # This is what goes in <html lang="">
 languageCode = 'en'
 baseURL = 'https://dandylyons.github.io'
