@@ -94,7 +94,7 @@ theme = "hugo-blog-awesome"
   [[Languages.en-gb.menu.main]]
     # pageRef="projects"
     name = 'Notes'
-    url = '/notes/'
+    url = 'https://dandylyons.github.io/notes'
     weight = 40
 
 [Languages.en-gb.params]
