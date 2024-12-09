@@ -4,3 +4,10 @@ HUGO_VERSION = "0.134.0"
 [build]
 publish = "public"
 command = "hugo --gc --minify"
+
+# Redirect https://dandylyons.github.io/notes/note-name to https://dandylyons.github.io/notes/note-name/
+[[redirects]]
+  from = "/notes/*"
+  to = "https://dandylyons.github.io/notes/:splat"
+  status = 301
+  force = true
