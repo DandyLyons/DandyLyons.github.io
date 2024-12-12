@@ -249,7 +249,8 @@ person1 === person2
 
 
 ## Conclusion
-Well there you have it, **Selective Equality Checking in Swift**. We can now easily and ergonomically check for equality on select properties and we don't need to conform our types to `Equatable`. Do you like this solution? Grab it for yourself from the [gist](https://gist.github.com/DandyLyons/d19c2b2444db743372fbe9f21d93c98a) here and don't forget to star it! 
+Well there you have it, **Selective Equality Checking in Swift**. We can now easily and ergonomically check for equality on select properties and we don't need to conform our types to `Equatable`. Do you like this solution? Good news! I now have an even better solution that is even easier to use. It's a micro-library called [SelectiveEquatable](https://dandylyons.net/posts/post-27/selectiveequatable/). 
+
 
 ---
 

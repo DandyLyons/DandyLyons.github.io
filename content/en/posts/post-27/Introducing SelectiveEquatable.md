@@ -10,7 +10,7 @@ description: Quickly and easily check for equality on specific properties in Swi
 
 # Introducing SelectiveEquatable
 
-A few weeks ago, I released a blog post named ["Selective Equality Checking in Swift"](<ref "Selective Equality Checking in Swift">). In that post, I designed and implemented an API to check for equality on specific properties of a type. Today, I am excited to announce a new Swift protocol named `SelectiveEquatable`, that makes all of this even easier. Let's see it in action.
+A few weeks ago, I released a blog post named ["Selective Equality Checking in Swift"](https://dandylyons.net/posts/post-24/selective-equality-checking-in-swift/). In that post, I designed and implemented an API to check for equality on specific properties of a type. Today, I am excited to announce a new Swift protocol named `SelectiveEquatable`, that makes all of this even easier. Let's see it in action.
 
 ## Using SelectiveEquatable
 To use the `SelectiveEquatable` protocol, all you need to do is add a conformance to it like this: 
