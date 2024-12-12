@@ -3,6 +3,7 @@ title: Forcing Value Semantics in Swift
 description: How to force value semantics in Swift. 
 date: 2024-12-10
 tags: ["Swift", "Value Semantics"]
+draft: true
 ---
 
 In most programming languages, there is some concept of value and reference types. In Swift, we prefer to use value types and value semantics whenever possible. This is because value types are easier to reason about since they cannot be mutated by other parts of the code.[^1] However there are some times when we must use reference types. Is there a way to get our reference types to behave like value types? Yes, there is.
