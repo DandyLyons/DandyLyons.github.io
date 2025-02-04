@@ -3,7 +3,9 @@ draft: true
 ---
 
 
-## Forcing Value Semantics Through Property Access
+## Forcing Value Semantics Through Property Access in Swift
+Earlier we explored [Easy Deep Cloning in Swift] using the `Cloneable` protocol. In this post, we'll explore how we can use the `Cloneable` protocol to enforce value semantics on a property in Swift.
+
 Now that we have a way to clone our reference type, we can enforce value semantics on a property by making the property private and only allowing access to it through a computed property.
 
 Suppose we have the following type: 
