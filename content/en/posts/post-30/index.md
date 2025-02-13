@@ -5,7 +5,6 @@ date: 2025-02-18
 tags: ["Obsidian", "Markdown", "WYSIWYG"]
 slug: essential-obsidian-formatting
 series: ["Essential Obsidian"]
-draft: true
 ---
 
 # Essential Obsidian: Formatting
