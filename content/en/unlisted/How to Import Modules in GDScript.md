@@ -52,14 +52,16 @@ var position = Vector2(0, 0)
 ```
 
 ### Importing Using `preload`
-However, this will only work if the class is defined in the Godot engine. If you want to use a class that you defined in another script, you will need to use the `preload` keyword. This will load the script and make it available in your current script. Here's an example of one way to do this:
+However, this will only work if the class is defined in the Godot engine. It will also work if the class is defined in a [plugin](https://docs.godotengine.org/en/stable/tutorials/plugins/editor/installing_plugins.html) that you imported.
+
+But, if you want to use a class that you defined in another script, you will need to use the `preload` keyword. This will load the script and make it available in your current script. Here's an example of one way to do this:
 
 First we write the code that we would like to reuse in one file: 
 ```GDScript
 # MyScript.gd
 extends Node
 
-func my_function():
+func my_function() -> string:
     return "Hello, World!"
 ```
 
@@ -68,7 +70,7 @@ Then we can use this script in another script like this:
 # AnotherScript.gd
 extends Node
 
-var my_script: MyType = preload("res://MyScript.gd").new()
+var my_script = preload("res://MyScript.gd").new()
 
 func _ready():
     print(my_script.my_function())
