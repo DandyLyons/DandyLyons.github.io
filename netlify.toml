@@ -3,7 +3,7 @@ HUGO_VERSION = "0.134.0"
 
 [build]
 publish = "public"
-command = "hugo --gc --minify"
+command = "hugo --gc --minify --buildFuture"
 
 # Redirect https://dandylyons.github.io/notes/note-name to https://dandylyons.github.io/notes/note-name/
 [[redirects]]
