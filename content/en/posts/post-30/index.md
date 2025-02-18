@@ -18,7 +18,7 @@ Obsidian is a note-taking app with three key superpowers that I want to highligh
 3. **Markdown-based**: Obsidian uses Markdown for all of its notes. This means that you can write your notes in plain text, and they will be rendered beautifully in Obsidian.
 
 ## How the heck do I make my text bold? 
-Usually when I tell people about Markdown they seem like their on the same page, until they see Markdown. It seems like a strange programming language and let's face it, many of us don't want to learn something that looks confusing and intimidating. We just want to take notes and do simple things like make our text bold. I hear you. Let's make this simple.
+Usually when I tell people about Obsidian they seem like they're on the same page, until they see Markdown. It seems like a strange programming language and let's face it, many of us don't want to learn something that looks confusing and intimidating. We just want to take notes and do simple things like make our text bold. I hear you. Let's make this simple.
 
 ## The Formatting Menu in Obsidian
 Most of us are familiar with traditional word processors like Microsoft Word or Google Docs. These tools are what is known as a [WYSIWYG editor](https://en.wikipedia.org/wiki/WYSIWYG). WYSIWYG stands for "**What You See Is What You Get**." They're called that because you can simply highlight your text and click a button to change the way that it looks. For example, to make your text bold, just highlight it and click the bold button.
@@ -70,7 +70,7 @@ As you can see the above formatting is very simple. Just add some extra characte
   - If you click on the checkbox, it will automatically check or uncheck the task, and update the Markdown syntax.
   - Obsidian even has powerful task management features that can be used with these tasks. Read all about it [here](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Task+lists).
 
-That's it! That's all you need to know to get started with Markdown. Plus learning Markdown is an incredibly useful skill. It's used in many different places, not just Obsidian. 
+That's it! That's all you need to know to get started with Markdown. Plus learning Markdown is an incredibly useful skill. It's used in many different places, not just Obsidian. In fact, I even wrote **this article** in Markdown!
 
 ## Source Mode, Reading View, and Live Preview
 Remember, Obsidian is just a plain-text Markdown editor. The only thing that you are actually editing is a plain text file. But Obsidian has three different ways to view your notes. 
