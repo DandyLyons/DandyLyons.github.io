@@ -7,8 +7,6 @@ description: Learn how to get a compile-time guarantee that you have handled eve
 topics: ["Swift", "Swift 6", "Error Handling"]
 ---
 
-# Exhaustive, Flexible, Multi-Typed Error Handling in Swift
-
 Swift has long had fantastic error handling! Errors are simple value types that conform to the `Error` protocol. 
 
 ```swift

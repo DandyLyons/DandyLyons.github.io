@@ -6,8 +6,6 @@ tags: ["Swift", "Value Semantics", "Reference Types", "Cloning", "Codable", "Val
 slug: easy-deep-copy-cloning-in-swift
 ---
 
-# Easy Deep Copy Cloning in Swift
-
 In most programming languages, there is some concept of value and reference types. In Swift, we prefer to use value types and value semantics whenever possible. This is because value types are easier to reason about since they cannot be mutated by other parts of the code.[^1] However there are some times when we must use reference types. Is there a way to get our reference types to behave like value types? Yes, there is.
 
 [^1]: To be clear, value types are not better or worse than reference types. They both have very valid use cases.

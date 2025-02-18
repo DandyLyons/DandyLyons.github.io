@@ -7,8 +7,6 @@ description: Learn about retroactive protocol conformance, and why you probably 
 topics: [Swift]
 ---
 
-# Swift 6's New `@retroactive` Attribute
-
 Swift 6.0 introduced the `@retroactive` attribute to address a specific issue with protocol conformances. Here's what you need to know:
 
 ## The Problem

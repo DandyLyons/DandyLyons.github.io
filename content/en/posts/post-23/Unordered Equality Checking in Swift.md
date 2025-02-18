@@ -7,7 +7,6 @@ topics: ["Swift", "Equatable Protocol"]
 images: 
 description: Learn how to ignore ordering when checking equality in Swift. 
 ---
-# Unordered Equality Checking in Swift
 
 Have you ever needed to compare two arrays in Swift, but the order of elements doesn't matter? I find this often happens to me when convert between an ordered type such as `Array` and an unordered type such as `Set` or `Dictionary`.  Today, we'll explore how to implement **unordered equality checking** in Swift, starting with the basics and working our way up to a flexible, protocol-based solution.
 

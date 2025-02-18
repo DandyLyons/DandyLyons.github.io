@@ -6,8 +6,6 @@ images: ["https://i.imgflip.com/96ybn9.jpg"]
 description: Should you use assert(), precondition(), or maybe fatalError()? Let's learn how to decide. 
 topics: ["Swift", "Cheatsheet"]
 ---
-
-# Swift Assertions Cheatsheet: How, Why, and When to Crash
 <center>
 <img src="https://i.imgflip.com/96ybn9.jpg" alt="Chaos Girl Meme: Swift watches while a house labeled `fatalError()` burns.">
 </center>

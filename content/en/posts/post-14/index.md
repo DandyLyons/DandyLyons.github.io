@@ -6,8 +6,6 @@ description:
 topics: ["Swift", "Benchmarking", "Data Structures and Algorithms"]
 ---
 
-# Benchmarking in Swift with `swift-collections-benchmark`
-
 There is an age-old adage of programming which states *"Make it work, then make it right, then make it fast."* Today we will be focusing on how to *make it fast*, with the help of a valuable technique called Benchmarking. 
 
 When developing software, especially when working with algorithms and data structures, performance is often a key concern. You may have experienced a piece of code that behaves well in your tests, but when it's exposed to real-world data, performance degrades. This is where **benchmarking** comes in. Benchmarking allows developers to measure how long a piece of code takes to run, helping to identify bottlenecks and areas for optimization.

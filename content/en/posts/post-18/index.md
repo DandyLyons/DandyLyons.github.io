@@ -6,7 +6,6 @@ images: ["pexels-googledeepmind-17484975.jpg"]
 description: Has another technology broken your heart when it promised to make things simpler? Abstractions don't reduce complexity, they delegate it. 
 topics: ["Software Development", "Abstractions"]
 ---
-# Abstractions Increase Complexity: Here's Why That's Not A Bad Thing
 I'm starting to see a pattern that seems to replay again and again. A shiny new technology comes out that solves a problem. A bunch of developers flock to it, evangelizing it to everyone else. Eventually the tech disappoints. The developers complain that the new solution is so complicated, and they long for the next shiny new thing. 
 
 Surely this pattern has existed for a long time, and will continue to repeat. But why does it happen? I think it's because we have fallen for a fallacy. The fallacy is this: 

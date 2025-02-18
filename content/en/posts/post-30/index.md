@@ -8,8 +8,6 @@ series: ["Actually Useful Obsidian"]
 postNumber: 30
 ---
 
-# Actually Useful Obsidian: Formatting
-
 Today we start a new series on one of my favorite note-taking apps, [Obsidian](https://obsidian.md/). In this series, we'll cover the basics of Obsidian. Here we will intentionally NOT be doing anything particularly fancy. We won't be using strange plugins or custom CSS. Instead we'll be focusing on the most helpul, core features that I use every day. Beginners will be able to finally overcome the initial learning curve and start using Obsidian effectively. And experienced users will find helpful tools to simplify their setup! 
 
 ## What is Obsidian?

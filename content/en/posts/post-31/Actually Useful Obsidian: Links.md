@@ -1,11 +1,12 @@
 ---
-title: "Actually Useful Obsidian - Links"
+title: "Actually Useful Obsidian: Links"
 date: 2025-02-25
 tags: ["Obsidian"]
 series: ["Actually Useful Obsidian"]
 image: 
 description: 
 slug: actually-useful-obsidian-links
+draft: true
 ---
 The following is my very rough draft outline of the blog that I am writing below. 
 ### The Power of Links

@@ -7,8 +7,6 @@ description: Learn the subtle differences between native Mac apps, Mac Catalyst 
 topics: [macOS, SwiftUI, Catalyst, Swift]
 ---
 
-# Demystifying Modern macOS Development
-
 ## Introduction
 
 For many years Apple, arguably left the Mac to languish for years while it focused on iOS and the iPhone. The Mac repeatedly got features years later than its mobile cousins, and the hardware was often behind and underpowered. But now, Mac app development is currently in the best state that it has been in a very long time, thanks to three major developments: 

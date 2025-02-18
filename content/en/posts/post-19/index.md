@@ -6,7 +6,6 @@ images: [""]
 description: 
 topics: ["Swift", "SPM"]
 ---
-# How to Visualize a Dependency Graph of Swift Dependencies
 As projects grow in complexity, it is common to use two techniques: 
 
 1. Depend on external libraries. 

@@ -7,8 +7,6 @@ description: Discover how inner classes and class names work in Godot's GDScript
 series: ["GDScript Fundamentals"]
 ---
 
-# What's the difference between class and class_name in Godot?
-
 When you're writing scripts in Godot, you might have noticed that some scripts use `class` and others use `class_name`. What's the difference between these two keywords? Let's find out.
 
 ## `class_name` keyword
