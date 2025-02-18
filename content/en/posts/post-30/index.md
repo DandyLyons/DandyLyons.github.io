@@ -1,27 +1,29 @@
 ---
-title: Essential Obsidian - Formatting
-description: Learn how to format your notes in Obsidian with Markdown.
+title: "Actually Useful Obsidian: Formatting"
+description: Learn how to style and format your notes in Obsidian with Markdown.
 date: 2025-02-18
 tags: ["Obsidian", "Markdown", "WYSIWYG"]
-slug: essential-obsidian-formatting
-series: ["Essential Obsidian"]
+slug: actually-useful-obsidian-formatting
+series: ["Actually Useful Obsidian"]
+postNumber: 30
 ---
 
-# Essential Obsidian: Formatting
+# Actually Useful Obsidian: Formatting
 
 Today we start a new series on one of my favorite note-taking apps, [Obsidian](https://obsidian.md/). In this series, we'll cover the basics of Obsidian. Here we will intentionally NOT be doing anything particularly fancy. We won't be using strange plugins or custom CSS. Instead we'll be focusing on the most helpul, core features that I use every day. Beginners will be able to finally overcome the initial learning curve and start using Obsidian effectively. And experienced users will find helpful tools to simplify their setup! 
 
 ## What is Obsidian?
 Obsidian is a note-taking app with three key superpowers that I want to highlight:
-1. Local-first and offline: These are your notes, stored on your computer, and controlled by no one else. 
-2. Extremely customizable: Practically anything that you can think of doing with your notes, you can do in Obsidian.
-3. Markdown-based: Obsidian uses Markdown for all of its notes. This means that you can write your notes in plain text, and they will be rendered beautifully in Obsidian.
+1. **Local-first and offline**: These are your notes, stored on your computer, and controlled by no one else. 
+2. **Extremely customizable**: Practically anything that you can think of doing with your notes, you can do in Obsidian.
+   - Seriously. You can make AirTable-like databases, Notion-like dashboards, Kanban boards, Todo lists, mind maps, and anything else that you can think of.
+3. **Markdown-based**: Obsidian uses Markdown for all of its notes. This means that you can write your notes in plain text, and they will be rendered beautifully in Obsidian.
 
 ## How the heck do I make my text bold? 
 Usually when I tell people about Markdown they seem like their on the same page, until they see Markdown. It seems like a strange programming language and let's face it, many of us don't want to learn something that looks confusing and intimidating. We just want to take notes and do simple things like make our text bold. I hear you. Let's make this simple.
 
 ## The Formatting Menu in Obsidian
-Most of us are familiar with traditional word processors like Microsoft Word or Google Docs. These tools are what is known as a **WYSIWYG** editor. WYSIWYG stands for "**What You See Is What You Get**." They're called that because you can simply highlight your text and click a button to change the way that it looks. For example, to make your text bold, just highlight it and click the bold button.
+Most of us are familiar with traditional word processors like Microsoft Word or Google Docs. These tools are what is known as a [WYSIWYG editor](https://en.wikipedia.org/wiki/WYSIWYG). WYSIWYG stands for "**What You See Is What You Get**." They're called that because you can simply highlight your text and click a button to change the way that it looks. For example, to make your text bold, just highlight it and click the bold button.
 
 WYSIWYG editors are great because they're simple and easy to use, at least at first. But they have some downsides, which we'll talk about in a bit. For now, let's focus on how to make Obsidian as easy to work with as a WYSIWYG editor.
 
@@ -83,7 +85,7 @@ You can switch between these three views, but the truth is, **I spend almost all
 
 Live Preview is so simple to use that it almost feels like a WYSIWYG editor, but there is one thing that you need to be aware of. Even though it looks like a WYSIWYG editor, you are still editing a plain text file, with Markdown syntax in it. Live Preview does a fantastic job of hiding the Markdown syntax, so that we can focus on our writing, but it is still there. For example look at this: 
 
-![](ObsidianLivePreviewMode.gif)
+![An example of the UI formatting menu from the Obsdian Format Menu plugin.](ObsidianLivePreviewMode.gif)
 
 As you can see, the text appears to change, depending on where the cursor is. This is because the Markdown syntax is being hidden. But when the cursor moves into a section of text that has Markdown syntax, the syntax is revealed. So when the cursor moves into the word "bold", then the `**` characters are revealed before and after the word. The truth is, those `**` characters are always there, but Live Preview is only showing them when you need to see them.
 
