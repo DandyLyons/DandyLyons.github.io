@@ -1,7 +1,7 @@
 ---
 title: "Swift Error Handling: The Problem"
 date: 2025-03-27
-tags: ["Swift", "Error Handling"]
+topics: ["Swift", "Error Handling"]
 series: "Swift Error Handling"
 image:
 description: "Explore the strengths and weaknesses of Swift's error handling system, and discover how it can be improved."
@@ -55,7 +55,7 @@ The Swift compiler won't allow you to ignore errors from throwing functions. You
 - Use a `do-catch` statement
 - Propagate errors with `throws`
 - Convert to optionals with `try?` (however this never actually reads the error)
-- Force unwrap with `try!` (which should be used carefully)
+- Force unwrap with `try!` (which should be used carefully, because it will crash if the function throws an error)
 
 This compiler enforcement prevents silent error situations that plague other languages.
 
@@ -328,13 +328,13 @@ Now we are in a place to begin to understand why the authors of SE-0413 recommen
 ## Takeaway: do, try, catch is problematic
 If there's one thing you can take away from this post, it's this: **`do` `catch` blocks with multiple `try` functions are problematic**. They implicitly create new code paths. They catch errors without actually informing you which function threw the error. They create a false sense of security, that all errors are handled. Finally, they have a strong tendency to balloon into even larger `do` blocks, which only further exacerbates the problem.
 
-This is a problem that is not unique to Swift. Many languages have similar issues and even worse issues. For example, in JavaScript, any function can throw an error and simply never tell you that they sometimes throw errors. Swift's error handling system has elegant solutions to many of these problems, but unfortunately, `do` `catch` blocks are not up to the task.
+This is a problem that is not unique to Swift. Many languages have similar issues and even worse issues. For example, in JavaScript, any function can throw an error and simply never tell you that they sometimes throw errors. Swift's error handling system has elegant solutions to many of these problems, but unfortunately, `do` `catch` blocks are not up to the task. In Swift, it is very easy to throw an error, and it is very easy to rethrow an error for someone else to deal with. But it is surprisingly difficult to `try` a throwing function and use the result. It's also surprisingly difficult to `catch` an error and handle it properly.
 
 ## Conclusion
 Swift's error handling system offers clear benefits: explicit function contracts, mandatory error acknowledgment, and straightforward error propagation. However, its implementation introduces significant challenges around scope, control flow, and practical error handling.
 
 These issues stem from the fundamental design choice to make error handling a special case of control flow rather than a type-based approach. While this design has performance benefits and syntactic clarity, it creates practical problems in everyday development scenarios.
 
-In our next post, "Swift Error Handling: The Solution," we will present concrete strategies for overcoming these limitations today, along with a preview of my "Catcher" library designed to simplify error handling. We'll also explore potential language changes that could fundamentally resolve these issues in future Swift versions.
+In our next post, [Swift Error Handling: The Solution]({{< ref "posts/post-32/Swift Error Handling: The Solution.md">}}), we will present concrete strategies for overcoming these limitations today, along with a preview of my "Catcher" library designed to simplify error handling. We'll also explore potential language changes that could fundamentally resolve these issues in future Swift versions.
 
 
