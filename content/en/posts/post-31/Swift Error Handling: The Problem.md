@@ -150,7 +150,54 @@ do {
 }
 ```
 
-Unless you explicitly check the error type or use multiple `catch` clauses, you can't immediately know which operation failed.
+Unless you explicitly check the error type or use multiple `catch` clauses, you can't immediately know which operation failed. So let's try both these approaches and we'll see how unwieldy and error-prone they are.
+#### Multiple `catch` Blocks
+
+```swift
+do {
+    let user = try fetchUserData(userId: "12345")
+    let posts = try fetchUserPosts(for: user)
+    let followers = try fetchUserFollowers(for: user)
+} catch {
+    if let networkError = error as? NetworkError {
+        showNetworkErrorMessage(networkError)
+    } else if let parsingError = error as? ParsingError {
+        showParsingErrorMessage(parsingError)
+    } else {
+        showGenericErrorMessage(error)
+    }
+}
+```
+
+This example floods the code with noise and further separates the error handling from the original call. It also assumes that the error types are known in advance. In Swift 6+ the error type may or may not be typed. In Swift 5 and before, the error is never typed and the error type is effectively always `any Error`. This means that we simply have to hope that the documentation tells us what the error type is, and hope that the documentation is accurate.
+
+#### Separate Catch Blocks
+Another option is to use separate `catch` blocks for each error type:
+
+```swift
+let user: User
+let posts: [Post]
+let followers: [Follower]
+do {
+    user = try fetchUserData(userId: "12345")
+} catch {
+    showErrorMessage(error)
+    return
+}
+do {
+    posts = try fetchUserPosts(for: user)
+} catch {
+    showErrorMessage(error)
+    return
+}
+do {
+    followers = try fetchUserFollowers(for: user)
+} catch {
+    showErrorMessage(error)
+    return
+}
+```
+But as you can see, this approach isn't great either. It creates even more noise. We are forced to declare the variables outside of the `do` block and initialize them inside the `do` block. If an error occurs, we are forced to exit scope using a control flow statement like `return` or else we will have uninitialized variables. 
 
 ####  Abrupt Control Flow Breaks
 
