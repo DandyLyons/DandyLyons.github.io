@@ -1,10 +1,9 @@
 # THIS IS THE CONFIGURATION FILE FOR HUGO.
 
-# This is what goes in <html lang="">
-languageCode = 'en'
+
+languageCode = 'en' # This is what goes in <html lang="">
 baseURL = 'https://dandylyons.net'
 title = 'Daniel Lyons'
-
 
 # This defines how dates are formatted
 defaultContentLanguage = "en-gb"
@@ -35,6 +34,9 @@ theme = "hugo-blog-awesome"
 #   [[module.imports]]
 #     path = "github.com/hugo-sid/hugo-blog-awesome"
 #     disable = false
+
+[frontmatter]
+  format = "yaml" 
 
 [taxonomies]
   series = "series" # blog series
@@ -70,7 +72,7 @@ theme = "hugo-blog-awesome"
 [Languages.en-gb]
   languageName = "English"
   languageCode = "en-gb"
-  contentDir = "content/en"
+  contentDir = "content/en-gb"
   weight = 1
 
   [Languages.en-gb.menu]
@@ -93,9 +95,19 @@ theme = "hugo-blog-awesome"
     weight = 30
   [[Languages.en-gb.menu.main]]
     # pageRef="projects"
+    name = 'Thoughts'
+    url = '/thoughts/'
+    weight = 40
+  # [[Languages.en-gb.menu.main]]
+  #   # pageRef="essays"
+  #   name = 'Essays'
+  #   url = '/essays/' # Added URL for Essays menu item
+  #   weight = 50
+  [[Languages.en-gb.menu.main]]
+    # pageRef="projects"
     name = 'Notes'
     url = 'https://dandylyons.github.io/notes'
-    weight = 40
+    weight = 60
 
 [Languages.en-gb.params]
   sitename = "Daniel Lyons"
