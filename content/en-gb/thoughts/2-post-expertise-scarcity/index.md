@@ -35,7 +35,7 @@ When I read this idea from _Deep Work_, I was struck by how insightful it was. I
 
 ## Post Expertise Scarcity
 
-What if I told you that you can ask deep questions in any topic and receive deep answers with citations in a matter of minutes? That reality is already here today, and it has many names: DeepSeek R1, ChatGPT, Claude, Perplexity, etc., ad nauseam.   
+What if I told you that you can ask deep questions in any topic and receive deep answers with citations in a matter of minutes, often just a few seconds? That reality is already here today, and it has many names: DeepSeek R1, ChatGPT, Claude, Perplexity, etc., ad nauseam.   
   
 Don't get me wrong. I'm fully aware that these systems are not perfect. Far from perfect, they are also hilariously wrong at times. But that doesn't matter, and here is why:   
   
