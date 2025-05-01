@@ -9,12 +9,15 @@ aliases:
   - "/thoughts/post-expertise-scarcity/"
   # Alias for /thoughts/SLUG/
   - "/thoughts/post-expertise-scarcity/"
+description: "The internet made information abundant, but now something is making expertise abundant too."
 ---
 
 
 # Post Expertise Scarcity
 
-There's a scene in the early-2000s medical sitcom [Scrubs](https://www.imdb.com/title/tt0285403/) where an older hotshot doctor is visiting a patient. He reads off a bunch of stats about her medical tests and tells her all about her diagnosis, but she constantly finishes his sentences before him. How? Google. She's using this new-fangled device called a smartphone and looking up all the answers faster than he can even say them.   
+There's a scene in the early-2000s medical sitcom [Scrubs](https://www.imdb.com/title/tt0285403/) where an older hotshot doctor is visiting a patient. He reads off a bunch of stats about her medical tests and tells her all about her diagnosis, but she constantly finishes his sentences before him. How? Google. She's using this new-fangled device called a smartphone[^1] and looking up all the answers faster than he can even say them.
+
+[^1]: Of course, I can hear people saying, "But wait! The iPhone didn't come out until 2007!" This is revisionistic. The scene is set in 2001, and the iPhone was not released until 2007. But the smartphone was already a thing, they just weren't good yet. 
   
 She's convinced that she doesn't need a doctor. She can look up whatever she needs to on Google.
 

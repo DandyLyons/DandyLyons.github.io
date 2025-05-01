@@ -7,6 +7,7 @@ slug: "penny-for-your-thoughts"
 aliases:
   # Alias for /thoughts/NUMBER/
   - "/thoughts/1/"
+description: "Introducing a new section of my blog: Thoughts. These are short, ephemeral posts that are less polished than my regular posts."
 ---
 
 For a long time I have been wanting a place to share my thoughts out loud. This site has been a fantastic creative outlet for me but I have found a few issues. Mostly just one, it takes a very long time to write a single blog post. My posts tend to be technical and include code examples, so it is really important that my code examples actually do what they are supposed to. I would really hate it if someone read my article, was excited to try the code, and then found out the whole thing didn't compile at all. So that means that I need to read and re-read my posts. I need to research them and think about them deeply. 
