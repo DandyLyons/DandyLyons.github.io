@@ -12,5 +12,3 @@ aliases:
   - "/thoughts/{{ .Name | urlize }}/"
 ---
 
-
-    
