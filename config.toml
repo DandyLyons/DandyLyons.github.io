@@ -55,7 +55,7 @@ theme = "hugo-blog-awesome"
 # To enable Disqus comments, provide Disqus Shortname below.
 # To disable Disqus comments, simply leave the field empty or remove the next two lines
   [services.disqus]
-    shortname = 'dandylyons'
+    shortname = ''
 
 # set markup.highlight.noClasses=false to enable code highlight
 [markup]
