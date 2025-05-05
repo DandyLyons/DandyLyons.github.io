@@ -155,6 +155,7 @@ theme = "hugo-blog-awesome"
   background_color = "#fff" # by default depend on "params.defaultColor" for "light" or "auto" will be set to "#fff" for dark will be "#131418" (color of dark mode background)
   display = "standalone"
 
+# MARK: Params
 
 # Allow to override `browserconfig.xml` params (configuration for windows embedded browsers)
 [params.browserconfig]
@@ -195,6 +196,10 @@ url = "https://iosdev.space/@dandylyons"
 [[params.socialIcons]]
 name = "medium"
 url = "https://medium.com/@_DandyLyons"
+
+[params]
+talkyardServerUrl = "https://site-27u7pjoswd.talkyard.net"
+talkyardScriptUrl = "https://c1.ty-cdn.net/-/talkyard-comments.min.js"
 
 [sitemap]
   changefreq = "weekly"
