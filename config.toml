@@ -108,6 +108,12 @@ theme = "hugo-blog-awesome"
     name = 'Notes'
     url = 'https://dandylyons.github.io/notes'
     weight = 60
+  [[Languages.en-gb.menu.main]]
+    # pageRef="about"
+    name = 'About'
+    url = '/about/'
+    weight = 70
+
 
 [Languages.en-gb.params]
   sitename = "Daniel Lyons"
