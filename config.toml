@@ -98,11 +98,11 @@ theme = "hugo-blog-awesome"
     name = 'Thoughts'
     url = '/thoughts/'
     weight = 40
-  # [[Languages.en-gb.menu.main]]
-  #   # pageRef="essays"
-  #   name = 'Essays'
-  #   url = '/essays/' # Added URL for Essays menu item
-  #   weight = 50
+  [[Languages.en-gb.menu.main]]
+    # pageRef="essays"
+    name = 'Essays'
+    url = '/essays/' # Added URL for Essays menu item
+    weight = 50
   [[Languages.en-gb.menu.main]]
     # pageRef="projects"
     name = 'Notes'
