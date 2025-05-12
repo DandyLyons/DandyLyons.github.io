@@ -2,7 +2,7 @@
 title: "Listen Up: Your Guide to Turning Any Text Into Audio" 
 
 date: 2025-05-12T12:18:34-06:00
-draft: truetags: 
+tags: 
     - "thoughts" 
 slug: "listen-up-your-guide-to-turning-any-text-into-audio" 
 
