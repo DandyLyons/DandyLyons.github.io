@@ -165,21 +165,24 @@ theme = "hugo-blog-awesome"
 ## Social Icons
 ## See: https://github.com/hugo-sid/hugo-blog-awesome#adding-social-icons
 [[params.socialIcons]]
+name = "RSS"
+url = "/posts/index.xml"
+
+[[params.socialIcons]]
 name = "github"
 url = "https://github.com/DandyLyons"
 
 [[params.socialIcons]]
-name = "x"
-url = "https://x.com/dan_dee_lyons"
+name = "mastodon"
+url = "https://iosdev.space/@dandylyons"
 
 [[params.socialIcons]]
-name = "RSS"
-url = "/posts/index.xml"
+name = "bluesky"
+url = "https://bsky.app/profile/dan-dee-lyons.bsky.social"
 
-
-[[params.socialIcons]]
-name = "email"
-url = "mailto://daniellyons500@gmail.com"
+# [[params.socialIcons]]
+# name = "email"
+# url = "mailto://daniellyons500@gmail.com"
 
 # [[params.socialIcons]]
 # name = "dev"
@@ -189,13 +192,15 @@ url = "mailto://daniellyons500@gmail.com"
 name = "linkedin"
 url = "https://www.linkedin.com/in/dandylyons/"
 
-[[params.socialIcons]]
-name = "mastodon"
-url = "https://iosdev.space/@dandylyons"
+
 
 [[params.socialIcons]]
 name = "medium"
 url = "https://medium.com/@_DandyLyons"
+
+[[params.socialIcons]]
+name = "x"
+url = "https://x.com/dan_dee_lyons"
 
 [params]
 talkyardServerUrl = "https://site-27u7pjoswd.talkyard.net"
