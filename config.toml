@@ -121,7 +121,7 @@ theme = "hugo-blog-awesome"
   # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
   # the default value is set to 'auto'.
   # You can take a look at layouts/index.html for more information.
-  description = "A blog about software development."
+  description = "The personal site of Daniel Lyons."
   mainSections = ['posts', 'thoughts', 'essays'] # sections to be included in the main menu
   toc = true # set to false to disable table of contents 'globally'
   tocOpen = false # set to true to open table of contents by default
