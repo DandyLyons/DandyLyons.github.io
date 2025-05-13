@@ -122,7 +122,7 @@ theme = "hugo-blog-awesome"
   # the default value is set to 'auto'.
   # You can take a look at layouts/index.html for more information.
   description = "A blog about software development."
-  mainSections = ['posts']
+  mainSections = ['posts', 'thoughts', 'essays'] # sections to be included in the main menu
   toc = true # set to false to disable table of contents 'globally'
   tocOpen = false # set to true to open table of contents by default
   goToTop = true # set to false to disable 'go to top' button
