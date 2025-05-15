@@ -1,6 +1,5 @@
 ---
-date: 
-drafts: true
+date: 2025-05-14
 title: "Smooth Site Migration: Redirecting GitHub Pages to Netlify Path-by-Path (with Hugo & SEO in Mind)"
 slug: "smooth-site-migration-redirecting-github-pages-to-netlify-path-by-path"
 tags: ["Hugo", "GitHub Pages", "Netlify", "SEO"]
@@ -98,13 +97,7 @@ My workflow already used different branches for deployment:
 1. Pushing to `deploy-netlify` triggered a build and deploy on Netlify.
 2. Pushing to `deploy-gh-pages` triggered a build and deploy on GitHub Pages (`dandylyons.github.io`).
 
-The solution was to modify my build process for the `deploy-gh-pages` branch specifically:
-
-1. **Create a dedicated partial:** I created `layouts/partials/head-gh-pages-redirect.html` containing *only* the redirect logic and the new canonical tag pointing to the Netlify URL, plus the necessary surrounding `<head>` and `</head>` tags.
-2. **Modify the GH Pages build script:** My script that builds Hugo for the `deploy-gh-pages` branch was updated. Before running `hugo`, it replaces the default `layouts/partials/head.html` (which is used for the Netlify build) with the content of `layouts/partials/head-gh-pages-redirect.html`.
-3. **Build and Deploy:** The script then runs `hugo`, which generates all HTML files with the redirect `<head>` content. The *entire output* of this build (the `public` directory) is pushed to the `deploy-gh-pages` branch of the `DandyLyons/DandyLyons.io` repository.
-4. **Freeze the GH Pages Branch:** After this final deployment of the redirect site, I **stopped pushing any new content builds to the `deploy-gh-pages` branch**. The branch remains static, serving only the redirect pages.
-5. **Netlify Builds Continue:** My standard build process for Netlify (pushing to `deploy-netlify`) continues using the *original* `layouts/partials/head.html`, which correctly sets the canonical tag to the Netlify URL (`{{ .Permalink }}` resolves to the Netlify domain when deployed there).
+So I simply pushed one last commit to the `deploy-gh-pages` branch with the modified `head.html` containing the redirect logic. Now I just won't push any more changes to this branch, effectively freezing it in time. This way, the GitHub Pages site will always serve the redirect HTML with the correct path-based logic.
 
 ### Preserving the Notes Site and Existing Redirects
 
