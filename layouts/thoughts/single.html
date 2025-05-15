@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="wrapper post">
+<div class="wrapper thought">
     <main class="page-content" aria-label="Content">
         <article>
             <header class="header">
@@ -10,15 +10,15 @@
                     <time datetime="{{ $ISO_time }}" itemprop="datePublished"> {{ . | time.Format ":date_medium" }} </time>
                 </div>
                 {{ end }}
-                {{ partial "post-topics.html" . }}
+                {{ partial "post-topics.html" . }} <!--- This partial might need review if 'thoughts' don't use topics the same way 'posts' do --->
             </header>
             {{ partial "toc.html" .}}
             <div class="page-content">
                 {{ .Content }}
-                {{ partial "attribution.html" . }} 
+                {{ partial "attribution.html" . }}
             </div>
         </article>
-        {{- partial "comments.html" . -}}
+        {{- partial "comments.html" . -}} <!-- Review if comments are desired on 'thoughts' -->
     </main>
 </div>
 {{ end }}
