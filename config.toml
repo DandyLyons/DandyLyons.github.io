@@ -209,3 +209,21 @@ talkyardScriptUrl = "https://c1.ty-cdn.net/-/talkyard-comments.min.js"
 [sitemap]
   changefreq = "weekly"
   filename = "sitemap.xml"
+
+# OUTPUTS
+[outputs]
+home = ["HTML", "RSS", "llms", "llms-full"]
+
+# generates dandylyons.net/llms.txt
+# SEE: https://glaforge.dev/posts/2025/03/03/llms-txt-to-help-llms-grok-your-content/
+[outputFormats.llms]
+baseName = "llms"
+mediaType = "text/plain"
+isPlainText = true
+
+# generates dandylyons.net/llms-full.txt
+[outputFormats.llms-full]
+baseName = "llms-full"
+mediaType = "text/plain"
+isPlainText = true
+
