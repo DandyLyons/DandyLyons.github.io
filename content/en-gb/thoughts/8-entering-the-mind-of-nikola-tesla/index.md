@@ -1,7 +1,7 @@
 ---
 title: "Entering the Mind of Nikola Tesla" 
 date: 2025-05-23T14:54:10-05:00
-draft: truetags: 
+tags: 
     - "thoughts" 
 slug: "entering-the-mind-of-nikola-tesla" 
 aliases:
