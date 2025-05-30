@@ -5,9 +5,9 @@ HUGO_VERSION = "0.134.0"
 publish = "public"
 command = "hugo --gc --minify --buildFuture"
 
-# Redirect https://dandylyons.github.io/notes/note-name to https://dandylyons.github.io/notes/note-name/
+# Redirect https://dandylyons.net/notes/note-name to https://publish.obsidian.md/serve?url=dandylyons.net/notes/note-name/
 [[redirects]]
   from = "/notes/*"
-  to = "https://dandylyons.github.io/notes/:splat"
-  status = 301
+  to = "https://publish.obsidian.md/serve?url=dandylyons.net/notes/:splat"
+  status = 200 
   force = true

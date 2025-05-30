@@ -18,6 +18,9 @@ Complicating factors:
 
 Let's dive into how I tackled this, moving beyond a simple root redirect.
 
+>![UPDATE] 
+> After this migration, I have since moved my [notes site](https://dandylyons.net/notes) to a new domain, [publish.obsidian.md/dandylyons](https://publish.obsidian.md/dandylyons). 
+
 ### The Initial Thought: A Simple Root Redirect
 
 My first inclination was the simplest approach: just put a single HTML file at the root of the GitHub Pages site (`dandylyons.github.io`) that redirected everyone to the new homepage (`dandylyons.net`).
