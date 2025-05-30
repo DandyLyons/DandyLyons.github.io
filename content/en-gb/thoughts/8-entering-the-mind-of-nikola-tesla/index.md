@@ -15,7 +15,7 @@ While reading this book, I was surprised to see how important Tesla's Christian 
 
 This book was a short yet insightful read, and I highly recommend it to anyone even if you are not particularly interested in Tesla or his inventions. It is a fascinating glimpse into the mind of a brilliant inventor and thinker, and it provides valuable insights into the relationship between science, religion, and the human experience. Tesla's reflections on his life and work are thought-provoking and inspiring, and they remind us of the importance of curiosity, creativity, and perseverance in the pursuit of knowledge and understanding.
 
-[You can read my notes on the book here.](https://dandylyons.github.io/notes/Media-DB/books)
+[You can read my notes on the book here.](https://dandylyons.net/notes/Media-DB/books)
 
 You can also read the book for free here: 
 - [Audiobook](https://archive.org/details/my_inventions_1812_librivox)

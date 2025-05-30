@@ -29,7 +29,7 @@ But which approach would I like to use? Well that is a much better question. And
 So far, I have had these sections on this site: 
 - [Posts](https://dandylyons.net/posts/): This is my blog so far, mostly technical writing about programming topics. 
 - [Projects](https://dandylyons.net/projects/): These are mostly announcements for apps or other things that I have released. 
-- [Notes](https://dandylyons.github.io/notes/): This is a link to my [digital garden](https://dandylyons.github.io/notes/Topics/Learning/Digital-Garden) which is made in [Obsidian](https://obsidian.md/). 
+- [Notes](https://dandylyons.net/notes/): This is a link to my [digital garden](https://dandylyons.net/notes/Topics/Learning/Digital-Garden) which is made in [Obsidian](https://obsidian.md/). 
 
 Starting today, I'm adding **two** more: 
 - [Thoughts](https://dandylyons.net/thoughts/): These are short *ephemeral* posts. Longer and more substantive than a silly tweet, but not as polished as a **post** or an **essay**. 
