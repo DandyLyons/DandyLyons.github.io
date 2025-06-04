@@ -41,6 +41,8 @@ collections:
     # Slug pattern for the filename. The CMS will generate a filename based on the title.
     # Your Hugo archetype will handle the front matter slug generation.
     slug: "{{slug}}"
+    path: "{{slug}}/index" # Path to the file, using the slug for the filename.
+    media_folder: "{{slug}}" # Media folder for this post, relative to the post folder.
     identifier_field: "title" # Use the 'title' field for a human-readable name in the CMS list view
     format: "frontmatter" # Indicates that content uses front matter (Decap CMS detects YAML/TOML automatically)
     fields: # Define the fields that appear in the CMS editor for each post
