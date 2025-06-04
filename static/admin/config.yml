@@ -68,6 +68,8 @@ collections:
     folder: "content/en-gb/thoughts"
     create: true
     slug: "{{slug}}" # Filename slug
+    path: "{{slug}}/index" # Path to the file, using the slug for the filename.
+    media_folder: "{{slug}}" # Media folder for this post, relative to the post folder.
     identifier_field: "title"
     format: "frontmatter"
     fields:
@@ -88,6 +90,8 @@ collections:
     folder: "content/en-gb/essays"
     create: true
     slug: "{{slug}}" # Filename slug
+    path: "{{slug}}/index" # Path to the file, using the slug for the filename.
+    media_folder: "{{slug}}" # Media folder for this post, relative to the post folder.
     identifier_field: "title"
     format: "frontmatter"
     fields:
