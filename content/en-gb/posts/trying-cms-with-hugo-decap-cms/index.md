@@ -1,7 +1,7 @@
 ---
 title: "Trying CMS with Hugo: Decap CMS"
 date: 2025-06-07T17:10:00.000Z
-draft: false
+draft: true
 slug: trying-cms-with-hugo
 description: "Learning how to use Decap CMS with Hugo. "
 author: Daniel Lyons
@@ -71,7 +71,7 @@ But there are two big benefits that I'm enjoying out of Decap so far:
 Decap has a feature it calls Workflows. Workflows allow you to:
 
 *   **Track Status**: keep track of the status of posts by marking them as Draft, In Review, or Ready.
-*   **Deploy Preview Links**: Deploy Preview Links so that you can show unpublished content to stakeholders: I don't understand the use case of this. A preview link seems to allow anyone to view it so long as they have the link. I'd prefer to have a preview link that requires authentication.
+*   **Deploy Preview Links**: Deploy Preview Links so that you can show unpublished content to stakeholders. 
 
 ## Handling Media
 
