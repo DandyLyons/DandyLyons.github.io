@@ -8,8 +8,10 @@ author: Daniel Lyons
 tags:
   - programming
 ---
-I've been running this personal site a little over a year (\*checks date), yup, since March of 2024, so just over a year. I've enjoyed using Hugo. It's fast, markdown based, and I'm not locked in to any vendor. 👍🏼
+I've been running this personal site a little over a year[^d]. I've enjoyed using Hugo. It's fast, markdown based, and I'm not locked in to any vendor. 👍🏼
 But it's been a bit tedious to release new posts. Currently, I write directly to markdown and push changes to Netlify for deployment. This process works well enough but a small part of me misses the usability of a WYSIWYG editor. This is where a CMS comes in.
+
+[^d]: (\*checks date), yup, since March of 2024, so just over a year.
 
 ## CMS: Content Management System
 
