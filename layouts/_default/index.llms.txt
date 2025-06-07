@@ -5,7 +5,8 @@
 You can find [more information about this site here](/about).
 
 ## All articles
-{{ range .Site.RegularPages.GroupByDate "2006" }}
+{{ /* Group pages by year, excluding the "en-gb/unlisted" section */ }}
+{{ range where .Site.RegularPages "Section" "ne" "en-gb/unlisted" | GroupByDate "2006" }}
 
 ### {{ .Key }}
 {{ range .Pages }}
