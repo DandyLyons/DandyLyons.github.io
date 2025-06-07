@@ -46,28 +46,38 @@ After some searching, it seems like [Decap](https://decapcms.org/) is my favorit
 3. Decap is simply a UI that makes it easier to create and edit files without being distracted by technical details. 
 4. When you save a change in Decap then Decap will directly make this change in your git repo. There are two ways that Decap can do this: 
 
-   1. If you are editing locally, then Decap can edit your site's files in place on your computer. 
+   1. If you are [editing locally](https://decapcms.org/docs/working-with-a-local-git-repository/), then Decap can edit your site's files in place on your computer. 
    2. If you are editing online, then saving Decap will cause Decap to remotely commit a change to your GitHub repo, which can then later be built by Hugo and deployed to your host. 
 
 Thankfully this wasn't very complex to set up at all. I just followed Decap's guide on [Installing Decap CMS](https://decapcms.org/docs/install-decap-cms/) and [Integrating Decap to work with Hugo](https://decapcms.org/docs/hugo/).
 
 ### Authentication
+
 In order for Decap to work properly it has to authenticate users. After all we wouldn't want just anyone to edit your site, right? Well this leads me to a little detail that I'd like to call out.
 
 It's worth briefly highlighting a bit about Decap's history. Decap used to be owned by Netlify and named *Netlify CMS*. Netlify has since open sourced it and so it has been renamed Decap. 
 
-Likewise, Decap relies on some service to authenticate users. Thankfully, Decap is very flexible and allows you to choose your own auth vendor, but clearly the simplest solution that the docs point to is [Netlify Identity](https://docs.netlify.com/security/secure-access-to-sites/identity/). There's only one problem: Netlify has **deprecated** Netlify Identity. So at the moment, I'm using Netlify Identity to auth (and it works great), but I do plan to migrate to [DecapBridge](https://decapbridge.com/) in the near future. 
+Likewise, Decap relies on some service to authenticate users. Thankfully, Decap is very flexible and allows you to [choose your own auth vendor](https://decapcms.org/docs/external-oauth-clients/), but clearly the simplest solution that the docs point to is [Netlify Identity](https://docs.netlify.com/security/secure-access-to-sites/identity/). There's only one problem: Netlify has **deprecated** Netlify Identity. So at the moment, I'm using Netlify Identity to auth (and it works great), but I do plan to migrate to [DecapBridge](https://decapbridge.com/) in the near future. 
 
 ## What It's Like Using Decap
+
 Decap is a bit of a mixed bag, for me at the moment. The writing editor is not great. Certain markdown features are not implemented. For example, footnotes have no GUI button and straight up do not render in the preview editor. Decap also has a Rich Text editor but I've stopped liking those. I can type markdown syntax faster than I can click a button and return my hands back to the keyboard. I'm almost certain that I won't be writing posts on Decap unless I'm posting from my phone. The nice thing about markdown is I can edit in any markdown editor for the best writing experience. When I'm ready, "importing" my content is as simple as pasting it in. 
 
 But there are two big benefits that I'm enjoying out of Decap so far: 
+
 1. **Decap makes it easy to start a post.** I pick the **type** of post and Decap will create a new file in the correct directory and include all the metadata in my YAML header to match the schema for that type of post! 🎉 
 2. **Decap makes it possible to draft, edit, and post content remotely.**
 
 ## Further Exploration
+
 Decap has a feature it calls **Workflows**. Workflows allow you to:
     1. keep track of the status of posts by marking them as **Draft**, **In Review**, or **Ready**. 
     2. **[Deploy Preview Links](https://decapcms.org/docs/deploy-preview-links/) so that you can show unpublished content to stakeholders**: I don't understand the use case of this. A preview link seems to allow anyone to view it so long as they have the link. I'd prefer to have a preview link that requires authentication. 
 
-I need to look into these more in the future to see if they'd be a good fit for me. 
+## Handling Media
+
+My media needs are simple, mostly just the occasional picture in a blog post. Currently I'm hosting media directly inside my content files which Hugo makes pretty easy, but I've learned is not such a great idea because it could lead to a [colossal bill from your host](https://www.reddit.com/r/webdev/comments/1b14bty/netlify_just_sent_me_a_104k_bill_for_a_simple/). Thankfully, Decap has some tools that should make this easier. 
+
+![this is alt text](https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=192/keyart/GRMG8ZQZR-backdrop_wide "this is the title")
+
+I need to look into these features more in the future to see if they'd be a good fit for me.
