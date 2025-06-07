@@ -1,7 +1,8 @@
 ---
 title: "Trying CMS with Hugo: Decap CMS"
 date: 2025-06-07T17:10:00.000Z
-draft: true
+draft: false
+slug: trying-cms-with-hugo
 description: "Learning how to use Decap CMS with Hugo. "
 author: Daniel Lyons
 tags:
