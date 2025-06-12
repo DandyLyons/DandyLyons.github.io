@@ -1,6 +1,6 @@
 ---
 title: "Actually Useful AI: Modern Search"
-date: 2025-05-30T13:14:22-05:00
+date: 2025-06-12T11:33:00.000Z
 draft: false
 slug: actually-useful-ai-modern-search
 description: Go beyond keywords with LLM-powered search. Learn how AI is
