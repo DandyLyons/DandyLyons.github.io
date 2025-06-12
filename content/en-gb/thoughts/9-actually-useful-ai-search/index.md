@@ -23,9 +23,9 @@ But that's changing. Today, we're going to dive into using LLMs for search in wa
 
 So, what are the tools enabling this shift? A few major players have emerged, essentially wrapping powerful LLMs in interfaces designed to tackle search-like tasks. We're talking about products like:
 
-• **Perplexity.ai:** A dedicated interface built around using LLMs to find and synthesize information from the web.
-• **ChatGPT's search mode:** This allows the LLM to actually go out and perform web searches.
-• **Google's new AI Mode:** Google's own foray into integrating LLM capabilities directly into search results.
+- **Perplexity.ai:** A dedicated interface built around using LLMs to find and synthesize information from the web.
+- **ChatGPT's search mode:** This allows the LLM to actually go out and perform web searches.
+- **Google's new AI Mode:** Google's own foray into integrating LLM capabilities directly into search results.
 
 All three of these are, at their core, an LLM chatbot enhanced and designed to meet the demands we traditionally threw at search engines, but with a new approach.
 
@@ -67,10 +67,10 @@ Think about it: the LLM reads your nuanced, natural language prompt. It then _tr
 
 To really appreciate what LLMs can do, let's quickly remind ourselves of the headaches of the old keyword-based search paradigm:
 
-• It fundamentally relied on matching keywords. You had to guess what words the page you wanted might contain.
-• While Google got better over time, it struggled to truly understand the _meaning_ of a full sentence or the _intent_ behind a query. It was mostly sophisticated pattern matching and ranking.
-• It was terrible at questions where there was no single obvious keyword.
-• Asking "how do I" questions often resulted in a list of pages that _might_ contain the instructions, forcing you to click through and piece together the answer yourself.
+- It fundamentally relied on matching keywords. You had to guess what words the page you wanted might contain.
+- While Google got better over time, it struggled to truly understand the _meaning_ of a full sentence or the _intent_ behind a query. It was mostly sophisticated pattern matching and ranking.
+- It was terrible at questions where there was no single obvious keyword.
+- Asking "how do I" questions often resulted in a list of pages that _might_ contain the instructions, forcing you to click through and piece together the answer yourself.
 
 ## Use Cases Uniquely Suited for LLM-Powered Search
 
@@ -84,22 +84,22 @@ Instead of just keyword matching, LLMs grasp the semantic meaning of your query.
 #### Retrieving Information from Vague Descriptions
 Remember trying to find something you vaguely recall? Now you can ask:
 
-◦ "I remember an episode of Spongebob where [describe a scene]. What was that episode?"
-◦ "What's that one song that talks about [describe the theme or a lyric fragment]?"
-◦ Finding information based on scenario: "I need a recipe for a quick dinner using chicken and whatever vegetables I might have on hand." (The LLM can interpret "whatever vegetables" and find recipes that fit the flexible criteria).
+- "I remember an episode of Spongebob where [describe a scene]. What was that episode?"
+- "What's that one song that talks about [describe the theme or a lyric fragment]?"
+- Finding information based on scenario: "I need a recipe for a quick dinner using chicken and whatever vegetables I might have on hand." (The LLM can interpret "whatever vegetables" and find recipes that fit the flexible criteria).
 
 #### Complex Comparisons and Analysis
 No more opening ten tabs to compare products or concepts manually. LLMs can do the heavy lifting:
 
-◦ "Compare product A and B. I care about these features: [list features]. What other features should I be considering?"
-◦ "Compare the features and pricing of three different project management software options, focusing on ease of use for small teams."
-◦ "Analyze the pros and cons of using [technology A] vs. [technology B] for building a [type of application]."
+- "Compare product A and B. I care about these features: [list features]. What other features should I be considering?"
+- "Compare the features and pricing of three different project management software options, focusing on ease of use for small teams."
+- "Analyze the pros and cons of using [technology A] vs. [technology B] for building a [type of application]."
 
 #### Summarizing and Explaining
 Get straight to the point or understand complex topics quickly:
 
-◦ "Summarize the key findings of the recent report on [topic]."
-◦ "Explain the concept of [technical term] in simple terms."
+- "Summarize the key findings of the recent report on [topic]."
+- "Explain the concept of [technical term] in simple terms."
 
 #### Converting From One Format To Another
 - "Summarize this buying guide as a table."
@@ -108,13 +108,13 @@ Get straight to the point or understand complex topics quickly:
 #### Researching Relationships and Effects
 Understand causality and connections between events or concepts:
 
-◦ "What were the main causes and effects of [historical event]?"
-◦ "How does [concept A] relate to [concept B] in the field of [subject]?"
+- "What were the main causes and effects of [historical event]?"
+- "How does [concept A] relate to [concept B] in the field of [subject]?"
 
 #### Exploring Ideas and Recommendations
 Get tailored suggestions based on your needs:
 
-◦ "Recommend a good podcast about [topic] that is suitable for beginners."
+- "Recommend a good podcast about [topic] that is suitable for beginners."
 
 ## Weaknesses of LLM Powered Search
 
@@ -135,9 +135,9 @@ Techniques like "Chain-of-Thought" were introduced to make models explain their 
 ### Yes, They Cite Their Sources, but Even Those Have Mistakes
 A great feature is that these products often inline cite their sources, letting you click through to the original page. This _should_ help with verification, but I've found two major problems:
 
-a. **Poor Source Trustworthiness Judgment:** LLMs don't seem to be very good at evaluating whether a source is trustworthy. They routinely fall for jokes or satire and often treat outdated sources with the same authority as brand new ones. They also don't seem to understand that for some subjects (like breaking news), you should actually place _less_ trust in brand new, unverified sources because the story is still developing.
+- **Poor Source Trustworthiness Judgment:** LLMs don't seem to be very good at evaluating whether a source is trustworthy. They routinely fall for jokes or satire and often treat outdated sources with the same authority as brand new ones. They also don't seem to understand that for some subjects (like breaking news), you should actually place _less_ trust in brand new, unverified sources because the story is still developing.
 
-b. **Phantom Citations:** Often, I click on a cited link, and the page straight up _never mentioned_ the fact the LLM attributed to it. It's like the model was programmed to cite _something_ and just picked a random link from the search results it processed. It's incredibly frustrating and undermines the verification feature.
+- **Phantom Citations:** Often, I click on a cited link, and the page straight up _never mentioned_ the fact the LLM attributed to it. It's like the model was programmed to cite _something_ and just picked a random link from the search results it processed. It's incredibly frustrating and undermines the verification feature.
 
 ### The Honeymoon Won't Last Forever
 Right now, many of these products deliver answers incredibly fast, for little to no cost, with minimal or zero ads. This is fantastic! But running these powerful models and their associated search infrastructure is expensive. These companies have massive costs, and eventually, they _will_ pass that on to us, the users. [Enshittification](https://en.wikipedia.org/wiki/Enshittification) is likely inevitable. Enjoy the current state while it lasts, but be prepared for things to change.
