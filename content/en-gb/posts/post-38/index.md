@@ -8,7 +8,6 @@ slug: obsidian-bases-folder-overview
 series: ["Obsidian Quick Tips"]
 ---
 
-# Obsidian Quick Tip: Folder Overviews with Obsidian Bases
 
 ## TLDR
 **Just here for the quick tip? Here's all you need to know:**
