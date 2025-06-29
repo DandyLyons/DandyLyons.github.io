@@ -92,15 +92,25 @@ Content files use YAML front matter. The following archetypes define the structu
 
 -   **Hosting:** The site is hosted on Netlify.
 -   **Repository:** [https://github.com/DandyLyons/DandyLyons.github.io](https://github.com/DandyLyons/DandyLyons.github.io)
--   **Deployment Trigger:** Pushing changes to the `deploy-netlify` branch.
+-   **Deployment Trigger:** Pushing changes to the `deploy-netlify` branch triggers a new build and deployment on Netlify.
 -   **Build Command:** `hugo --gc --minify --buildFuture`
 -   **Configuration:** `netlify.toml` contains settings, including the `/notes/*` redirect.
 
 ### 5.1 Git Branching Strategy
 
 -   **`content` branch:** All content-related changes (new posts, edits to existing content) should be committed to this branch.
--   **`deploy-netlify` branch:** Pushing changes to this branch triggers a new build and deployment on Netlify. Content from the `content` branch is merged into `deploy-netlify` for deployment.
+-   **`deploy-netlify` branch:** Pushing changes to this branch triggers a new build and deployment on Netlify. Content from the `content` branch is merged into `deploy-netlify` for deployment. **A post is considered published on the live site only after it has been successfully pushed to this branch and Netlify has completed its build.** (This is of course assuming that the post doesn't have `draft: true` in its front matter.)
 -   **`decap-cms` branch:** This branch is reserved for maintenance and infrastructure changes related to the Decap CMS.
+
+### 5.2 Deployment Checklist
+
+Before pushing changes to the `deploy-netlify` branch, ensure the following:
+
+1. All content is finalized. There are no placeholders, "TODOs", incomplete sections, unfinished thoughts, empty tags, missing metadata, or empty links. 
+2. The user has approved the content.
+3. Front matter is correctly configured (see archetypes to understand the template).
+4. Local testing is complete (e.g., `hugo server -D`).
+5. Commit messages are clear and descriptive.
 
 ## 6. Assistant Guidelines
 
