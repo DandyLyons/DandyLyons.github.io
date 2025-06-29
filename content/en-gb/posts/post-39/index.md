@@ -6,6 +6,8 @@ author: Daniel Lyons
 tags:
   - programming
 topics: ["AI", "LLMs", "Large Language Models", "Programming", "Apple Foundation Models"]
+draft: true
+description: Learn how to teach LLMs to tell time using tool calling. This article explores the challenges and solutions for integrating real-time data with large language models using Apple's FoundationModels framework.
 ---
 
 In July 2024, Anthropic [revealed their system prompts to the public](https://docs.anthropic.com/en/release-notes/system-prompts). This taught the community [a ton of valuable insights about how to properly prompt engineer](https://simonwillison.net/2025/May/25/claude-4-system-prompt/). One interesting insight that we learned is that the prompt immediately tells the model what the current date is. This teaches us about a limitation of virtually all LLMs: they don't know how to tell time. It also shows us how to solve this problem: let's just tell them what the time is. 
