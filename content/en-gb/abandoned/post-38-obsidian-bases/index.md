@@ -6,6 +6,7 @@ tags: ["Obsidian", "Markdown"]
 topics: ["Bases", "Databases", "Dataview", "Markdown", "Obsidian", "YAML", "AirTable"]
 slug: obsidian-bases-folder-overview
 series: ["Obsidian Quick Tips"]
+draft: true
 ---
 
 
