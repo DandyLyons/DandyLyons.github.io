@@ -5,3 +5,6 @@ This is the code for my personal site which you can visit [here](https://dandyly
 
 ## Techinical Details
 This site is built using the [hugo](http://gohugo.io) static site generator and the [Hugo Blog Awesome](https://github.com/hugo-sid/hugo-blog-awesome) theme. 
+
+## `agents/` Directory 
+Any agents working on this repo should read the files located in the `agents/` directory. These files contain important information about the site, including how to build and deploy it.
