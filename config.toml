@@ -84,14 +84,14 @@ theme = "hugo-blog-awesome"
     url = '/'
     weight = 10
   [[Languages.en-gb.menu.main]]
-    pageRef="posts"
-    name = 'Posts'
-    url = '/posts/'
+    # pageRef="about"
+    name = 'About'
+    url = '/about/'
     weight = 20
   [[Languages.en-gb.menu.main]]
-    pageRef="projects"
-    name = 'Projects'
-    url = '/projects/'
+    # pageRef="essays"
+    name = 'Essays'
+    url = '/essays/' # Added URL for Essays menu item
     weight = 30
   [[Languages.en-gb.menu.main]]
     # pageRef="projects"
@@ -99,19 +99,19 @@ theme = "hugo-blog-awesome"
     url = '/thoughts/'
     weight = 40
   [[Languages.en-gb.menu.main]]
-    # pageRef="essays"
-    name = 'Essays'
-    url = '/essays/' # Added URL for Essays menu item
+    pageRef="posts"
+    name = 'Posts'
+    url = '/posts/'
     weight = 50
+  [[Languages.en-gb.menu.main]]
+    pageRef="projects"
+    name = 'Projects'
+    url = '/projects/'
+    weight = 60
   [[Languages.en-gb.menu.main]]
     # pageRef="projects"
     name = 'Notes'
     url = '/notes/'
-    weight = 60
-  [[Languages.en-gb.menu.main]]
-    # pageRef="about"
-    name = 'About'
-    url = '/about/'
     weight = 70
 
 
