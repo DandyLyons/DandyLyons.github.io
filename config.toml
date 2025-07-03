@@ -202,10 +202,6 @@ url = "https://medium.com/@_DandyLyons"
 name = "x"
 url = "https://x.com/dan_dee_lyons"
 
-[params]
-talkyardServerUrl = "https://site-27u7pjoswd.talkyard.net"
-talkyardScriptUrl = "https://c1.ty-cdn.net/-/talkyard-comments.min.js"
-
 [sitemap]
   changefreq = "weekly"
   filename = "sitemap.xml"
