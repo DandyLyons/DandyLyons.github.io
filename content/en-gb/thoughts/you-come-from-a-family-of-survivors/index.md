@@ -1,7 +1,7 @@
 ---
 title: You Come From a Family Of Survivors
 date: 2025-07-25T08:28:00.000-06:00
-draft: true
+draft: false
 slug: you-come-from-a-family-of-survivors
 tags:
   - thoughts
