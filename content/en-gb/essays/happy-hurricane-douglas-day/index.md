@@ -6,7 +6,7 @@ tags:
     - "essays" 
 slug: "happy-hurricane-douglas-day"
 description: "Celebrating the day Hurricane Douglas passed by Hawaii and how God turned tragedy into beauty."
-images: ["https://res.cloudinary.com/dzwglhtnl/image/upload/v1753542570/IMG_0375_xgww13.jpg"]
+images: ["hurricane_sunset_thumbnail.jpg"]
 ---
 
 The year was 2020. Covid was in full swing. My wife and I were married for less than a year. And the grocery stores and hardware stores were flooded with people preparing for the Category 1 Hurricane Douglas. 
@@ -25,11 +25,9 @@ The Hawaiian Islands are arranged in an almost straight line and the path of the
 We waited and waited for the worst... Finally I got tired of waiting, walked out onto the balcony and that's when this happened: 
 
 <figure>
-    <a href="https://res.cloudinary.com/dzwglhtnl/image/upload/v1753542570/IMG_0375_xgww13.jpg" target="_blank" rel="noopener noreferrer">
-        <img src="https://res.cloudinary.com/dzwglhtnl/image/upload/c_scale,w_1200/v1753542570/IMG_0375_xgww13.jpg" 
+    <img src="https://res.cloudinary.com/dzwglhtnl/image/upload/c_scale,w_1200/v1753542570/IMG_0375_xgww13.jpg" 
                  alt="A beautiful city sunset over Honolulu, Hawaii during Hurricane Douglas" 
                  style="width: 100%; height: auto;">
-    </a>
 </figure>
 
 I didn't edit this photo at all. It was taken from an iPhone SE. That's just what the sunset actually looked like that day. Those clouds you see are actually the outer rings of Hurricane Douglas. But here is what it looked like on the news:
@@ -49,18 +47,17 @@ You can barely even see the islands because they are completely covered by the h
     <img src="https://res.cloudinary.com/dzwglhtnl/image/upload/c_scale,w_800/v1753553548/ChatGPT_Image_Jul_26_2025_12_11_49_PM_zxmi7e.png" 
          alt="A silly Mortal Kombat parody image with the text 'NO FATALITIES'" 
          style="width: 100%; height: auto;">
-    <figcaption>A silly Mortal Kombat parody image with the text "NO FATALITIES"</figcaption>
 </figure>
 
 ## Celebrating Hurricane Douglas Day
-When I got married, my dad said to me, "the fun thing about getting married is you get to start your own family traditions." So I decided to start a new family tradition: **Hurricane Douglas Day**. Every year on July 26th, we celebrate the day that Hurricane Douglas passed by Hawaii and God spared us from its full force. But I don't want a lame boring holiday that is just a name. This day has to be special and different from other days. Otherwise, it's just like any other day. So how can we make Hurricane Douglas Day special? Sugary, swirly drinks of course! Every year my wife and I celebrate with a fun treat, a swirly from Wendy's, or a smoothie or some other delicious drink. 
+When I got married, my dad said to me, "the fun thing about getting married is you get to start your own family traditions." So I decided to start a new family tradition: **Hurricane Douglas Day**. Every year on July 26th, we celebrate the day that Hurricane Douglas passed by Hawaii and God spared us from its full force. But I don't want a lame boring holiday that is just a name. This day has to be special and different from other days. Otherwise, it's just like any other day. So how can we make Hurricane Douglas Day special? Sugary, swirly drinks of course! Every year my wife and I celebrate with a fun treat, a Frosty from Wendy's, or a smoothie or some other delicious drink. 
 
 >*"As for you, **you meant evil against me, but God meant it for good**, to bring it about that many people should be kept alive, as they are today."* - Genesis 50:20 (ESV)
 
 What should have been a devastating hurricane turned into easily the most beautiful sunset I have ever seen. **Our God is a God who turns evil into good.** He turns tragedy into therapy.  When the world is spinning out of control, and all that is good in the world is being cut into tiny pieces, God turns around and blends it into a delicious treat. 
 
 ## But What if the Storm Hits? 
-This time, we escaped the storm. But only this time. In 1991, when Hurricane Iniki hit, we weren't so lucky. It was a Category 4 hurricane that devastated the island of Kauai. It destroyed 1,400 homes and caused $1.8 billion in damages. 
+This time, we escaped the storm. But only this time. In 1992, when Hurricane Iniki hit, we weren't so lucky. It was a Category 4 hurricane that devastated the island of Kauai. It destroyed 1,400 homes and caused $1.8 billion in damages. 
 
 Tragedy can and will hit sooner or later. I want to be very clear. I am not saying that God will protect us from every storm. And I am not trying to minimize the pain and suffering that real people experience during real tragedies. I'm not even suggesting that we should _look for the silver lining_ in every situation. Tragedy is tragedy. It hurts, it's painful, and it should be mourned.
 
