@@ -6,7 +6,7 @@ tags:
     - "essays" 
 slug: "happy-hurricane-douglas-day"
 description: "Celebrating the day Hurricane Douglas passed by Hawaii and how God turned tragedy into beauty."
-images: ["hurricane_sunset_thumbnail.jpg"]
+image: "hurricane_sunset_thumbnail.jpg"
 ---
 
 The year was 2020. Covid was in full swing. My wife and I were married for less than a year. And the grocery stores and hardware stores were flooded with people preparing for the Category 1 Hurricane Douglas. 
