@@ -1,11 +1,12 @@
 ---
 title: "Happy Hurricane Douglas Day!"
-date: 2025-07-26T08:06:22-06:00
+date: 2025-07-26
 draft: false
 tags: 
     - "essays" 
 slug: "happy-hurricane-douglas-day"
-description: 
+description: "Celebrating the day Hurricane Douglas passed by Hawaii and how God turned tragedy into beauty."
+images: ["https://res.cloudinary.com/dzwglhtnl/image/upload/v1753542570/IMG_0375_xgww13.jpg"]
 ---
 
 The year was 2020. Covid was in full swing. My wife and I were married for less than a year. And the grocery stores and hardware stores were flooded with people preparing for the Category 1 Hurricane Douglas. 
