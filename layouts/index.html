@@ -30,7 +30,7 @@
         <main aria-label="Content">
             <h3 class="posts-item-note" aria-label="Recents">Recents</h3>
             {{/* Show last 50 posts in reverse date order */}}
-            {{ $pagesToShow := where .Site.RegularPages "Type" "in" site.Params.mainSections }}
+            {{ $pagesToShow := where (where .Site.RegularPages "Type" "in" site.Params.mainSections) "Params.list" "!=" false }}
             {{ $posts := $pagesToShow.ByDate.Reverse }}
             {{ range first 50 $posts }}
             {{ partial "postCard" . }}
