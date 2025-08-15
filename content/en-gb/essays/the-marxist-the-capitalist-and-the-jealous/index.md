@@ -1,8 +1,7 @@
 ---
 title: "The Marxist, The Capitalist, and The Jealous"
 date: 2025-08-15
-tags: 
-    - "essays"
+tags: ["essays", "Marxism", "Capitalism", "jealousy"]
 slug: "the-marxist-the-capitalist-and-the-jealous"
 ---
 
