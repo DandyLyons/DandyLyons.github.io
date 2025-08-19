@@ -32,6 +32,10 @@
 
     <meta name="theme-color" content="{{ .Site.Params.webmanifest.theme_color | default "#434648" }}">
 
+    {{ if .Params.unlisted }}
+    <meta name="robots" content="noindex, nofollow">
+    {{ end }}
+
     {{/* SVG favicon for the modern web */}}
     <link rel="icon" type="image/svg+xml" href="{{ (resources.Get "icons/favicon.svg").RelPermalink }}">
 
