@@ -1,10 +1,15 @@
 ---
 date: 2024-10-02
-title: "How to Visualize a Dependency Graph of Swift Dependencies"
+title: How to Visualize a Dependency Graph of Swift Dependencies
 slug: swift-dependency-graph-visualization
-images: [""]
-description: 
-topics: ["Swift", "SPM"]
+images:
+  - ""
+description:
+topics:
+  - Swift
+  - SPM
+tags:
+  - Swift
 ---
 As projects grow in complexity, it is common to use two techniques: 
 

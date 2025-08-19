@@ -1,13 +1,12 @@
 ---
-title: "Listen Up: Your Guide to Turning Any Text Into Audio" 
-
+title: "Listen Up: Your Guide to Turning Any Text Into Audio"
 date: 2025-05-12T12:18:34-06:00
-tags: 
-    - "thoughts" 
-slug: "listen-up-your-guide-to-turning-any-text-into-audio" 
-
+tags:
+  - thoughts
+  - text-to-speech
+slug: listen-up-your-guide-to-turning-any-text-into-audio
 aliases:
-    - "/thoughts/7/" 
+  - /thoughts/7/
 description: Discover free and affordable ways to turn any text into audio, enhancing your multitasking and content consumption experience.
 ---
 Have you ever felt like there's simply *too much* to read and not enough time? Between articles, emails, reports, and even books, our eyes and brains are constantly bombarded with text. For years, I consumed content the traditional way – with my eyes fixed on a screen or page. But recently, something shifted dramatically. I discovered the power of listening to text, and honestly, it's rapidly become my preferred method of "reading." This isn't about ditching traditional reading entirely, but about opening up a whole new, incredibly flexible way to consume information and entertainment.

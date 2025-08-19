@@ -1,15 +1,15 @@
 ---
-title: "Navigating the Post Expertise Scarcity Age" 
-
+title: Navigating the Post Expertise Scarcity Age
 date: 2025-05-02T16:47:06-06:00
 draft: true
-tags: 
-    - "thoughts" 
-slug: "navigating-the-post-expertise-scarcity-age" 
-
+tags:
+  - thoughts
+  - AI
+  - expertise
+slug: navigating-the-post-expertise-scarcity-age
 aliases:
-    - "/thoughts/3/" 
-description: 
+  - /thoughts/3/
+description:
 ---
 
 Hey everyone, following up on my last post, "Post Expertise Scarcity."

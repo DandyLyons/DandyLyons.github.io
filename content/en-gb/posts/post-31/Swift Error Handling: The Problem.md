@@ -1,11 +1,15 @@
 ---
 title: "Swift Error Handling: The Problem"
 date: 2025-03-27
-topics: ["Swift", "Error Handling"]
-series: "Swift Error Handling"
+topics:
+  - Swift
+  - Error Handling
+series: Swift Error Handling
 image:
-description: "Explore the strengths and weaknesses of Swift's error handling system, and discover how it can be improved."
+description: Explore the strengths and weaknesses of Swift's error handling system, and discover how it can be improved.
 slug: swift-error-handling-the-problem
+tags:
+  - Swift
 ---
 
 # Swift Error Handling: The Problem

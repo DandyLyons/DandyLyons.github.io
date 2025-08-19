@@ -1,9 +1,12 @@
 ---
-title: "There's Poor, and Then There's Capitalist Poor"
+title: There's Poor, and Then There's Capitalist Poor
 date: 2025-08-15
-tags: ["thoughts", "poverty", "Capitalism"]
-slug: "theres-poor-and-then-theres-capitalist-poor"
-description: 
+tags:
+  - thoughts
+  - poverty
+  - Capitalism
+slug: theres-poor-and-then-theres-capitalist-poor
+description: A thoughtful critique of capitalism that contrasts poverty under capitalist and Marxist systems, arguing that despite flaws, capitalism better prevents famine and improves living standards for the poor.
 ---
 
 There's a lot of self-declared [Anti-Capitalists](https://en.wikipedia.org/wiki/Anti-capitalism) in my social media feeds. Fine by me. I like being exposed to thoughts I disagree with because it sharpens my own thinking, and [truth is far more valuable than being right]({{< ref "essays/how-to-always-be-right" >}}). It forces me to wrestle with flaws in my own thinking, and it forces me to search for strong rebuttals. 

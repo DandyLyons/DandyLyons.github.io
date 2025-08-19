@@ -1,13 +1,16 @@
 ---
-title: "AI Is Human Intelligence Applied" 
+title: AI Is Human Intelligence Applied
 date: 2025-06-10T11:43:57-06:00
-tags: 
-    - "thoughts" 
-slug: "ai-is-human-intelligence-applied" 
-topics: ["AI", "Technology"]
+tags:
+  - thoughts
+  - intelligence
+slug: ai-is-human-intelligence-applied
+topics:
+  - AI
+  - Technology
 aliases:
-    - "/thoughts/10/" 
-description: "AI is not a replacement for human intelligence; it's an application of it. Understanding this distinction is crucial."
+  - /thoughts/10/
+description: AI is not a replacement for human intelligence; it's an application of it. Understanding this distinction is crucial.
 ---
 
 My first experience with so-called AI was in the late 90s playing a PS1 game called _Twisted Metal_. I could play competitively against my friends, but somehow I could even play when there was no one else around. The game itself could be my opponent. This felt like magic to me. How could a computer understand how to play the game so well. At times, it even felt like it was strategizing and anticipating my moves.

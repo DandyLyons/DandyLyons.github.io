@@ -1,12 +1,16 @@
 ---
-title: "How to Always Be Right"
-date: 2025-05-04T19:30:03-06:00
-tags: 
-    - "essays" 
-slug: "how-to-always-be-right"
-topics: ["truth", "humility", "arguments"]
-aliases: ["/essays/1/"]
-description: "To always be right, you must first be willing to be wrong. Embrace humility and discover the freedom of truth."
+title: How to Always Be Right
+date: 2025-05-04
+tags:
+  - essays
+slug: how-to-always-be-right
+topics:
+  - truth
+  - humility
+  - arguments
+aliases:
+  - /essays/1/
+description: To always be right, you must first be willing to be wrong. Embrace humility and discover the freedom of truth.
 ---
 
 # How to Always Be Right and Never Ever Wrong

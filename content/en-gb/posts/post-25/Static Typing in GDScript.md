@@ -1,9 +1,13 @@
 ---
-title: 'Gradual Static Typing in GDScript'
+title: Gradual Static Typing in GDScript
 slug: gradual-static-typing-in-gdscript
 date: 2024-11-13
-topics: ["Type Systems", "GDScript"]
-description: Static or dynamic types? How about neither? Let's learn how GDScript's type system works. 
+topics:
+  - Type Systems
+  - GDScript
+description: Static or dynamic types? How about neither? Let's learn how GDScript's type system works.
+tags:
+  - GDScript
 ---
 
 Any time we learn a new programming language, one of the first things we tend to fixate on is the syntax. But in many ways syntax is actually less important. The syntax is effectively the UI of the programming language. It's how the language "looks". But learning a language also requires understanding how a language "works".

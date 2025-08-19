@@ -1,14 +1,17 @@
 ---
-title: "AI Is Not Human But We Sure Think It Is" 
-
+title: AI Is Not Human But We Sure Think It Is
 date: 2025-05-09T08:33:32-06:00
-tags: 
-    - "thoughts" 
-slug: "ai-is-not-human-but-we-sure-think-it-is" 
-topics: ["AI", "Anthropomorphism", "Psychology"]
+tags:
+  - thoughts
+  - AI
+slug: ai-is-not-human-but-we-sure-think-it-is
+topics:
+  - AI
+  - Anthropomorphism
+  - Psychology
 aliases:
-    - "/thoughts/6/" 
-description: "Exploring the human tendency to anthropomorphize AI and its implications for our interactions with technology."
+  - /thoughts/6/
+description: Exploring the human tendency to anthropomorphize AI and its implications for our interactions with technology.
 ---
 Look at this picture. What do you see?
 

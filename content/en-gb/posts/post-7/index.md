@@ -2,9 +2,13 @@
 title: How to Scroll to a Percentage in a ScrollView
 slug: scroll-to-percentage-in-scrollview
 date: 2024-07-30
-topics: ["SwiftUI"]
-images: ["image.jpg"]
-decription: Learn how to programmatically move a SwiftUI ScrollView to a precise numeric position. 
+topics:
+  - SwiftUI
+images:
+  - image.jpg
+decription: Learn how to programmatically move a SwiftUI ScrollView to a precise numeric position.
+tags:
+  - SwiftUI
 ---
 SwiftUI can make many tasks extremely easy, yet SwiftUi struggles to do other seemingly simple tasks. Today we will learn how to accomplish one of those tasks. We will create a ScrollView that can programmatically scroll to a specific location within the ScrollView. First let's create a new type called `ProgrammaticScrollView`. 
 

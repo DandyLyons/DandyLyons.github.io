@@ -1,15 +1,14 @@
 ---
-title: "Post Expertise Scarcity"
+title: Post Expertise Scarcity
 date: 2025-05-01T07:48:36-06:00
-tags: 
-    - thoughts # Default tag
-slug: "post-expertise-scarcity"
+tags:
+  - thoughts
+  - AI
+slug: post-expertise-scarcity
 aliases:
-  # Alias for /thoughts/NUMBER/
-  - "/thoughts/post-expertise-scarcity/"
-  # Alias for /thoughts/SLUG/
-  - "/thoughts/post-expertise-scarcity/"
-description: "The internet made information abundant, but now something is making expertise abundant too."
+  - /thoughts/post-expertise-scarcity/
+  - /thoughts/post-expertise-scarcity/
+description: The internet made information abundant, but now something is making expertise abundant too.
 ---
 
 

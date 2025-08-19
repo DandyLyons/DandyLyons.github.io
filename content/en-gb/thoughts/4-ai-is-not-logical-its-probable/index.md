@@ -1,14 +1,17 @@
 ---
-title: "AI Is Not Logical, It's Probable" 
+title: AI Is Not Logical, It's Probable
 date: 2025-05-05T09:28:59-06:00
-tags: 
-    - "thoughts" 
-slug: "ai-is-not-logical-its-probable" 
-
+tags:
+  - thoughts
+  - AI
+slug: ai-is-not-logical-its-probable
 aliases:
-    - "/thoughts/4/" 
-description: "AI is not logical, it's probable. Understanding the difference is key to navigating our increasingly automated world."
-topics: ["AI", "Machine Learning", "Technology"]
+  - /thoughts/4/
+description: AI is not logical, it's probable. Understanding the difference is key to navigating our increasingly automated world.
+topics:
+  - AI
+  - Machine Learning
+  - Technology
 ---
 
 ## Sci-Fi vs. Reality

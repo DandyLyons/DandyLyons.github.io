@@ -5,6 +5,8 @@ draft: false
 slug: you-come-from-a-family-of-survivors
 tags:
   - thoughts
+  - survival
+description: Did you know that you are a survivor?
 ---
 You come from a family of survivors. 
 

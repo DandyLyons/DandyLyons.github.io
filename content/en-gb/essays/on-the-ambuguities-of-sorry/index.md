@@ -1,10 +1,10 @@
 ---
-title: "On the Ambuguities of Sorry"
-date: 2025-05-15T09:22:12-06:00
-tags: 
-    - "essays" 
-slug: "on-the-ambuguities-of-sorry"
-description: "The word 'sorry' is a Rorschach test for our biases and beliefs. It can mean sympathy, regret, or an admission of guilt. Let's explore the implications of this ambiguity and how it fuels division and tribalism."
+title: On the Ambuguities of Sorry
+date: 2025-05-15
+tags:
+  - essays
+slug: on-the-ambuguities-of-sorry
+description: The word 'sorry' is a Rorschach test for our biases and beliefs. It can mean sympathy, regret, or an admission of guilt. Let's explore the implications of this ambiguity and how it fuels division and tribalism.
 ---
 
 ## Introduction
