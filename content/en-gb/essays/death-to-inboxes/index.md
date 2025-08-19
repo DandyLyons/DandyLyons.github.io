@@ -4,11 +4,12 @@ date: 2025-08-10T14:14:52-06:00
 draft: false
 sitemap: 
   disable: true
-list: false
+build:
+  list: false
 tags: 
     - "essays" 
 slug: "death-to-inboxes"
-description: 
+description: "A critical examination of the concept of inbox zero and its implications on productivity and mental health."
 ---
 
 **Unschackle yourself from the tyranny of the inbox.** [Inbox zero](https://en.wiktionary.org/wiki/inbox_zero) is a scam and a plague. It promises zen and peace, only to be immediately flooded by the deluge of more meaningless messages to fight for your attention. What do you honestly gain from inbox zero? A warm fuzzy feeling? Bragging rights? No. What you really gain is the satisfaction of knowing that you achieved a metric that provides no actual value to your life. 
