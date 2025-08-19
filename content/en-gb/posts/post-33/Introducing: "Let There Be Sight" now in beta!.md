@@ -1,11 +1,14 @@
 ---
-title: "Introducing: \"Let There Be Sight\" now in beta!"
+title: 'Introducing: "Let There Be Sight" now in beta!'
 date: 2025-04-21
-topics: 
-series: 
+topics:
+series:
 image:
-description: 
+description:
 slug: let-there-be-sight-beta
+tags:
+  - iOS
+  - announcements
 ---
 
 # **Introducing the Beta of Let There Be Sight: Alt Text Made Easy**

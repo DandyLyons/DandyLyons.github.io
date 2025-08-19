@@ -12,6 +12,7 @@ description: Exploring the world of icons in SwiftUI, from SF Symbols to custom 
 slug: icons-in-swiftui
 tags:
   - SwiftUI
+  - lucide
 ---
 
 # Icons in SwiftUI

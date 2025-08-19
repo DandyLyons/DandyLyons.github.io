@@ -10,6 +10,7 @@ description: Discover how a few simple methods can greately improve your error h
 slug: swift-error-handling-the-solution
 tags:
   - Swift
+  - errors
 ---
 
 # Swift Error Handling: The Solution
