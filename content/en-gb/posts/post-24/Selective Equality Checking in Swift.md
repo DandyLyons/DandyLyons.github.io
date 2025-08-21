@@ -1,11 +1,17 @@
 ---
-title: 'Selective Equality Checking in Swift'
+title: Selective Equality Checking in Swift
 slug: selective-equality-checking-in-swift
 date: 2024-11-05
-series: ["Swift Equatability"]
-topics: ["Swift", "Equatable Protocol", "Parameter Packs"]
-images: 
-description: Learn how to check equality in Swift WITHOUT using Equatable? Now you can pick and choose which properties you would like to check equality on. 
+series:
+  - Swift Equatability
+topics:
+  - Swift
+  - Equatable Protocol
+  - Parameter Packs
+images:
+description: Learn how to check equality in Swift WITHOUT using Equatable? Now you can pick and choose which properties you would like to check equality on.
+tags:
+  - Swift
 ---
 
 The humble `Equatable` protocols is one of the most fundamental tools in Swift, but sometimes it is not always the best tool for the job. Last week we learned how to [check equality for collections while ignoring order]({{<ref "Unordered Equality Checking in Swift">}}). Today we will learn how to pick and choose exactly what properties we would like to check equality on. But first let's talk about the problem: 

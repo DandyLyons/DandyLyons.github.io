@@ -1,10 +1,16 @@
 ---
 date: 2024-10-22
-title: "A Deep Dive into Value and Reference Types in Swift"
+title: A Deep Dive into Value and Reference Types in Swift
 slug: swift-value-reference-deep-dive
-images: [""]
-description: 
-topics: ["Swift", "C", "Pointers"]
+images:
+  - ""
+description:
+topics:
+  - Swift
+  - C
+  - Pointers
+tags:
+  - Swift
 ---
 
 Understanding how Swift handles memory and data is key to writing efficient, bug-free code. In this post, we'll explore the differences between value and reference types, and more importantly, what value and reference **semantics** mean in Swift. By the end, you'll know how to think about these concepts when designing your own Swift code.

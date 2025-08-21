@@ -1,13 +1,13 @@
 ---
-title: "AI Is a Moving Goalpost" 
+title: AI Is a Moving Goalpost
 date: 2025-05-06T10:02:25-06:00
-tags: 
-    - "thoughts" 
-slug: "ai-is-a-moving-goalpost" 
-
+tags:
+  - thoughts
+  - AI
+slug: ai-is-a-moving-goalpost
 aliases:
-    - "/thoughts/5/" 
-description: 
+  - /thoughts/5/
+description:
 ---
 
 

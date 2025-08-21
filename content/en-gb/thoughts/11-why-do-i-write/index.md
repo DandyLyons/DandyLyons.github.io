@@ -6,6 +6,7 @@ slug: why-do-i-write
 description: Meditations on creativity and effort.
 tags:
   - creativity
+  - thoughts
 ---
 *Why do I write?* This is a question that I have been asking myself more often lately, which makes a lot of sense because I have been trying to write more often on this site. Ideally, I'd like to write something every day (at least something small). \
 \

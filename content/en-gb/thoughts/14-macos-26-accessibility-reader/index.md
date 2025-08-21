@@ -2,20 +2,21 @@
 title: "macOS 26's Hidden Speechify Killer: Accessibility Reader"
 date: 2025-07-04
 draft: false
-tags: 
-    - "thoughts"
-    - "accessibility"
-    - "macOS"
-    - "text-to-speech"
-slug: "macos-26-accessibility-reader"
+tags:
+  - thoughts
+  - accessibility
+  - macOS
+  - text-to-speech
+  - macOS_26
+slug: macos-26-accessibility-reader
 aliases:
-    - "/thoughts/14/"
-description: "Apple quietly shipped a powerful text-to-speech feature in macOS 26 that could replace premium apps like Speechify - but almost nobody knows about it."
+  - /thoughts/14/
+description: Apple quietly shipped a powerful text-to-speech feature in macOS 26 that could replace premium apps like Speechify - but almost nobody knows about it.
 topics:
-    - accessibility
-    - macOS
-    - technology
-    - Apple
+  - accessibility
+  - macOS
+  - technology
+  - Apple
 ---
 
 Apple's macOS 26 introduces a powerful, yet frustratingly hidden, accessibility feature that could potentially "Sherlock" some of the leading voice reader applications like Readwise Reader, Speechify, and ElevenLabs' _ElevenReader_. This new addition is called **Accessibility Reader**, and it brings high-quality text-to-speech capabilities directly to your Mac at no extra charge.

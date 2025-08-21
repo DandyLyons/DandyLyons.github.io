@@ -1,11 +1,16 @@
 ---
 title: "Swift Error Handling: The Solution"
 date: 2025-03-29
-topics: ["Swift", "Error Handling"]
-series: "Swift Error Handling"
+topics:
+  - Swift
+  - Error Handling
+series: Swift Error Handling
 image:
-description: "Discover how a few simple methods can greately improve your error handling in Swift, to be safer and easier to understand."
+description: Discover how a few simple methods can greately improve your error handling in Swift, to be safer and easier to understand.
 slug: swift-error-handling-the-solution
+tags:
+  - Swift
+  - errors
 ---
 
 # Swift Error Handling: The Solution

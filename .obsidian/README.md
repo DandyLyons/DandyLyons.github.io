@@ -1,0 +1,3 @@
+This Obsidian vault is completely unnecessary for the actual hugo site. It should not affect the content or structure of the site in any way. The only reason for using Obsidian is to allow for easy editing of YAML front matter spread out across several files. The Obsidian Base plugin makes it much easier to edit YAML front matter of multiple files side by side in a spreadsheet-like view.
+
+If you delete this `.obsidian` folder, it will not impact the functionality of the Hugo site.

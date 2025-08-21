@@ -1,11 +1,19 @@
 ---
-title: 'Introducing SelectiveEquatable'
+title: Introducing SelectiveEquatable
 slug: selectiveequatable
 date: 2024-12-12
-series: ["Swift Equatability"]
-topics: ["Swift", "Equatable Protocol", "SelectiveEquatable"]
-images: ["SelectiveEquatable.png"]
+series:
+  - Swift Equatability
+topics:
+  - Swift
+  - Equatable Protocol
+  - SelectiveEquatable
+images:
+  - SelectiveEquatable.png
 description: Quickly and easily check for equality on specific properties in Swift with the new SelectiveEquatable protocol.
+tags:
+  - Swift
+  - Equatable
 ---
 
 A few weeks ago, I released a blog post named ["Selective Equality Checking in Swift"](https://dandylyons.net/posts/post-24/selective-equality-checking-in-swift/). In that post, I designed and implemented an API to check for equality on specific properties of a type. Today, I am excited to announce a new Swift protocol named `SelectiveEquatable`, that makes all of this even easier. Let's see it in action.

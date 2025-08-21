@@ -3,13 +3,14 @@ title: My Takeaways From "Dawnshard" by Brandon Sanderson
 date: 2025-06-18T08:15:00.000Z
 draft: false
 slug: dawnshard-takeaways
-description: "Did you know that capitalism is not the devil? Rysn from Dawnshard sure thinks so."
+description: Did you know that capitalism is not the devil? Rysn from Dawnshard sure thinks so.
 topics:
   - thoughts
   - capitalism
   - literature
 tags:
   - thoughts
+  - Capitalism
 ---
 I recently finished "Dawnshard" by Brandon Sanderson. It was... fine. I don't think it's a bad book. I think I probably just have Sanderson fatigue after reading Stormlight book 5. Dawnshard is basically Stormlight 3.5 . For some reason I missed this book so I'm reading it out of order, which might be part of the why I'm not so excited by it. Perhaps I would have been more excited about it, if I read it 4 or 5 years ago.
 

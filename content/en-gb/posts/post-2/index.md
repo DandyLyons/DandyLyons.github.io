@@ -2,9 +2,13 @@
 title: How to use a JS for...of loop with an index
 slug: js-for-of-loop
 date: 2023-09-07
-topics: ["JavaScript"]
-images: ["image.jpg"]
-description: Enumerate in a way that is safer and easier to read. 
+topics:
+  - JavaScript
+images:
+  - image.jpg
+description: Enumerate in a way that is safer and easier to read.
+tags:
+  - JavaScript
 ---
 > **Note**:
 > I originally posted this blog post to Medium, [here](https://medium.com/@_DandyLyons/how-to-use-a-js-for-of-loop-with-an-index-a4675ed22351).

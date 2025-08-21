@@ -2,9 +2,15 @@
 date: 2024-09-25
 title: The Swift Ranges Cheatsheet
 slug: swift-ranges-cheatsheet
-images: [""]
+images:
+  - ""
 description: Ranges in Swift exlained, plain and simple.
-topics: [Swift, Ranges, Cheatsheet]
+topics:
+  - Swift
+  - Ranges
+  - Cheatsheet
+tags:
+  - Swift
 ---
 Ranges are fantastic for when we want to work with a range of sorted values that contain no duplicates. 
 

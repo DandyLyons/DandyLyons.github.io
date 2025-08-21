@@ -2,9 +2,13 @@
 title: Hello Hugo
 slug: hello-hugo
 date: 2024-07-23
-images: ["image.png"]
-topics: ["Hugo"]
+images:
+  - image.png
+topics:
+  - Hugo
 description: I've rewritten and released my personal site using Hugo!
+tags:
+  - Hugo
 ---
 Hello! 
 

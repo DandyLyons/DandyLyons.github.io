@@ -3,11 +3,10 @@ title: "Actually Useful AI: Modern Search"
 date: 2025-06-12T11:33:00.000Z
 draft: false
 slug: actually-useful-ai-modern-search
-description: Go beyond keywords with LLM-powered search. Learn how AI is
-  revolutionizing information retrieval, its unique use cases, critical
-  weaknesses, and tips for effective searching.
+description: Go beyond keywords with LLM-powered search. Learn how AI is revolutionizing information retrieval, its unique use cases, critical weaknesses, and tips for effective searching.
 tags:
   - thoughts
+  - search
 aliases:
   - /thoughts/9/
 ---

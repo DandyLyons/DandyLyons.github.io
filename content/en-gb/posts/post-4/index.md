@@ -1,13 +1,19 @@
 ---
-title: 'Explicit and Implicit Types in Swift'
+title: Explicit and Implicit Types in Swift
 slug: explicit-implicit-types-in-swift
 date: 2024-03-16
-draft:  false
-series: ["Swift Generics Demystified"]
-topics: ["Swift", "Generics"]
-url: "/posts/swift-generics/explicit-types-swift"
-images: ["image.jpg"]
-description: Let's learn how Swift infers types. 
+draft: false
+series:
+  - Swift Generics Demystified
+topics:
+  - Swift
+  - Generics
+url: /posts/swift-generics/explicit-types-swift
+images:
+  - image.jpg
+description: Let's learn how Swift infers types.
+tags:
+  - Swift
 ---
 Generics are one of the most powerful features in Swift, yet they can often feel overwhelming, even for seasoned Swift developers. In this series we'll learn how to make generics simple, useful, and even fun!
 ### Back to Basics

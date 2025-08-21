@@ -1,10 +1,18 @@
 ---
-title: "Icons in SwiftUI"
+title: Icons in SwiftUI
 date: 2025-04-29
-topics: ["SwiftUI", "Icons", "SF Symbols", "Lucide Icons", "SVG"]
-series: "SwiftUI"
-description: "Exploring the world of icons in SwiftUI, from SF Symbols to custom SVGs."
+topics:
+  - SwiftUI
+  - Icons
+  - SF Symbols
+  - Lucide Icons
+  - SVG
+series: SwiftUI
+description: Exploring the world of icons in SwiftUI, from SF Symbols to custom SVGs.
 slug: icons-in-swiftui
+tags:
+  - SwiftUI
+  - lucide
 ---
 
 # Icons in SwiftUI
