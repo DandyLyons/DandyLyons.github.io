@@ -3,6 +3,10 @@ title: "{{ replaceRE `^[^-]+-(.+)` `$1` .Name | humanize | title }}"
 {{/* 👆🏼 title Extracts the portion of the filename after the first hyphen and converts it into title case.*/}}
 date: {{ .Date }}
 draft: true
+build: 
+  list: never
+sitemap:
+  disable: true
 tags: 
     - "thoughts" {{/* 👈🏼 Default tag */}}
 slug: "{{ replaceRE `^[^-]+-(.+)` `$1` .Name | urlize }}" 
