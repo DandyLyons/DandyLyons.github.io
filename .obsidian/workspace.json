@@ -8,16 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "21afbe931c73912e",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
             "id": "bebd1c836cbf0c82",
             "type": "leaf",
             "state": {
@@ -176,7 +166,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "21afbe931c73912e",
+  "active": "bebd1c836cbf0c82",
   "lastOpenFiles": [
     "content/en-gb/thoughts/17-curiosity-silenced-the-uncurious-cat/index.md",
     "content/en-gb/thoughts/17-curiosity-silenced-the-uncurious-cat",
