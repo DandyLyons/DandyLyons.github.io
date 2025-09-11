@@ -1,11 +1,7 @@
 ---
 title: Death to Inboxes
-date: 2025-08-10
+date: 2025-09-11
 draft: false
-sitemap:
-  disable: true
-build: 
-  list: false
 tags:
   - essays
 slug: death-to-inboxes
@@ -113,9 +109,9 @@ Set yourself up for success. Save what matters. Trash what doesn't.
 [^g]: Videogames are notorious for wasting your time. So much so that gamers made up a word for it: [grinding](https://en.wikipedia.org/wiki/Grinding_(video_games)). Would you permit any other business to intentionally waste your time just so that they can pretend to provide you more value? 
 
 ### Make FOMO, No Mo'
-_What if I miss something, important?_ You will miss something, and that's what's so great about it. You'll miss scams, spam, childish celebrity drama, frivolous tech hype, cancerous cancel campaigns, and so so many ads. 
+_What if I miss something, important?_ **You will miss something, and that's what's so great about it.** You'll miss scams, spam, childish celebrity drama, frivolous tech hype, cancerous cancel campaigns, and so so many ads. 
 
-The truth is, most of what you think is important, is really just noise. By eliminating the noise, you can discover what truly matters. 
+The truth is, most of what you think is important, is really just noise. Stop worrying about missing out. Kick [FOMO](https://en.wikipedia.org/wiki/Fear_of_missing_out) to the curb! By eliminating the noise, you can discover what truly matters. 
 
 In my time on this earth, I've discovered that important things will surface themselves. They don't **demand** your attention like the petty things in our inboxes. Important things just **are** important. **If it's actually important, then you will probably find it, eventually.** Remember this. Trust it. Feel it. Believe it.
 
