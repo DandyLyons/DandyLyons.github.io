@@ -45,5 +45,4 @@ But really, we should be asking ourselves, "How could a Man willingly put Himsel
 ## What Is Your Passion?
 What is your passion? What do you love so much that you are willing to suffer for it? 
 
-
-
+## Compassion Means "To Suffer With"
