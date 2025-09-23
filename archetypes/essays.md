@@ -2,6 +2,10 @@
 title: "{{ .Name | humanize | title }}"
 date: {{ .Date }}
 draft: true
+build: 
+  list: never
+sitemap:
+  disable: true
 tags: 
     - "essays" {{/* 👈🏼 Default tag */}}
 slug: "{{ .Name | urlize }}"
