@@ -49,7 +49,7 @@ Like Bastian, when we realize this, it is an incredibly empowering realization. 
 
 ## The Danger of Storytelling
 >Life and death are in the power of the tongue, and those who love it will eat its fruit.
->- [Proverbs 18:21 ESV](https://biblehub.com/proverbs/18-21.htm)
+>- [Proverbs 18:21](https://biblehub.com/proverbs/18-21.htm)
 
 In the early 20th century, there lived a young man whose nation lost a bitter war. The world blamed his nation for starting the war, and they were treated as pariahs. Millions of people were forced into cruel poverty for simply being born in the "wrong" country. This young man felt led to do something about this. He raised a political movement meant to restore his nation's pride and power and for this he was thrown into prison. But somehow, this mere prisoner managed to rise to power and become the leader of his nation, and even to propel his nation to become one of the most powerful nations in the world. How did he do this? Through the power of storytelling. While in prison, he wrote an incredibly influential book. Unfortunately, this book was [Mein Kampf](https://en.wikipedia.org/wiki/Mein_Kampf) (My Struggle), an autobiographical manifesto by [Adolf Hitler](https://en.wikipedia.org/wiki/Adolf_Hitler). 
 
