@@ -1,5 +1,9 @@
 ---
 draft: false
+build: 
+  list: never
+sitemap:
+  disable: true
 ---
 
 Open this file in the Obsidian vault in order to batch edit the metadata of all posts.
