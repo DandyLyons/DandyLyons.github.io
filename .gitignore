@@ -28,3 +28,6 @@
 /resources/
 # Local Netlify folder
 .netlify
+
+# Ignore npm modules
+node_modules/

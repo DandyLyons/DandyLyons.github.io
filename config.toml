@@ -21,8 +21,8 @@ ignoreErrors = ["additional-script-loading-error"] # ignore error of loading add
 # 4. manually dragging in your dependency
 # as of 2024-07-27 this project uses the git submodule method
 
-# traditional way: theme component resides in directory 'themes' 
-theme = "hugo-blog-awesome"
+# traditional way: theme component resides in directory 'themes'
+theme = ["hugo-admonitions", "hugo-blog-awesome"]
 
 # # modern way: pull in theme component as hugo module
 # [module]

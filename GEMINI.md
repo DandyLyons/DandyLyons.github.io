@@ -9,7 +9,7 @@ This document provides context for the AI assistant to effectively collaborate o
 
 ## 2. Core Technologies & Configuration
 
-- **Hugo Version:** `hugo v0.134.0+extended darwin/arm64`. The user prefers stability over frequent updates.
+- **Hugo Version:** `hugo v0.147.8+extended+withDeploy darwin/arm64 VenderInfo=brew`. The user prefers stability over frequent updates.
 - **Operating System:** macOS.
 - **Configuration:** The primary configuration is in `config.toml`.
 - **Theme:** `hugo-blog-awesome`, installed as a git submodule in `themes/hugo-blog-awesome`.
@@ -100,7 +100,7 @@ Content files use YAML front matter. The following archetypes define the structu
 
 -   **`content` branch:** All content-related changes (new posts, edits to existing content) should be committed to this branch.
 -   **`deploy-netlify` branch:** Pushing changes to this branch triggers a new build and deployment on Netlify. Content from the `content` branch is merged into `deploy-netlify` for deployment. **A post is considered published on the live site only after it has been successfully pushed to this branch and Netlify has completed its build.** (This is of course assuming that the post doesn't have `draft: true` in its front matter.)
--   **`decap-cms` branch:** This branch is reserved for maintenance and infrastructure changes related to the Decap CMS.
+-   **`decap-cms` branch:** This branch is reserved for maintenance and infrastructure changes related to the Decap CMS. (DEPRECATED: The user is not currently using Decap CMS and plans to remove it in the future.)
 
 ### 5.2 Deployment Checklist
 
