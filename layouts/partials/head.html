@@ -49,11 +49,15 @@
     {{- end -}}
 
     {{/* Chirpy comments script. See config.toml to enable/disable this. */}}
-    {{- if and .Site.Params.chirpy.enabled .Site.Params.chirpy.domain }}
+    {{- if .Site.Params.chirpy.enabled }}
+    {{- $chirpyDomain := "example.com" }}
+    {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
+        {{- $chirpyDomain = .Site.Params.chirpy.domain }}
+    {{- end }}
     <script
         defer
         src="https://chirpy.dev/bootstrapper.js"
-        data-chirpy-domain="{{ .Site.Params.chirpy.domain }}"
+        data-chirpy-domain="{{ $chirpyDomain }}"
     ></script>
     {{- end -}}
 
