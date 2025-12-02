@@ -48,6 +48,19 @@
     {{ template "_internal/google_analytics.html" . }}
     {{- end -}}
 
+    {{/* Chirpy comments script. See config.toml to enable/disable this. */}}
+    {{- if .Site.Params.chirpy.enabled }}
+    {{- $chirpyDomain := "example.com" }}
+    {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
+        {{- $chirpyDomain = .Site.Params.chirpy.domain }}
+    {{- end }}
+    <script
+        defer
+        src="https://chirpy.dev/bootstrapper.js"
+        data-chirpy-domain="{{ $chirpyDomain }}"
+    ></script>
+    {{- end -}}
+
     {{/* Netlify Identity setup. DEPRECATED. Purpose: provides auth for DecapCMS. TODO: Switch to DecapBridge. */}}
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>

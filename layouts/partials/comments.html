@@ -1,5 +1,10 @@
-{{- if .Site.Config.Services.Disqus.Shortname -}}
-<hr style="margin-top: 40px; margin-bottom: 40px;" />
-{{ template "_internal/disqus.html" . }}
-<!-- Comments are currently disabled but may be added in a future update. -->
+{{/* Only show comments on thoughts, posts, and essays */}}
+{{- $allowedSections := slice "thoughts" "posts" "essays" -}}
+{{- $currentSection := .Section -}}
+
+{{- if in $allowedSections $currentSection -}}
+    {{- if and .Site.Params.chirpy.enabled .Site.Params.chirpy.domain -}}
+    <hr style="margin-top: 40px; margin-bottom: 40px;" />
+    <div data-chirpy-comment="true" id="chirpy-comment"></div>
+    {{- end -}}
 {{- end -}}
