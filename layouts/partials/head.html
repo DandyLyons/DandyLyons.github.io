@@ -48,6 +48,15 @@
     {{ template "_internal/google_analytics.html" . }}
     {{- end -}}
 
+    {{/* Chirpy comments script. See config.toml to enable/disable this. */}}
+    {{- if and .Site.Params.chirpy.enabled .Site.Params.chirpy.domain }}
+    <script
+        defer
+        src="https://chirpy.dev/bootstrapper.js"
+        data-chirpy-domain="{{ .Site.Params.chirpy.domain }}"
+    ></script>
+    {{- end -}}
+
     {{/* Netlify Identity setup. DEPRECATED. Purpose: provides auth for DecapCMS. TODO: Switch to DecapBridge. */}}
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>

@@ -19,7 +19,7 @@ This document provides context for the AI assistant to effectively collaborate o
     - `frontmatter.format`: `yaml` (Note: `archetypes/default.md` uses TOML `+++`).
     - `mainSections`: `["posts", "essays", "thoughts"]`
     - Taxonomies: `series`, `topics`.
-    - Services: Google Analytics is enabled; Disqus is disabled; comments are disabled.
+    - Services: Google Analytics is enabled; Chirpy comments are enabled for posts, essays, and thoughts.
 
 ## 3. Content Architecture
 
